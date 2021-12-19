@@ -43,7 +43,7 @@ class AllArticlesPage extends React.Component {
 
 export default AllArticlesPage
 export const tutorialsQuery = graphql`
-  query allArticlesQuery($skip: Int!) {
+  query allArticlesQuery() {
     site {
       siteMetadata {
         title
@@ -57,7 +57,6 @@ export const tutorialsQuery = graphql`
         frontmatter: { published: { ne: false }, unlisted: { ne: true } }
       }
       limit: 50
-      skip: $skip
     ) {
       edges {
         node {
