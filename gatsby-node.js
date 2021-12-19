@@ -8,11 +8,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     './src/templates/blog-post-share-image.js'
   )
   const PageTemplate = require.resolve('./src/templates/page.js')
-  const PostsBytagTemplate = require.resolve('./src/templates/tags.js')
+  const PostsBytagTemplate = require.resolve('./src/templates/tag.js')
   const HomeListPostsTemplate = require.resolve(
     './src/templates/home.js'
   )
-  const AllListPostsTemplate = require.resolve('./src/pages/tutorials.js')
+  const AllListPostsTemplate = require.resolve('./src/templates/tutorials.js')
   const allMarkdownQuery = await graphql(`
     {
       allMarkdown: allMdx(
