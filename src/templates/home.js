@@ -252,7 +252,7 @@ class BlogList extends React.Component {
                 Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development.
                 Know more about me 👉 Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development.
                 Know more about me 👉 Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development.
-                Know more about me 👉 
+                Know more about me 👉 hello
               </AboutAuthor>
               <AuthorImage src={Avatar} alt='Author Image' />
             </AuthorInfo>
