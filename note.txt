@@ -1,0 +1,13 @@
+Website Version 1 completed in December 2021
+
+-----------------------------------------------------------------------------------------------
+
+
+
+27/01/2022
+    - Started to implement responsiveness to website
+    - Need to create a Hamburger menu for mobile
+
+29/01/2022
+    - Completed responsive navbar and hamburger menu for mobile.
+    - Uploaded to github.

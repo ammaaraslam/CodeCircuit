@@ -16,23 +16,25 @@ const DarkModeButton = styled.button`
 `
 
 const MoonIcon = styled(BsMoonStarsFill)`
-  font-size: 26px;
+  font-size: 27px;
   transition: all 0.2s;
   color: var(--color-invertedBackground);
   transition: 0.25s ease-in;
+  margin-right: 8px;
   &:hover{
     color: var(--color-primaryColor);
-    transform: rotate(360deg);
+    transform: translateY(-3px);
     cursor: pointer;
   }
 `
 const SunIcon = styled(BsFillSunFill)`
-  font-size: 26px;
+  font-size: 27px;
   color: var(--color-invertedBackground);
   transition: 0.25s ease-in;
+  margin-right: 8px;
   &:hover{
     color: var(--color-primaryColor);
-    transform: rotate(360deg);
+    transform: translateY(-3px);
     cursor: pointer;
   }
 `

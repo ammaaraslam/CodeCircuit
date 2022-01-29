@@ -13,6 +13,9 @@ const SiteContent = styled.div`
   width: 100%;
   padding: 0;
   align-items: center
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+  }
 
 `
 

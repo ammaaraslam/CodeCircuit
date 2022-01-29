@@ -21,6 +21,10 @@ const LogoChange = ({ isExpanded = false , type, to, children, onClick, disabled
         width: '70px',
         height: '70px',
     }
+    const xsmallLogo = {
+        width: '70px',
+        height: '70px',
+    }
 
     const bigLogo = {
         width: '190px',
@@ -65,6 +69,14 @@ const LogoChange = ({ isExpanded = false , type, to, children, onClick, disabled
             }
             else {
                 logoSize = smallLogo;
+            }
+            break;
+        case 'xsmall':
+            if (hover) {
+                logoSize = xsmallLogo;
+            }
+            else {
+                logoSize = xsmallLogo;
             }
             break;
         case 'big':
