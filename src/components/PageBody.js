@@ -12,5 +12,6 @@ export const PageBody = styled.div`
     transform: translateY(-50px);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+
 `;
 

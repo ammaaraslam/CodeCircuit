@@ -19,6 +19,14 @@ const RightSectionWrapper = styled.aside`
     max-height: 100vh;
     top: 230px;
     position: sticky; */
+    @media screen and (max-width: 768px) {
+        & {
+            
+            width: 95%;
+            float: left;
+            margin-top: 20px;
+        }
+    }
 `
 const AuthorInfo = styled.div`
     padding: 8px;
@@ -52,13 +60,17 @@ const AboutAuthor = styled.p`
     font-family: 'Roboto';
 `
 const PopularTagsList = styled.div`
-    padding: 8px;
-    max-width: 200px;
+    display: grid;
+    justify-items: center;
+    grid-gap: 0;
+    row-gap: 20px;
+    horizontal-grid-gap: 100px;
+    grid-template-columns: repeat(4, 1fr);
 
 `
 const PopularTag = styled.div`
     display: inline;
-    margin-right: 4px; 
+    margin-right: 3px; 
 `
 
 const RecentArticles = styled.div`
@@ -97,8 +109,8 @@ const RightSection = () => {
                 <RecentArticlesLink>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
                 <RecentArticlesLink>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>
             </RecentArticles>
+            <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
             <PopularTagsList>
-                <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
                 <PopularTag>
                     <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/tags/gatsby`}>gatsby</TopicItem>
                 </PopularTag>
@@ -113,7 +125,7 @@ const RightSection = () => {
                 </PopularTag>
                 <PopularTag>
                     <TopicItem type='django' size='5px' border='10px' fontSize='15px' to={`/tags/django`}>django</TopicItem>
-                </PopularTag><br></br><br></br>
+                </PopularTag>
                 <PopularTag>
                     <TopicItem type='css' size='5px' border='10px' fontSize='15px' to={`/tags/css`}>CSS</TopicItem>
                 </PopularTag>

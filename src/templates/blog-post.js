@@ -24,6 +24,16 @@ const PageBody = styled.div`
     padding: 15px;
     z-index: 10;
     scroll-behavior: smooth;
+    @media screen and (max-width: 768px) {
+      & {
+        width: 95%
+      }
+    }
+    @media screen and (max-width: 400px) {
+      & {
+        width: 92%;
+      }
+    }
 `
 const AboutAuthor = styled.div`
   background-color: var(--color-darkerBackground);
@@ -35,6 +45,16 @@ const AboutAuthor = styled.div`
   border-radius: 20px;
   padding: 20px;
   z-index: 10;
+  @media screen and (max-width: 768px) {
+    & {
+      width: 95%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    & {
+      width: 92%;
+    }
+  }
 `
 const Toc = styled.ul`
   position: sticky;
@@ -69,6 +89,11 @@ const Toc = styled.ul`
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    & {
+      display: none;
+    }
+  }
   
 
 `
@@ -94,6 +119,11 @@ const TitleContainer = styled.div`
   border-radius: 20px;
   padding: 20px;
   z-index: 10;
+  @media screen and (max-width: 768px) {
+    & {
+      width: 94%;
+    }
+  }
 `
 
 const TocTtile = styled.h1`

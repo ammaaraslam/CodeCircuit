@@ -23,9 +23,13 @@ import LogoChange from '../components/LogoChange'
 const FooterContainer = styled.footer`
   align-items: center;
   display: block;
-  height: 40vh;
+  height: auto;
   text-align: center;  
   background-color: var(--color-primaryBackground);
+  @media screen and (max-width: 768px) {
+    & {
+      height: auto;
+  }
     
 `
 
@@ -35,8 +39,14 @@ const FooterLinks = styled.div`
   justify-content: center;
   align-items: center;
   text-align: left;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 31px;
+  @media screen and (max-width: 768px) {
+    & {
+      flex-direction: column;
+      padding-top: 70px;
+    }
+  }
 `
 
 const FooterLinkItem = styled(Link)`
@@ -64,6 +74,7 @@ const FooterText = styled.p`
   align-items: center;
   font-family: 'Roboto';
   padding-top: 8.5px;
+  padding-bottom: 20px;
 `
 const FooterSpanText = styled(Link)`
   text-decoration: none;
@@ -155,7 +166,7 @@ const Footer = () => {
       <FooterText><FooterSpanText to='/'>Code Circuit</FooterSpanText> © 2021</FooterText>
       <FooterText>
         Built with <a href='https://www.gatsbyjs.com' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' target='_blank'><ReactIcon /></a> by <AuthorName>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' target='_blank'><NetlifyIcon /></a>
-        </FooterText>
+      </FooterText>
     </FooterContainer>
   )
 }

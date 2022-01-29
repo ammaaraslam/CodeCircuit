@@ -14,9 +14,10 @@ const BioWrapper = styled.div`
   grid-gap: 50px;
   grid-template-columns: repeat(3, 1fr);
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     & {
       grid-template-columns: repeat(1, 1fr);
+      width: 90%;
     }
   }
   padding-left: 15px;
@@ -31,6 +32,12 @@ const BioImage = styled.img`
     border-radius: 20px;
     align-items: right;
     transform: translateX(100px);
+    @media screen and (max-width: 768px) {
+      & {
+        display: none;
+        
+      }
+    }
 
 `
 const BioInfo = styled.div`

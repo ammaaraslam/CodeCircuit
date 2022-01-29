@@ -29,9 +29,14 @@ const TagList = styled.div`
   grid-gap: 100px;
   grid-template-columns: repeat(3, 1fr);
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     & {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (max-width: 400px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `

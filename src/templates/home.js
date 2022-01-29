@@ -48,17 +48,26 @@ const HomeHeroInfo = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    color: var(--color-secondaryColor)
+    width: 60%;
+    color: var(--color-secondaryColor);
+    align-items: center;
+    text-align: center;
+    
 
 `
 const HomeHeroInfoHeading = styled.h1`
     text-decoration: none;
     font-family: 'Rubik';
     padding-bottom: 20px;
+    align-items: center;
+    text-align: center;
     font-size: 4.2rem;
     font-weight: 1700;
     line-height: 1.3cm;
+    @media screen and (max-width: 768px) {
+      line-height: 1.4cm;
+      font-size: 3.5rem;
+    }
     
 `
 const HomeHeroInfoPara = styled.p`
@@ -68,6 +77,12 @@ const HomeHeroInfoPara = styled.p`
     font-size: 2rem;
     font-weight: 700;
     line-height: 0.85cm;
+    align-items: center;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      line-height: 0.9cm;
+      font-size: 1.7rem;
+    }
 `
 const HomeBodyWrapper = styled.div`
   background-color: var(--color-darkerBackground);
@@ -108,6 +123,11 @@ const SectionTitle = styled.h1`
     color: var(--color-secondaryText);
     border-bottom: 2px solid var(--color-secondaryText);
     font-family: 'Rubik';
+    @media screen and (max-width: 768px) {
+      & {
+        font-size: 3rem;
+      }
+    }
 `
 
 const AllBtn = styled.div`
@@ -121,6 +141,18 @@ const RecentPosts = styled.div`
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    & {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    & {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
 `
 const TopicsSection = styled.div`
   position: relative;
@@ -147,9 +179,11 @@ const Topics = styled.div`
   grid-template-columns: repeat(3, 1fr);
   font-family: 'Rubik';
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     & {
       grid-template-columns: repeat(1, 1fr);
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 `
@@ -179,6 +213,14 @@ const AuthorInfo = styled.div`
   text-align: left;
   width: 80%;
   margin-top: 30px;
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 6px;
+      width: 90%;
+      margin-left: 0;
+      felx-direction: column;
+    }
+  }
 `
 
 const AboutAuthor = styled.p`
@@ -186,8 +228,15 @@ const AboutAuthor = styled.p`
     font-family: 'Roboto';
     font-size: 1.5rem;
     line-height: 0.85cm;
-    width: 65%;
+    width: 80%;
     color: var(--color-primaryText);
+    text-align: left;
+    @media screen and (max-width: 768px) {
+      & {
+        font-size: 1.3rem;
+        align-items: bottom;
+      }
+    }
     
 
 `
@@ -197,6 +246,11 @@ const AuthorImage = styled.img`
     border-radius: 20px;
     align-items: right;
     transform: translateX(100px);
+    @media screen and (max-width: 768px) {
+      & {
+        display: none;
+      }
+    }
 
 `
 

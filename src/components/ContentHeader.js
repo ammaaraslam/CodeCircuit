@@ -14,9 +14,15 @@ const Header = styled.header`
   padding: 20px;
   width: fit-content;
   margin-top: 2rem;
-  margin-left: 35%;
+  margin-left: 40%;
   background-color: var(--color-darkerBackground);
   border-radius: 10px;
+  @media screen and (max-width: 768px) {
+    & {
+      font-size: 1rem;
+      margin-left: 15%;
+    }
+  }
 `
 const CalendarIcon = styled(FaRegCalendarAlt)`
   color: var(--color-primaryText);
@@ -29,8 +35,8 @@ class ContentIntro extends React.Component {
     return (
       <Header>
         <CalendarIcon />{date && <Time date={date} />}
-        {date && Array.isArray(tags) && tags.length > 0 && <Bull />}
-        
+        {date && Array.isArray(tags) && tags.length > 0}
+        <br></br><br></br>
         {Array.isArray(tags) && tags.length > 0 && (
           <Fragment>
             <TagList tags={tags} />

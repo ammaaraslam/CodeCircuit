@@ -15,6 +15,11 @@ const ContentBody = styled.div`
     font-size: 2.1rem;
     text-decoration: underline;
     text-decoration-color: var(--color-secondaryColor);
+    @media screen and (max-width: 768px) {
+      & {
+        font-size: 2rem;
+      }
+    }
   }
 
   & > h3 {
@@ -22,6 +27,11 @@ const ContentBody = styled.div`
     color: var(--color-secondaryText);
     font-family: 'Rubik';
     font-size: 1.8rem;
+    @media screen and (max-width: 768px) {
+      & {
+        font-size: 1.7rem;
+      }
+    }
   }
 
   & > p {
@@ -29,6 +39,11 @@ const ContentBody = styled.div`
     color: var(--color-primaryText);
     font-family: 'Roboto';
     font-size: 1.2rem;
+    @media screen and (max-width: 768px) {
+      & {
+        font-size: 1.1rem;
+      }
+    }
   }
 
   & a {
@@ -101,7 +116,7 @@ const ContentBody = styled.div`
   }
 
   & .gatsby-highlight {
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 15px;
     line-height: 1.7;
     border-radius: 10px;
@@ -109,10 +124,8 @@ const ContentBody = styled.div`
     tab-size: 1.5em;
     margin: 1.5em -1.5em;
 
-    @media (max-width: 500px) {
-      border-radius: 0;
-      margin-left: -25px;
-      margin-right: -25px;
+    @media (max-width: 768px) {
+      overflow: hidden;
     }
   }
 

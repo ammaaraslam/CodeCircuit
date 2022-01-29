@@ -30,9 +30,18 @@ const Post = styled.li`
     box-shadow: 0 0 0 0, 0 6px 12px var(--color-invertedBackground);
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     & {
       margin-top: var(--size-600);
+      width: 340px;
+      height: 480px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    & {
+      margin-top: var(--size-600);
+      width: 310px;
+      height: 450px;
     }
   }
 

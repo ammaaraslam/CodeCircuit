@@ -11,3 +11,8 @@ Website Version 1 completed in December 2021
 29/01/2022
     - Completed responsive navbar and hamburger menu for mobile.
     - Uploaded to github.
+    - Completed home hero responsiveness.
+    - Completed home sections responsiveness.
+    - Completed entire home screen and footer responsiveness.
+    - Completed Tutorials page and Topics page.
+    - Completed Entire Website Responsiveness.

@@ -35,21 +35,7 @@ const TagListItemLink = styled(Link)`
 `
 
 const TagListItem = styled.span`
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
-  background-color: green;
-  color: var(--color-secondaryText);
-  transition: all 0.2s ease-in-out;
-
-  &:not(:first-child) {
-    margin-left: 0.3rem;
-  }
-  
-  &:hover {
-    background-color: var(--color-secondaryText);
-    color: green;
-  }
+  margin-right: 5px;
 `
 
 class TagList extends React.Component {
@@ -62,9 +48,9 @@ class TagList extends React.Component {
           return (
             <Fragment key={`tag-list-${i}`}>
               {!noLink && (
-                <TopicItem type={`${tag}-inverted`} size='5px' border='10px' fontSize='15px' to={`/tags/${tag}`}>{tag}</TopicItem>
+                <TagListItem><TopicItem type={`${tag}-inverted`} size='5px' border='10px' fontSize='15px' to={`/tags/${tag}`}>{tag}</TopicItem></TagListItem>
               )}
-              {noLink && <TopicItem type={tag} size='5px' fontSize='15px' border='10px' to={`/tags/${tag}`}>{tag}</TopicItem>}
+              {noLink && <TagListItem><TopicItem type={tag} size='5px' fontSize='15px' border='10px' to={`/tags/${tag}`}>{tag}</TopicItem></TagListItem>}
               {i < tags.length - 1 ? ' ' : ''}
             </Fragment>
           )

@@ -15,8 +15,8 @@ import '@fontsource/rubik/800.css'
 const HamburgerMenu = ({handleNavToggle}) => {
     return (
         <StyledMenu>
-            <StyledLink onClick={handleNavToggle} to="/"><TutorialsIcon />  Tutorials</StyledLink>
-            <StyledLink onClick={handleNavToggle} to="/example"><TopicsIcon />  Topics</StyledLink>
+            <StyledLink onClick={handleNavToggle} to="/tutorials"><TutorialsIcon />  Tutorials</StyledLink>
+            <StyledLink onClick={handleNavToggle} to="/tags"><TopicsIcon />  Topics</StyledLink>
             <CloseToggle onClick={handleNavToggle}><FaTimes/></CloseToggle>
         </StyledMenu>
     )

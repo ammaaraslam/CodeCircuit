@@ -6,7 +6,7 @@ import Content from './Content'
 const ArticleWrapper = styled.article`
   padding: 0 30px 30px;
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 768px) {
     padding: 0;
   }
 `

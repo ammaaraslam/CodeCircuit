@@ -17,14 +17,17 @@ const HeroContainer = styled.div`
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   font-family: 'Rubik';
-  align-items: center;;
+  align-items: center;
+  
 `
+
 
 const TitleContainer = styled.div`
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 100%;
+  
   
 `
 
@@ -34,6 +37,12 @@ const HeroTitle = styled.h1`
   margin: 10px 50px;
   color: var(--color-secondaryColor);
   text-transform: capitalize;
+  @media screen and (max-width: 768px) {
+    & {
+      margin: 0;
+      font-size: 3.4rem;
+    }
+  }
   
   
 `

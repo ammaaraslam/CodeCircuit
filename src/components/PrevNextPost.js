@@ -26,6 +26,12 @@ const PreviewContainer = styled.aside`
   padding-right: 20px;
   margin-left: 15px;
   margin-right: auto;
+  @media screen and (max-width: 768px) {
+    & {
+      width: 94%;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 `
 const SectionTitle = styled.h1`
     margin-left: 3%;
@@ -66,6 +72,21 @@ const Preview = styled.article`
       margin-right: 0;
     }
   }
+  @media screen and (max-width: 768px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+      width: 340px;
+      height: 480px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+      width: 320px;
+      height: 460px;
+    }
+  }
+  
 `
 
 const ReadPost = styled.div`

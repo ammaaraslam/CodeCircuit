@@ -11,6 +11,12 @@ const PostListLayout = styled.ul`
   justify-items: center;
   grid-gap: 50px;
   grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 768px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 `
 
 

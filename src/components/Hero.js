@@ -6,15 +6,17 @@ import '@fontsource/rubik/800.css'
 
 const HeroContainer = styled.div`
   position: relative;
-  display: table;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  top: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--color-primaryBackground);
+  top: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 `
