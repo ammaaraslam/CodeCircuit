@@ -98,13 +98,13 @@ const RightSection = () => {
     const { authorAvatar, authorName, authorDescription } = useSiteMetadata()
     return (
         <RightSectionWrapper>
+            <RightSectionTitle>About The Author</RightSectionTitle>
             <AuthorInfo>
-                <RightSectionTitle>About The Author</RightSectionTitle>
                 <AuthorImage src={Avatar} alt='Author Image' />
                 <AboutAuthor dangerouslySetInnerHTML={{ __html: authorDescription }} />
             </AuthorInfo>
+            <RightSectionTitle>Recent Tutorials</RightSectionTitle>
             <RecentArticles>
-                <RightSectionTitle>Recent Tutorials</RightSectionTitle>
                 <RecentArticlesLink>Link to the first tutorial</RecentArticlesLink><br></br>
                 <RecentArticlesLink>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
                 <RecentArticlesLink>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>

@@ -6,8 +6,8 @@ module.exports = {
   authorAvatar: 'avatar.jpg', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
-  Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development. <br>
-  Know more about me 👉 <a href="https://www.ammaaraslam.com" rel="noopener" target="_blank">Visit my website!</a>
+  Hi👋 I’m Ammaar Aslam. I’m a 16 year-old self taught programmer/web developer from Sri Lanka. 
+  Code Circuit is the place where I share my programming journey and help others to code as I learn.
   `,
   siteUrl: 'https://maxpou.github.io/',
   disqusSiteUrl: 'https://www.maxpou.fr/',

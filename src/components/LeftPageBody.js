@@ -9,6 +9,8 @@ const LeftPageBodyContainer = styled.section`
     width: 72%;
     padding-top: 20px;
     padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 18px;
     transform: translateY(-50px);
     @media screen and (max-width: 768px) {
         & {

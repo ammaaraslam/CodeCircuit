@@ -101,14 +101,13 @@ const RecentPostsSection = styled.div`
     position: relative;
     display: table;
     width: 100%;
-    height: 100vh;
     border-radius: 45px;
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
 `
 
@@ -158,13 +157,13 @@ const TopicsSection = styled.div`
   position: relative;
   display: table;
   width: 100%;
-  height: 85vh;
   border-radius: 45px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   z-index: 5;
 `
 
@@ -192,13 +191,13 @@ const AuthorSection = styled.div`
   position: relative;
   display: table;
   width: 100%;
-  height: 85vh;
   border-radius: 45px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   z-index: 5;
 `
 
@@ -212,7 +211,7 @@ const AuthorInfo = styled.div`
   align-items: center;
   text-align: left;
   width: 80%;
-  margin-top: 30px;
+  margin-top: 10px;
   @media screen and (max-width: 768px) {
     & {
       padding: 6px;
@@ -228,6 +227,7 @@ const AboutAuthor = styled.p`
     font-family: 'Roboto';
     font-size: 1.5rem;
     line-height: 0.85cm;
+    margin-top: -80px;
     width: 80%;
     color: var(--color-primaryText);
     text-align: left;
@@ -291,22 +291,20 @@ class BlogList extends React.Component {
               <AllBtn><Button type="mini-secondary" textColor='var(--color-secondaryText)' to="/tags">All Topics ➡ </Button></AllBtn>
             </SectionTitle>
             <Topics>
-              <TopicItem type="gatsby" to='/tags/gatsby' fontSize='23px'>Gatsby</TopicItem>
-              <TopicItem type="react" to='/tags/react' fontSize='23px'>React</TopicItem>
-              <TopicItem type="python" to='/tags/python' fontSize='23px'>Python</TopicItem>
-              <TopicItem type="django" to='/tags/django' fontSize='23px'>Django</TopicItem>
-              <TopicItem type="css" to='/tags/css' fontSize='23px'>CSS</TopicItem>
-              <TopicItem type="git" to='/tags/git' fontSize='23px'>Git</TopicItem>
+              <TopicItem type="gatsby" to='/tags/gatsby' fontSize='28px'>Gatsby</TopicItem>
+              <TopicItem type="react" to='/tags/react' fontSize='28px'>React</TopicItem>
+              <TopicItem type="python" to='/tags/python' fontSize='28px'>Python</TopicItem>
+              <TopicItem type="django" to='/tags/django' fontSize='28px'>Django</TopicItem>
+              <TopicItem type="css" to='/tags/css' fontSize='28px'>CSS</TopicItem>
+              <TopicItem type="git" to='/tags/git' fontSize='28px'>Git</TopicItem>
             </Topics>
           </TopicsSection>
           <AuthorSection>
             <SectionTitle>About The Author</SectionTitle>
             <AuthorInfo>
               <AboutAuthor>
-                Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development.
-                Know more about me 👉 Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development.
-                Know more about me 👉 Hi! I'm Ammaar Aslam, a self taught programmer/developer. I write tutorials on programming and web development.
-                Know more about me 👉 hello
+              Hi👋 I’m Ammaar Aslam. I’m a 16 year-old self taught programmer/web developer from Sri Lanka. 
+              Code Circuit is the place where I share my programming journey and help others to code as I learn.
               </AboutAuthor>
               <AuthorImage src={Avatar} alt='Author Image' />
             </AuthorInfo>

@@ -21,7 +21,10 @@ const PageBody = styled.div`
     margin-right: auto;
     border-radius: 20px;
     transform: translateY(-55px);
-    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 18px;
     z-index: 10;
     scroll-behavior: smooth;
     @media screen and (max-width: 768px) {
