@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import TopicItem from './TopicItem'
 
@@ -8,30 +7,6 @@ const ListContainer = styled.div`
   color: var(--color-secondaryText);
   font-size: 0.5rem;
   
-`
-
-const TagListItemLink = styled(Link)`
-  color: white;
-  font-size: 15px;
-  background-color: green;
-  padding: 5px;
-  border-radius: 2px;
-  font-weight: 1000;
-  transition: all 0.2s ease-in-out;
-  align-items: center;
-  text-align: center;
-
-  
-  &:hover {
-    background-color: white;
-    color: green;
-  }
-
-  &:not(:first-child) {
-    margin-left: 0.3rem;
-  }
-
-
 `
 
 const TagListItem = styled.span`

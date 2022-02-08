@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import useSiteMetadata from '../hooks/use-site-config'
-import useSiteImages from '../hooks/use-site-images'
 import '@fontsource/rubik/800.css'
 
 const HeroContainer = styled.div`

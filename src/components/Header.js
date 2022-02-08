@@ -2,8 +2,6 @@
 // import { Link } from 'gatsby'
 // import styled from 'styled-components'
 import React, {useState} from 'react'
-import useSiteMetadata from '../hooks/use-site-config'
-import useSiteImages from '../hooks/use-site-images'
 import DarkToggle from './DarkToggle'
 import { Link } from 'gatsby';
 import styled from 'styled-components';
@@ -46,17 +44,6 @@ const NavLogoContainer = styled(Link)`
 
 `
 
-const NavLogo = styled.img`
-  display: flex;
-  align-items: bottom;
-  text-decoration: none;
-  width: 70px;
-  height: 70px;
-  margin-left: 7px;
-  @media screen and (max-width: 768px) {
-    width: 40px;
-  }
-`
 const NavLogoTitle = styled.a`
   text-decoration: none;
   color: var(--color-invertedBackground);
@@ -135,12 +122,7 @@ const TopicsIcon = styled(FaTags)`
 
 
 const Header = (props) => {
-  const {
-     headerLinksIcon,
-   } = useSiteMetadata()
-   const iconSrc = headerLinksIcon
-     ? useSiteImages(headerLinksIcon).fluid.src
-     : null
+   
     const [navToggled, setNavToggled] = useState(false);
 
     const handleNavToggle = () => {

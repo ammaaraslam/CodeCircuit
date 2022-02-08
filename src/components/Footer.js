@@ -1,24 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import useSiteMetadata from '../hooks/use-site-config'
 import { GrGatsbyjs } from 'react-icons/gr';
 import { SiNetlify } from 'react-icons/si';
 import '@fontsource/rubik/700.css'
 import '@fontsource/roboto/400.css'
 
-import {
-  FaReact,
-  FaHeart,
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin
-} from 'react-icons/fa';
-import Button from './Button'
-import CodeCircuitLogoLight from '../images/CodeCircuitLogoLight.png'
-import LogoChange from '../components/LogoChange'
+import {FaReact} from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   align-items: center;
@@ -154,8 +142,6 @@ const NetlifyIcon = styled(SiNetlify)`
 
 
 const Footer = () => {
-  const { authorName, websiteHost, footerLinks } = useSiteMetadata()
-
   return (
     <FooterContainer>
       <FooterLinks>
@@ -166,7 +152,7 @@ const Footer = () => {
       </FooterLinks>
       <FooterText><FooterSpanText to='/'>Code Circuit</FooterSpanText> © 2021</FooterText>
       <FooterText>
-        Built with <a href='https://www.gatsbyjs.com' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' target='_blank'><ReactIcon /></a> by <AuthorName>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' target='_blank'><NetlifyIcon /></a>
+        Built with <a href='https://www.gatsbyjs.com' rel='noreferrer' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' rel='noreferrer' target='_blank'><ReactIcon /></a> by <AuthorName>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' rel='noreferrer' target='_blank'><NetlifyIcon /></a>
       </FooterText>
     </FooterContainer>
   )

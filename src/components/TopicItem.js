@@ -310,28 +310,6 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     fontFamily: 'Rubik',
     color           : 'white'
   };
-  const outlineStyles = {
-      border          : `1px solid var(--color-primaryColor)`,
-      color           : 'var(--color-primaryColor)',
-      backgroundColor : 'white'
-  };
-  const outlineHoverStyle = {
-      color           : 'white',
-      backgroundColor : 'var(--color-primaryColor)'
-  };
-
-  const roundedStyle = {
-      backgroundColor : 'var(--color-primaryColor)',
-      color           : 'white',
-      borderRadius    : '25px'
-  };
-  const disabledStyle = {
-      cursor          : 'default',
-      backgroundColor : 'var(--color-primaryColor)',
-      color           : 'white',
-      opacity         : 0.4
-  };
-
   let tagStyle;
     switch (type) {
       case 'gatsby':
@@ -582,7 +560,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
         <Topic
              style={
 
-                     disabled ? { ...commonStyles, ...tagStyle, ...disabledStyle, ...style } :
+                     disabled ? { ...commonStyles, ...tagStyle, ...style } :
                      { ...commonStyles, ...tagStyle, ...style }
              }
             onMouseEnter={toggleHover}

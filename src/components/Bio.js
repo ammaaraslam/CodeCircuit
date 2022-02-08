@@ -49,15 +49,7 @@ const BioInfo = styled.div`
   margin-top: 30px;
   margin-left: 40px;
 `
-const BioTitle = styled.h2`
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-secondaryText);
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
-    font-family: 'Rubik';
-    padding-bottom: 8px;
-`
+
 const BioText = styled(Text)`
   font-size: 1.1rem;
   font-weight: 500;
@@ -66,8 +58,7 @@ const BioText = styled(Text)`
 `
 
 const Bio = () => {
-  const { authorAvatar, authorName, authorDescription } = useSiteMetadata()
-  const { fixed } = useSiteImages(authorAvatar)
+  const { authorDescription } = useSiteMetadata()
 
   return (
     <BioWrapper>

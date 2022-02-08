@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import TagList from './TagList'
 import Translations from './Translations'
 import Time from './Time'
-import { Bull, ReadingTime } from './Commons'
 import {FaRegCalendarAlt} from 'react-icons/fa'
 
 

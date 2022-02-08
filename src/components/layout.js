@@ -5,7 +5,6 @@ import Header from './Header'
 import Footer from './Footer'
 import 'prismjs/themes/prism-tomorrow.css'
 import { GlobalStyle } from './Commons'
-import { media } from '../tokens'
 
 const SiteContent = styled.div`
   margin: 0;

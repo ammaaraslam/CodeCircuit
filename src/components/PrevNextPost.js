@@ -5,9 +5,8 @@ import useSiteMetadata from '../hooks/use-site-config'
 import useSiteImages from '../hooks/use-site-images'
 import TagList from './TagList'
 import Flag from './Flag'
-import { ReadingTime, Bull } from './Commons'
+import { ReadingTime } from './Commons'
 import {AiOutlineClockCircle} from 'react-icons/ai'
-import {FaRegCalendarAlt} from 'react-icons/fa'
 import {HiArrowRight} from 'react-icons/hi'
 
 
@@ -32,18 +31,6 @@ const PreviewContainer = styled.aside`
       grid-template-columns: repeat(1, 1fr);
     }
   }
-`
-const SectionTitle = styled.h1`
-    margin-left: 3%;
-    text-decoration: none;
-    font-size: 3.3rem;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-weight: 1500;
-    line-height: 1.3cm;
-    color: var(--color-secondaryText);
-    border-bottom: 2px solid var(--color-secondaryText);
-    font-family: 'Rubik';
 `
 
 const Preview = styled.article`
@@ -199,43 +186,12 @@ const FooterLine = styled.div`
   color: var(--color-primaryText);
 `
 
-const Date = styled.span`
-  color: var(--color-primaryText);
-  margin-left: 6px;
-`
 
 
 const ClockIcon = styled(AiOutlineClockCircle)`
   color: var(--color-primaryText);
   transform: translateY(1px) translateX(-2.3px);
   
-`
-const CalendarIcon = styled(FaRegCalendarAlt)`
-  color: var(--color-primaryText);
-  transform: translateY(1px) translateX(1.5px);
-`
-
-
-const PreviewCover = styled.div`
-  width: auto;
-  height: 200px;
-  background: #c5d2d9 no-repeat 50%;
-  background-size: cover;
-  border-radius: 5px 5px 0 0;
-`
-
-const PreviewContent = styled.div`
-  padding: 20px;
-
-  header {
-    padding: 0 0 10px 0;
-  }
-  section {
-    padding-bottom: 10px;
-  }
-  footer {
-    font-size: 0.8em;
-  }
 `
 
 const PrevNextPost = props => {

@@ -39,27 +39,6 @@ const LogoChange = ({ isExpanded = false , type, to, children, onClick, disabled
         padding : size,
         color           : 'white'
       };
-      const outlineStyles = {
-          border          : `1px solid var(--color-primaryColor)`,
-          color           : 'var(--color-primaryColor)',
-          backgroundColor : 'white'
-      };
-      const outlineHoverStyle = {
-          color           : 'white',
-          backgroundColor : 'var(--color-primaryColor)'
-      };
-    
-      const roundedStyle = {
-          backgroundColor : 'var(--color-primaryColor)',
-          color           : 'white',
-          borderRadius    : '25px'
-      };
-      const disabledStyle = {
-          cursor          : 'default',
-          backgroundColor : 'var(--color-primaryColor)',
-          color           : 'white',
-          opacity         : 0.4
-      };
     
     let logoSize;
     switch (type) {
@@ -91,20 +70,19 @@ const LogoChange = ({ isExpanded = false , type, to, children, onClick, disabled
             logoSize = smallLogo;
             break;
     }
-    const { colorMode, setColorMode } = React.useContext(ThemeContext)
+    const { colorMode } = React.useContext(ThemeContext)
   
     if (!colorMode) {
       return null
     }
   
-    const toggleMode = () =>
-      colorMode === 'light' ? setColorMode('dark') : setColorMode('light')
+    
     const oppositeColor = colorMode === 'light' ? 'dark' : 'light'
     return (
         <Logo
         style={
 
-                disabled ? { ...commonStyles, ...logoSize, ...disabledStyle, ...style } :
+                disabled ? { ...commonStyles, ...logoSize, ...style } :
                 { ...commonStyles, ...logoSize, ...style }
         }
        onMouseEnter={toggleHover}

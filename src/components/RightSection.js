@@ -95,7 +95,7 @@ const RecentArticlesLink = styled(Link)`
 
 
 const RightSection = () => {
-    const { authorAvatar, authorName, authorDescription } = useSiteMetadata()
+    const { authorDescription } = useSiteMetadata()
     return (
         <RightSectionWrapper>
             <RightSectionTitle>About The Author</RightSectionTitle>

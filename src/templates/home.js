@@ -10,7 +10,6 @@ import LogoChange from '../components/LogoChange'
 import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 import Button from '../components/Button'
-import Bio from '../components/Bio'
 import Avatar from '../images/avatar.jpg'
 
 
@@ -31,17 +30,6 @@ const HomeHero = styled.div`
     border-bottom-right-radius: 20px;
     
     
-`
-const HomeHeroLogoContainer = styled.div`
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-`
-const HomeHeroLogo = styled.img`
-  align-items: center;
-  text-decoration: none;
-  width: 180px;
-  height: 180px;
 `
 
 const HomeHeroInfo = styled.div`
@@ -257,9 +245,7 @@ const AuthorImage = styled.img`
 class BlogList extends React.Component {
 
   render() {
-    const { title, description } = this.props.data.site.siteMetadata
     const posts = this.props.data.posts.edges
-    const { pageContext } = this.props
 
     return (
       <Layout>

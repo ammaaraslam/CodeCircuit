@@ -1,12 +1,6 @@
 import React from 'react'
-import useSiteMetadata from '../hooks/use-site-config'
-import useSiteImages from '../hooks/use-site-images'
-import DarkToggle from './DarkToggle'
-import { Link } from 'gatsby';
 import styled from 'styled-components';
-import {RiArticleFill} from 'react-icons/ri'
 import {FaBars} from 'react-icons/fa'
-import LogoChange from './LogoChange'
 
 const HamburgerToggle = ({handleNavToggle}) => {
     return (

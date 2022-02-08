@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import PostsList from '../components/PostsList'
-import Wrapper from '../components/Wrapper'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import LeftPageBody from '../components/LeftPageBody'
@@ -21,10 +20,6 @@ const PageBody = styled.div`
   transform: translateY(-50px);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-`
-const PageTitle = styled.h1`
-  padding-bottom: 10px;
-  text-transform: capitalize;
 `
 
 class Tags extends React.Component {

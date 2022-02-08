@@ -47,17 +47,12 @@ const HeroTitle = styled.h1`
   
 `
 
-const HeroSubTitle = styled.h2`
-  margin: 10px 50px;
-  color: var(--color-secondaryColor);
-  text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.85);
-`
 
 const Hero = props => {
   const { siteCover } = useSiteMetadata()
   const { fluid } = useSiteImages(siteCover)
   const heroImg = props.heroImg || fluid.src
-  const { date, tags, translations } = props
+  const { date, tags } = props
   
 
   return (

@@ -4,14 +4,12 @@ import Flag from './Flag'
 import TagList from './TagList'
 import useSiteMetadata from '../hooks/use-site-config'
 import styled from 'styled-components'
-import { Bull, ReadingTime } from './Commons'
+import { ReadingTime } from './Commons'
 import {AiOutlineClockCircle} from 'react-icons/ai'
-import {FaRegCalendarAlt} from 'react-icons/fa'
 import {HiArrowRight} from 'react-icons/hi'
 import useSiteImages from '../hooks/use-site-images'
 import '@fontsource/rubik/700.css'
 import '@fontsource/roboto/400.css'
-import Time from '../components/Time'
 const Post = styled.li`
   position: relative;
   display: flex;
@@ -157,26 +155,17 @@ const FooterLine = styled.div`
   color: var(--color-primaryText);
 `
 
-const Date = styled.span`
-  color: var(--color-primaryText);
-  margin-left: 6px;
-`
-
 
 const ClockIcon = styled(AiOutlineClockCircle)`
   color: var(--color-primaryText);
   transform: translateY(1px) translateX(-2.3px);
   
 `
-const CalendarIcon = styled(FaRegCalendarAlt)`
-  color: var(--color-primaryText);
-  transform: translateY(1px) translateX(1.5px);
-`
 
 
 
 const PostsListItem = props => {
-  const { title, excerpt, slug, language, cover, tags, date, timeToRead } = props
+  const { title, excerpt, slug, language, cover, tags, timeToRead } = props
   const { defaultLang } = useSiteMetadata()
   const { siteCover } = useSiteMetadata()
   const { fluid } = useSiteImages(siteCover)
