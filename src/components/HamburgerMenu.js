@@ -60,7 +60,7 @@ const StyledLink = styled(Link)`
     transition: 0.25s ease-in;
     &:hover {
         color: var(--color-primaryColor);
-        transform: translateY(-3px);
+        transform: scale(1.04);
     }
 `;
 
@@ -89,7 +89,7 @@ const CloseToggle = styled(FaWindowClose)`
     transition: 0.25s ease-in;
     &:hover{
         color: var(--color-primaryColor);
-        transform: translateY(-3px);
+        transform: scale(1.04);
         cursor: pointer;
     }
     

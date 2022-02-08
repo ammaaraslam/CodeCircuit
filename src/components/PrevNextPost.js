@@ -60,7 +60,7 @@ const Preview = styled.article`
   
 
   &:hover {
-    transform: translateY(-10px);
+    transform: scale(1.04);
     box-shadow: 0 0 0 0, 0 6px 12px var(--color-invertedBackground);
   }
 

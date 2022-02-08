@@ -26,7 +26,7 @@ const Post = styled.li`
   
 
   &:hover {
-    transform: translateY(-10px);
+    transform: scale(1.04);
     box-shadow: 0 0 0 0, 0 6px 12px var(--color-invertedBackground);
   }
 
@@ -139,9 +139,6 @@ const PostTitleLink = styled(Link)`
   background-size: 100% 0.2em;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
-  &:hover {
-    background-size: 100% 88%;
-  }
 `
 const PostTags = styled.div`
   transform: translateY(-20px) translateX(8px);

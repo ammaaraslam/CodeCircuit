@@ -62,6 +62,7 @@ const FooterLinkItem = styled(Link)`
   transition: 0.25s ease-in;
   &:hover {
     color: var(--color-primaryColor);
+    transform: scale(1.04);
   }
 
 `
@@ -119,7 +120,7 @@ const GatsbyIcon = styled(GrGatsbyjs)`
   transition: all 0.2s ease-in-out;
   &:hover {
     color: var(--color-gatsbyColor);
-    transform: translateY(-1px);
+    transform: scale(1.04);
     cursor: pointer;
   }
 `
@@ -132,7 +133,7 @@ const ReactIcon = styled(FaReact)`
   transition: all 0.2s ease-in-out;
   &:hover {
     color: var(--color-reactColor);
-    transform: translateY(-1px);
+    transform: scale(1.04);
     cursor: pointer;
   }
 `
@@ -146,7 +147,7 @@ const NetlifyIcon = styled(SiNetlify)`
   transition: all 0.2s ease-in-out;
   &:hover {
     color: var(--color-netlifyColor);
-    transform: translateY(-1px);
+    transform: scale(1.04);
     cursor: pointer;
   }
 `

@@ -85,7 +85,7 @@ export const NavLink = styled(Link)`
   transition: 0.25s ease-in;
   &:hover {
     color: var(--color-primaryColor);
-    transform: translateY(-3px);
+    transform: scale(1.04);
   }
 `
 export const NavLinkText = styled(Link)`

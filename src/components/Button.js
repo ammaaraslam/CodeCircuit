@@ -51,7 +51,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         maxWidth           : '100px',
         height          : '22px',
         fontSize        : '0.9rem',
-        transform       : 'translateY(-2px)',
+        transform       : 'scale(1.04)',
         padding         : '3px',
     }
     const miniSecondary = {
@@ -73,7 +73,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         maxWidth           : '150px',
         height          : '22px',
         fontSize        : '0.9rem',
-        transform       : 'translateY(-2px)'
+        transform       : 'scale(1.04)'
     }
     const smallPrimary = {
         backgroundColor : 'transparent',
@@ -90,7 +90,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         width           : '100px',
         height          : '45px',
         fontSize        : '1.35rem',
-        transform       : 'translateY(-5px)'
+        transform       : 'scale(1.04)'
     }
     const bigPrimary = {
         backgroundColor : 'transparent',
@@ -107,7 +107,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         width           : '150px',
         height          : '50px',
         fontSize        : '1.5rem',
-        transform       : 'translateY(-5px)'
+        transform       : 'scale(1.04)'
     }
     const bigSecondary = {
         backgroundColor : 'transparent',
@@ -124,7 +124,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         width           : '150px',
         height          : '50px',
         fontSize        : '1.5rem',
-        transform       : 'translateY(-5px)'
+        transform       : 'scale(1.04)'
     }
     const smallSecondary = {
         backgroundColor : 'transparent',
@@ -141,7 +141,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         width           : '100px',
         height          : '45px',
         fontSize        : '1.35rem',
-        transform       : 'translateY(-5px)'
+        transform       : 'scale(1.04)'
     }
     const commonStyles = {
         backgroundColor : 'var(--color-secondaryColor)',
