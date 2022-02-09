@@ -27,7 +27,7 @@ const SEO = props => {
   const internalTranslations = (props.translations || []).filter(
     t => !t.link.startsWith('http')
   )
-  const url = formatedSiteUrl + withPrefix(path)
+  const url = siteUrl
 
   return (
     <>

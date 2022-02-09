@@ -9,10 +9,10 @@ module.exports = {
   Hi👋 I’m Ammaar Aslam. I’m a 16 year-old self taught programmer/web developer from Sri Lanka. 
   Code Circuit is the place where I share my programming journey and help others to code as I learn.
   `,
-  siteUrl: 'https://maxpou.github.io/',
-  disqusSiteUrl: 'https://www.maxpou.fr/',
+  siteUrl: 'https://codecircuit.netlify.app/',
+  disqusSiteUrl: 'https://www.codecircuit.netlify.app/',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
-  pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
+  //pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
   siteCover: 'cover-baymax.jpeg', // file in content/images
   background_color: '#ffffff',
   theme_color: '#222222',
