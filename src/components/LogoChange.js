@@ -9,7 +9,7 @@ export const Logo = styled.div`
 
 `
 
-const LogoChange = ({ isExpanded = false , type, to, children, onClick, disabled, size,  style,  ...props}) => {
+const LogoChange = ({ isExpanded = false , type, to, children, setWidth, setHeight, onClick, disabled, size,  style,  ...props}) => {
     const [
         hover,
         setHover
@@ -17,18 +17,34 @@ const LogoChange = ({ isExpanded = false , type, to, children, onClick, disabled
     const toggleHover = () => {
         setHover(!hover);
     };
+    // const smallLogo = {
+    //     width: setWidth,
+    //     height: '70px',
+    // }
+    // const xsmallLogo = {
+    //     width: '70px',
+    //     height: '70px',
+    // }
+
+    // const bigLogo = {
+    //     width: '190px',
+    //     height: '190px',
+    //     display: 'block',
+    //     marginLeft: 'auto',
+    //     marginRight: 'auto',
+    // }
     const smallLogo = {
-        width: '70px',
-        height: '70px',
+        width: setWidth,
+        height: setHeight,
     }
     const xsmallLogo = {
-        width: '70px',
-        height: '70px',
+        width: setWidth,
+        height: setHeight,
     }
 
     const bigLogo = {
-        width: '190px',
-        height: '190px',
+        width: setWidth,
+        height: setHeight,
         display: 'block',
         marginLeft: 'auto',
         marginRight: 'auto',

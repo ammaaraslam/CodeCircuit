@@ -53,10 +53,6 @@ const colors = {
 
 export const COLORS = {
   ...colors,
-  logoChange: {
-    light: colors.darkLogo,
-    dark: colors.lightLogo,
-  },
   primaryBackground: {
     light: colors.lightColor,
     dark: colors.darkColor,

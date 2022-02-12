@@ -46,7 +46,9 @@ const NavLogoContainer = styled(Link)`
 
 const NavLogoTitle = styled.a`
   text-decoration: none;
-  color: var(--color-invertedBackground);
+  background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
   margin-left: 9px;
   font-size: 29px;
   max-width: 100px;
@@ -68,7 +70,7 @@ export const NavItem = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: var(--color-invertedBackground);
+  color: var(--color-secondaryText);
   transition: 0.25s ease-in;
   &:hover {
     color: var(--color-primaryColor);
@@ -133,7 +135,7 @@ const Header = (props) => {
       <Nav>
         { navToggled ? <HamburgerMenu handleNavToggle={handleNavToggle} /> : null }
         <NavLogoContainer to="/">
-          <LogoChange type='small' to='/' />
+          <LogoChange setWidth={'70px'} setHeight={'70px'} to='/' />
           <NavLogoTitle>Code Circuit</NavLogoTitle>
         </NavLogoContainer>
         

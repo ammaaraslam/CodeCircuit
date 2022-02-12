@@ -107,7 +107,9 @@ const SectionTitle = styled.div`
     font-weight: 1500;
     line-height: 1.3cm;
     color: var(--color-secondaryText);
-    border-bottom: 2px solid var(--color-secondaryText);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    border-image-slice: 1;
     font-family: 'Rubik';
 `
 const TitleContainer = styled.div`

@@ -11,7 +11,6 @@ const ButtonComponent = styled(Link)`
     font-weight: 540;
     line-height: 2;
     transition: all 0.2s ease-in-out;
-    border-radius: 8px;
     letter-spacing: 1px;
     display: inline-flex;
     align-items: center;
@@ -21,6 +20,9 @@ const ButtonComponent = styled(Link)`
     border: none;
     cursor: pointer;
     outline: 0;
+    color: var(--color-primaryBackground);
+    background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    
 `
 
 
@@ -35,24 +37,24 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
     };
     const miniPrimary = {
         letterSpacing: '0.5px',
-        backgroundColor : 'transparent',
-        color           : 'var(--color-secondaryText)',
-        border          : `2px solid var(--color-secondaryText)`,
-        maxWidth           : '100px',
+        maxWidth        : '110px',
         height          : '22px',
         fontSize        : '0.9rem',
-        padding         : '5px',
+        padding         : '6px',
+        borderRadius    : '10px',
+        color           : 'var(--color-primaryBackground)',
+
     }
     const miniPrimaryHover = {
-        backgroundColor : 'var(--color-secondaryText)',
-        letterSpacing: '0.5px',
-        border          : `2px solid var(--color-secondaryText)`,
-        color           : 'var(--color-secondaryColor)',
-        maxWidth           : '100px',
+        letterSpacing   : '0.5px',
+        color           : 'var(--color-primaryBackground)',
+        maxWidth        : '110px',
         height          : '22px',
         fontSize        : '0.9rem',
         transform       : 'scale(1.04)',
-        padding         : '3px',
+        padding         : '6px',
+        borderRadius    : '10px',
+
     }
     const miniSecondary = {
         backgroundColor : 'transparent',
@@ -93,21 +95,19 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         transform       : 'scale(1.04)'
     }
     const bigPrimary = {
-        backgroundColor : 'transparent',
-        color           : 'var(--color-primaryColor)',
-        border          : `2px solid var(--color-primaryColor)`,
-        width           : '150px',
-        height          : '50px',
+        color           : 'var(--color-primaryBackground)',
+        width           : '160px',
+        height          : '60px',
         fontSize        : '1.5rem',
+        borderRadius    : '10px',
     }
     const bigPrimaryHover = {
-        backgroundColor : 'var(--color-primaryColor)',
-        border          : `2px solid var(--color-primaryColor)`,
         color           : textColor,
-        width           : '150px',
-        height          : '50px',
+        width           : '160px',
+        height          : '60px',
         fontSize        : '1.5rem',
-        transform       : 'scale(1.04)'
+        transform       : 'scale(1.04)',
+        borderRadius    : '10px',
     }
     const bigSecondary = {
         backgroundColor : 'transparent',

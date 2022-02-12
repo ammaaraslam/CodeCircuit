@@ -22,7 +22,7 @@ const MoonIcon = styled(BsMoonStarsFill)`
   transition: 0.25s ease-in;
   margin-right: 8px;
   &:hover{
-    color: var(--color-primaryColor);
+    color: var(--color-secondaryColor);
     transform: scale(1.04);
     cursor: pointer;
   }
@@ -33,7 +33,7 @@ const SunIcon = styled(BsFillSunFill)`
   transition: 0.25s ease-in;
   margin-right: 8px;
   &:hover{
-    color: var(--color-primaryColor);
+    color: var(--color-secondaryColor);
     transform: scale(1.04);
     cursor: pointer;
   }

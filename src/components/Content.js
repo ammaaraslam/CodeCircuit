@@ -49,7 +49,7 @@ const ContentBody = styled.div`
   & a {
     padding-left: 2px;
     padding-right: 2px;
-    background-image: linear-gradient(120deg, #FA8072 0%, #FA8072 100%);
+    background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
@@ -57,6 +57,7 @@ const ContentBody = styled.div`
 
     &:hover {
       background-size: 100% 88%;
+      color: var(--color-primaryBackground);
     }
 
 

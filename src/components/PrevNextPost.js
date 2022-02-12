@@ -47,8 +47,10 @@ const Preview = styled.article`
   
 
   &:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 0 0, 0 6px 12px var(--color-invertedBackground);
+    box-shadow: 0px -10px 15px -6px  #115dd2, /* top - THE RED SHADOW */
+                0px  5px  15px  0px  #115dd2, /* bottom */
+                5px  0px  15px  0px  #FA8072, /* right */
+                -5px  0px  15px  0px  #FA8072; /* left */
   }
 
   @media (min-width: 780px) {
@@ -91,7 +93,7 @@ const ReadPost = styled.div`
   font-family: 'Roboto';
 `
 const RightArrowIcon = styled(HiArrowRight)`
-  color: var(--color-primaryText);
+  color: var(--color-primaryBackground);
   transform: translateY(3px);
   transition: all 0.3s;
 `
@@ -106,16 +108,17 @@ const ReadPostText = styled(Link)`
   padding-left: 12px;
   padding-right: 12px;
   font-size: 0.9rem;
-  background-color: transparent;
-  border: 2px solid var(--color-primaryColor);
+  color: var(--color-primaryBackground);
+  background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
   border-radius: 50px;
   transition: all 0.3s;
 
   &:hover {
-    background-color: var(--color-primaryColor);
-    color: var(--color-primaryText);
+    color: var(--color-primaryBackground);
+    background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    transform: scale(1.04);
     ${RightArrowIcon} {
-      color: var(--color-primaryText);
+      color: var(--color-primaryBackground);
       transform: translateY(3px) translateX(5px);
     }
   }
@@ -157,10 +160,10 @@ const PostTitleLink = styled(Link)`
   font-family: 'Rubik';
   font-size: 1.6rem;
   font-weight: 1000;
-  color: var(--color-secondaryColor);
+  color: var(--color-primaryText);
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #115dd2 0%, #115dd2 100%);
+  background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;

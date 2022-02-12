@@ -54,12 +54,12 @@ ol {
   }
  
 *::-webkit-scrollbar-thumb {
-  background: var(--color-primaryColor); 
+  background: linear-gradient(120deg, #FA8072 0%, #115dd2 100%); 
   border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  	background: var(--color-secondaryColor); 
+  	background: linear-gradient(120deg, #FA8072 0%, #115dd2 100%); 
 }	
 `
 export const StyledLink = styled(Link)`

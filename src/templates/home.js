@@ -34,12 +34,11 @@ const HomeHero = styled.div`
 
 const HomeHeroInfo = styled.div`
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    color: var(--color-secondaryColor);
-    align-items: center;
-    text-align: center;
+    margin-left: 8%;
+    width: 70%;
+    color: var(--color-secondaryText);
+    align-items: left;
+    text-align: left;
     
 
 `
@@ -48,15 +47,26 @@ const HomeHeroInfoHeading = styled.h1`
     font-family: 'Rubik';
     padding-bottom: 20px;
     align-items: center;
-    text-align: center;
-    font-size: 4.2rem;
+    font-size: 4.3rem;
+    text-transform: uppercase;
     font-weight: 1700;
-    line-height: 1.3cm;
+    line-height: 2cm;
     @media screen and (max-width: 768px) {
       line-height: 1.4cm;
       font-size: 3.5rem;
     }
     
+`
+const HomeHeroInfoHeadingSpan = styled.span`
+  padding: 10px;
+  font-style: italic;
+  background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+`
+
+const HomeHeroButtonContainer = styled.div`
+    margin-left: 5%;
 `
 const HomeHeroInfoPara = styled.p`
     text-decoration: none;
@@ -108,7 +118,9 @@ const SectionTitle = styled.h1`
     font-weight: 1500;
     line-height: 1.3cm;
     color: var(--color-secondaryText);
-    border-bottom: 2px solid var(--color-secondaryText);
+    border-bottom: 2px solid;
+    border-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    border-image-slice: 1;
     font-family: 'Rubik';
     @media screen and (max-width: 768px) {
       & {
@@ -252,20 +264,20 @@ class BlogList extends React.Component {
         <SEO />
         <HomeHero>
           <HomeHeroInfo>
-            <LogoChange type='big' />
             <HomeHeroInfoHeading>
-              Code Circuit
+              Ready to<HomeHeroInfoHeadingSpan>electrify </HomeHeroInfoHeadingSpan> your programming or web development journey?
             </HomeHeroInfoHeading>
-            <HomeHeroInfoPara>
+            {/* <HomeHeroInfoPara>
               Programming and Web Development tutorials.
-            </HomeHeroInfoPara>
+            </HomeHeroInfoPara> */}
+              <Button type={'big-primary'} to='/tutorials'>Get Started</Button>
           </HomeHeroInfo>
         </HomeHero>
         <HomeBodyWrapper>
           <RecentPostsSection>
             <SectionTitle>
               Recent Articles
-              <AllBtn><Button type="mini-secondary" textColor='var(--color-secondaryText)' to="/tutorials">All Posts ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/tutorials">All Posts ➡ </Button></AllBtn>
             </SectionTitle>
             <RecentPosts>
               <PostsList posts={posts} />
@@ -274,7 +286,7 @@ class BlogList extends React.Component {
           <TopicsSection>
             <SectionTitle>
               Popular Topics
-              <AllBtn><Button type="mini-secondary" textColor='var(--color-secondaryText)' to="/tags">All Topics ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">All Topics ➡ </Button></AllBtn>
             </SectionTitle>
             <Topics>
               <TopicItem type="gatsby" to='/tags/gatsby' fontSize='28px'>Gatsby</TopicItem>
