@@ -79,7 +79,7 @@ const StyledLink = styled(Link)`
 // `;
 const CloseToggle = styled(FaWindowClose)`
     position: fixed;
-    top: 5%;
+    top: 4%;
     right: 4%;
     display: flex;
     place-items: center;

@@ -39,7 +39,7 @@ ol {
 }
 
 *::selection {
-  background-color: var(--color-invertedBackground);
+  background-color: var(--color-lighterBackground);
 
 }
 *::-webkit-scrollbar {

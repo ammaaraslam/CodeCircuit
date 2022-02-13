@@ -9,7 +9,7 @@ import TopicItem from '../components/TopicItem'
 import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 import Button from '../components/Button'
-import Avatar from '../images/avatar.jpg'
+import Bio from '../components/Bio'
 
 
 const HomeHero = styled.div`
@@ -38,7 +38,9 @@ const HomeHeroInfo = styled.div`
     color: var(--color-secondaryText);
     align-items: left;
     text-align: left;
-    
+    @media screen and (max-width: 768px) {
+      margin-left: 5%;
+    }
 
 `
 const HomeHeroInfoHeading = styled.h1`
@@ -52,7 +54,7 @@ const HomeHeroInfoHeading = styled.h1`
     line-height: 2cm;
     @media screen and (max-width: 768px) {
       line-height: 1.4cm;
-      font-size: 3.5rem;
+      font-size: 2.7rem;
     }
     
 `
@@ -62,6 +64,10 @@ const HomeHeroInfoHeadingSpan = styled.span`
   background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+  @media screen and (max-width: 768px) {
+      padding: 5px;
+      margin-left: -5px;
+    }
 `
 const HomeBodyWrapper = styled.div`
   background-color: var(--color-darkerBackground);
@@ -105,7 +111,7 @@ const SectionTitle = styled.h1`
     font-family: 'Rubik';
     @media screen and (max-width: 768px) {
       & {
-        font-size: 3rem;
+        font-size: 2.9rem;
       }
     }
 `
@@ -191,7 +197,7 @@ const AuthorInfo = styled.div`
   justify-content: center;
   align-items: center;
   text-align: left;
-  width: 80%;
+  width: 90%;
   margin-top: 10px;
   @media screen and (max-width: 768px) {
     & {
@@ -203,50 +209,19 @@ const AuthorInfo = styled.div`
   }
 `
 
-const AboutAuthor = styled.p`
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-size: 1.5rem;
-    line-height: 0.85cm;
-    margin-top: -80px;
-    width: 80%;
-    color: var(--color-primaryText);
-    text-align: left;
-    @media screen and (max-width: 768px) {
-      & {
-        font-size: 1.3rem;
-        align-items: bottom;
-      }
-    }
-    
 
-`
-const AuthorImage = styled.img`
-    width: 320px;
-    height: 210px;
-    border-radius: 20px;
-    align-items: right;
-    transform: translateX(100px);
-    @media screen and (max-width: 768px) {
-      & {
-        display: none;
-      }
-    }
-
-`
 
 class BlogList extends React.Component {
-
+  
   render() {
     const posts = this.props.data.posts.edges
-
     return (
       <Layout>
         <SEO />
         <HomeHero>
           <HomeHeroInfo>
             <HomeHeroInfoHeading>
-              Ready to<HomeHeroInfoHeadingSpan>electrify </HomeHeroInfoHeadingSpan> your programming or web development journey?
+              Ready to <HomeHeroInfoHeadingSpan>electrify </HomeHeroInfoHeadingSpan> your programming or web development journey?
             </HomeHeroInfoHeading>
             {/* <HomeHeroInfoPara>
               Programming and Web Development tutorials.
@@ -281,11 +256,7 @@ class BlogList extends React.Component {
           <AuthorSection>
             <SectionTitle>About The Author</SectionTitle>
             <AuthorInfo>
-              <AboutAuthor>
-              Hi👋 I’m Ammaar Aslam. I’m a 16 year-old self taught programmer/web developer from Sri Lanka. 
-              Code Circuit is the place where I share my programming journey and help others to code as I learn.
-              </AboutAuthor>
-              <AuthorImage src={Avatar} alt='Author Image' />
+              <Bio />
             </AuthorInfo>
           </AuthorSection>
         </HomeBodyWrapper>

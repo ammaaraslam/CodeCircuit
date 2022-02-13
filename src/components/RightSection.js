@@ -105,9 +105,9 @@ const RightSection = () => {
             </AuthorInfo>
             <RightSectionTitle>Recent Tutorials</RightSectionTitle>
             <RecentArticles>
-                <RecentArticlesLink>Link to the first tutorial</RecentArticlesLink><br></br>
-                <RecentArticlesLink>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
-                <RecentArticlesLink>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>
+                <RecentArticlesLink to='/tutorial'>Link to the first tutorial</RecentArticlesLink><br></br>
+                <RecentArticlesLink to='/tutorial'>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
+                <RecentArticlesLink to='/tutorial'>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>
             </RecentArticles>
             <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
             <PopularTagsList>

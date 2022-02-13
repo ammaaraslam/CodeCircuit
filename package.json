@@ -1,6 +1,6 @@
 {
   "name": "code-circuit",
-  "version": "0.1-development",
+  "version": "0.0.0-development",
   "description": "Programming and Web Development Tutorials, Tips and Tricks",
   "keywords": [
     "blog",
@@ -11,13 +11,13 @@
     "full-stack",
     "web development"
   ],
-  "homepage": "https://codecircuit.netlify.app",
+  "homepage": "https://github.com/maxpou/gatsby-starter-morning-dew#readme",
   "bugs": {
-    "url": "https://codecircuit.netlify.app/issues"
+    "url": "https://github.com/maxpou/gatsby-starter-morning-dew/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ammaaraslam/CodeCircuit.git"
+    "url": "https://github.com/maxpou/gatsby-starter-morning-dew.git"
   },
   "license": "MIT",
   "author": "Ammaar Aslam <ammaaraslam7@gmail.com>",

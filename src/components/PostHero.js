@@ -35,9 +35,7 @@ const HeroTitle = styled.h1`
   font-weight: 700;
   font-size: 4.1rem;
   margin: 10px 50px;
-  background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--color-primaryText);
   text-transform: capitalize;
   @media screen and (max-width: 768px) {
     & {
