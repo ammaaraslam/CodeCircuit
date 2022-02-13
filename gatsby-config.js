@@ -86,12 +86,6 @@ module.exports = {
         icon: config.icon,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `pub-3622793457803759`
-      },
-    },
     // https://www.gatsbyjs.org/docs/themes/converting-a-starter/#transpiling-your-theme-with-webpack
     {
       resolve: 'gatsby-plugin-compile-es6-packages',

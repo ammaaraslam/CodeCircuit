@@ -6,7 +6,6 @@ import PostsList from '../components/PostsList'
 import SEO from '../components/SEO'
 import styled from 'styled-components'
 import TopicItem from '../components/TopicItem'
-import LogoChange from '../components/LogoChange'
 import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 import Button from '../components/Button'
@@ -63,24 +62,6 @@ const HomeHeroInfoHeadingSpan = styled.span`
   background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-`
-
-const HomeHeroButtonContainer = styled.div`
-    margin-left: 5%;
-`
-const HomeHeroInfoPara = styled.p`
-    text-decoration: none;
-    padding-bottom: 35px;
-    font-family: 'Roboto';
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 0.85cm;
-    align-items: center;
-    text-align: center;
-    @media screen and (max-width: 768px) {
-      line-height: 0.9cm;
-      font-size: 1.7rem;
-    }
 `
 const HomeBodyWrapper = styled.div`
   background-color: var(--color-darkerBackground);

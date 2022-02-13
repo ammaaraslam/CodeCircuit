@@ -1,24 +1,26 @@
 {
   "name": "code-circuit",
-  "version": "0.0.0-development",
-  "description": "Programming and Web Development tutorials",
+  "version": "0.1-development",
+  "description": "Programming and Web Development Tutorials, Tips and Tricks",
   "keywords": [
     "blog",
     "gatsby",
-    "gatsby-plugin",
-    "gatsby-theme",
-    "starter"
+    "react",
+    "python",
+    "programming",
+    "full-stack",
+    "web development"
   ],
-  "homepage": "https://github.com/maxpou/gatsby-starter-morning-dew#readme",
+  "homepage": "https://codecircuit.netlify.app",
   "bugs": {
-    "url": "https://github.com/maxpou/gatsby-starter-morning-dew/issues"
+    "url": "https://codecircuit.netlify.app/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxpou/gatsby-starter-morning-dew.git"
+    "url": "https://github.com/ammaaraslam/CodeCircuit.git"
   },
   "license": "MIT",
-  "author": "Maxence Poutord <maxence.poutord@gmail.com>",
+  "author": "Ammaar Aslam <ammaaraslam7@gmail.com>",
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
