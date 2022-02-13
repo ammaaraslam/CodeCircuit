@@ -4,16 +4,11 @@ import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import Layout from '../components/layout'
-import Wrapper from '../components/Wrapper'
 import SEO from '../components/SEO'
 import RelatedPosts from '../components/RelatedPosts'
-import { Text } from '../components/Commons'
-
-const MainTitle = styled.h1`
-  line-height: 1.5;
-  text-align: center;
-  font-size: 3rem;
-`
+import Hero from '../components/Hero'
+import '@fontsource/roboto/400.css'
+import '@fontsource/rubik/800.css'
 
 const Ghost = styled.span`
   display: block;
@@ -23,10 +18,37 @@ const Ghost = styled.span`
 `
 
 const SubTitle = styled.h2`
-  padding-top: 40px;
-  line-height: 1.2;
-  border-top: 1px solid #ececec;
-  margin-top: 44px;
+  margin-left: 3%;
+  text-decoration: none;
+  font-size: 3.3rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 1500;
+  line-height: 1.3cm;
+  color: var(--color-secondaryText);
+  border-bottom: 2px solid;
+  border-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  border-image-slice: 1;
+  font-family: 'Rubik';
+`
+
+const NotFoundPageText = styled.p`
+  text-align: left;
+  line-height: 0.82cm;
+  font-family: 'Roboto';
+`
+
+const PageBody = styled.div`
+  background-color: var(--color-lighterBackground);
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
+  padding-left: 15px;
+  padding-right: 15px;
+  transform: translateY(-50px);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 `
 
 const NotFoundPage = props => {
@@ -38,7 +60,7 @@ const NotFoundPage = props => {
           fileAbsolutePath: { regex: "//content/posts//" }
           frontmatter: { published: { ne: false }, unlisted: { ne: true } }
         }
-        limit: 5
+        limit: 10
       ) {
         edges {
           node {
@@ -61,20 +83,20 @@ const NotFoundPage = props => {
   return (
     <Layout location={props.location} noCover={true}>
       <SEO title="Page Not Found" />
-      <Wrapper>
-        <MainTitle>404 Page Not Found</MainTitle>
+      <Hero
+        title='404 Page Not Found'
+      />
+      <PageBody>
         <Ghost role="img" aria-label="Ghost">
-          👻
+            👻
         </Ghost>
-        <Text>
+        <NotFoundPageText>
           Looks like you've followed a broken link or entered a URL that doesn't
           exist on this site.
-        </Text>
-
+        </NotFoundPageText>
         <SubTitle>Recent Posts</SubTitle>
-
         <RelatedPosts posts={posts} />
-      </Wrapper>
+      </PageBody>
     </Layout>
   )
 }

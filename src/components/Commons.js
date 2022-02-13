@@ -63,11 +63,14 @@ ol {
 }	
 `
 export const StyledLink = styled(Link)`
-  box-shadow: 0 2px 0 0 var(--color-secondary);
-
+  font-family: 'Roboto';
+  color: var(--color-invertedBackground);
+  transition: 0.25s ease-in;
   &:hover {
-    filter: brightness(150%);
-    box-shadow: none;
+    background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.04);
   }
 `
 
