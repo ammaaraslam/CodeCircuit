@@ -11,6 +11,13 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   plugins: [
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5PMR5Q6",
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: 'posts',
