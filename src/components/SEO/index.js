@@ -35,7 +35,6 @@ const SEO = props => {
         {/* General tags */}
         <html lang={lang} />
         <meta name="description" content={description} />
-        <link rel="canonical" href={url} />
 
         {/* Each language version must list itself + all other language versions */}
         {internalTranslations.length > 0 && (

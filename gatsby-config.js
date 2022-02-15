@@ -11,6 +11,13 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   plugins: [
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.codecircuit.netlify.app`,
+        stripQueryString: true,
+      },
+    }, 
+    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-5PMR5Q6",
