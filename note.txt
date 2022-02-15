@@ -16,3 +16,7 @@ Website Version 1 completed in December 2021
     - Completed entire home screen and footer responsiveness.
     - Completed Tutorials page and Topics page.
     - Completed Entire Website Responsiveness.
+15/02/202
+    - Completed V1 of entire website and added google analytics 4 using tag manager
+    - Code Circuit V1 test1 completed succesfully with analytics enabeled
+    
