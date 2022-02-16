@@ -19,7 +19,7 @@ class Article extends React.Component {
         <Content
           content={post.body}
           date={post.frontmatter.date}
-          tags={post.frontmatter.tags}
+          topics={post.frontmatter.topics}
           translations={post.frontmatter.translations}
         />
       </ArticleWrapper>

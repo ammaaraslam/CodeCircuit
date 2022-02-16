@@ -75,7 +75,7 @@ export default React.memo(
 
     return (
       <Helmet>
-        {/* Schema.org tags */}
+        {/* Schema.org topics */}
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
     )

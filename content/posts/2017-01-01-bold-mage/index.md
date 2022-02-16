@@ -5,7 +5,7 @@ date: 2017-01-01
 cover: ./cover.jpg
 generate-card: false
 language: en
-tags:
+topics:
   - programming
   - stuff
   - fake

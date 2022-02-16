@@ -245,12 +245,12 @@ class BlogList extends React.Component {
               <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">All Topics ➡ </Button></AllBtn>
             </SectionTitle>
             <Topics>
-              <TopicItem type="gatsby" to='/tags/gatsby' fontSize='28px'>Gatsby</TopicItem>
-              <TopicItem type="react" to='/tags/react' fontSize='28px'>React</TopicItem>
-              <TopicItem type="python" to='/tags/python' fontSize='28px'>Python</TopicItem>
-              <TopicItem type="django" to='/tags/django' fontSize='28px'>Django</TopicItem>
-              <TopicItem type="css" to='/tags/css' fontSize='28px'>CSS</TopicItem>
-              <TopicItem type="git" to='/tags/git' fontSize='28px'>Git</TopicItem>
+              <TopicItem type="gatsby" to='/topics/gatsby' fontSize='28px'>Gatsby</TopicItem>
+              <TopicItem type="react" to='/topics/react' fontSize='28px'>React</TopicItem>
+              <TopicItem type="python" to='/topics/python' fontSize='28px'>Python</TopicItem>
+              <TopicItem type="django" to='/topics/django' fontSize='28px'>Django</TopicItem>
+              <TopicItem type="css" to='/topics/css' fontSize='28px'>CSS</TopicItem>
+              <TopicItem type="git" to='/topics/git' fontSize='28px'>Git</TopicItem>
             </Topics>
           </TopicsSection>
           <AuthorSection>
@@ -290,7 +290,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            tags
+            topics
             language
             date
             slug

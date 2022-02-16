@@ -4,7 +4,7 @@ slug: big-test
 date: 2018-01-03
 language: en
 generate-card: false
-tags:
+topics:
   - test
   - huge
   - no-cover
@@ -328,7 +328,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Is something people use sometimes.</dd>
 
   <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dd>Does *not* work **very** well. Use HTML <em>topics</em>.</dd>
 </dl>
 ```
 
@@ -337,7 +337,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Is something people use sometimes.</dd>
 
   <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+  <dd>Does *not* work **very** well. Use HTML <em>topics</em>.</dd>
 </dl>
 
 <a name="hr"/>

@@ -5,7 +5,7 @@ cover: ./cover.jpg
 generate-card: false
 date: 2018-01-02
 language: fr
-tags:
+topics:
   - cheese
   - baguette
   - cliche

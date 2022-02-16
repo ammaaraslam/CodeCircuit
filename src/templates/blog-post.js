@@ -165,7 +165,7 @@ class BlogPostTemplate extends React.Component {
           heroImg={post.frontmatter.cover && post.frontmatter.cover.publicURL}
           title={post.frontmatter.title}
           date={post.frontmatter.date}
-          tags={post.frontmatter.tags}
+          topics={post.frontmatter.topics}
         />
 
         <PageBody>
@@ -211,7 +211,7 @@ export const pageQuery = graphql`
         date
         slug
         language
-        tags
+        topics
         cover {
           publicURL
         }

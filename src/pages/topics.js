@@ -38,7 +38,7 @@ const TagList = styled.div`
   }
 `
 
-const TagsPage = ({
+const TopicsPage = ({
   data: {
     allMarkdownRemark: { group },
     site: {
@@ -53,13 +53,13 @@ const TagsPage = ({
         <PageBody>
           <LeftPageBody>
             <TagList>
-                  {group.map(tag => (
-                  <li key={tag.fieldValue}>
-                      <TopicItem type={tag.fieldValue} size='20px' fontSize='26px' to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                      {tag.fieldValue} ({tag.totalCount})
+                  {group.map(topic => (
+                  <li key={topic.fieldValue}>
+                      <TopicItem type={topic.fieldValue} size='20px' fontSize='26px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                      {topic.fieldValue} ({topic.totalCount})
                       </TopicItem>
-                      {/* <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                      {tag.fieldValue} ({tag.totalCount})
+                      {/* <Link to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                      {topic.fieldValue} ({topic.totalCount})
                       </Link> */}
                   </li>
                   ))}
@@ -71,7 +71,7 @@ const TagsPage = ({
       
 )
 
-TagsPage.propTypes = {
+TopicsPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       group: PropTypes.arrayOf(
@@ -89,7 +89,7 @@ TagsPage.propTypes = {
   }),
 }
 
-export default TagsPage
+export default TopicsPage
 
 export const pageQuery = graphql`
   query {
@@ -99,7 +99,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {
+      group(field: frontmatter___topics) {
         fieldValue
         totalCount
       }

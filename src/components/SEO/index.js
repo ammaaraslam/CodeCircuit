@@ -32,7 +32,7 @@ const SEO = props => {
   return (
     <>
       <Helmet title={title}>
-        {/* General tags */}
+        {/* General topics */}
         <html lang={lang} />
         <meta name="description" content={description} />
 
@@ -53,14 +53,14 @@ const SEO = props => {
           />
         ))}
 
-        {/* OpenGraph tags */}
+        {/* OpenGraph topics */}
         <meta property="og:url" content={url} />
         <meta property="og:type" content={isBlogPost ? 'tutorial' : 'website'} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
 
-        {/* Twitter Card tags */}
+        {/* Twitter Card topics */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content={twitterUsername} />
         <meta name="twitter:title" content={title} />

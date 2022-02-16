@@ -5,7 +5,7 @@ cover: ./cover.jpg
 generate-card: false
 date: 2018-09-29
 language: en
-tags:
+topics:
   - gatsby
 ---
 

@@ -211,7 +211,7 @@ const PrevNextPost = props => {
           {tutorials.map((tutorial, i) => {
             const { excerpt, timeToRead } = tutorial.node
             const {
-              tags,
+              topics,
               cover,
               title,
               slug,
@@ -226,7 +226,7 @@ const PrevNextPost = props => {
                     />
                     <PostHeader>
                     <PostTags>
-                      <TagList tags={tags} />
+                      <TagList topics={topics} />
                     </PostTags>
                     <h2>
                       <PostTitleLink to={`/tutorial/${slug}`}>

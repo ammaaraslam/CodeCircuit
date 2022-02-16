@@ -44,7 +44,7 @@ const NavLogoContainer = styled(Link)`
 
 `
 
-const NavLogoTitle = styled.a`
+const NavLogoTitle = styled.span`
   text-decoration: none;
   background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
   -webkit-background-clip: text;
@@ -145,7 +145,7 @@ const Header = (props) => {
             <NavLink to="/tutorials"><TutorialsIcon /> Tutorials</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/tags"><TopicsIcon /> Topics</NavLink>
+            <NavLink to="/topics"><TopicsIcon /> Topics</NavLink>
           </NavItem>
         </NavMenu>
         <NavBtns>

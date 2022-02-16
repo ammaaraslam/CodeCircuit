@@ -190,8 +190,8 @@ imageShare: ./gatsby-starter-morning-dew-v1-1-share.png
 # ... or if you want to skip the generation
 generate-card: false
 
-# Tags
-tags:
+# topics
+topics:
   - Gatsby
   - JavaScript
 ---

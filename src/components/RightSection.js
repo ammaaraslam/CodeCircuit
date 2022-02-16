@@ -113,25 +113,25 @@ const RightSection = () => {
             <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
             <PopularTagsList>
                 <PopularTag>
-                    <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/tags/gatsby`}>gatsby</TopicItem>
+                    <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/topics/gatsby`}>gatsby</TopicItem>
                 </PopularTag>
                 <PopularTag>
-                    <TopicItem type='react' size='5px' border='10px' fontSize='15px' to={`/tags/react`}>react</TopicItem>
+                    <TopicItem type='react' size='5px' border='10px' fontSize='15px' to={`/topics/react`}>react</TopicItem>
                 </PopularTag>
                 <PopularTag>
-                    <TopicItem type='python' size='5px' border='10px' fontSize='15px' to={`/tags/python`}>python</TopicItem>
+                    <TopicItem type='python' size='5px' border='10px' fontSize='15px' to={`/topics/python`}>python</TopicItem>
                 </PopularTag>
                 <PopularTag>
-                    <TopicItem type='git' size='5px' border='10px' fontSize='15px' to={`/tags/git`}>git</TopicItem>
+                    <TopicItem type='git' size='5px' border='10px' fontSize='15px' to={`/topics/git`}>git</TopicItem>
                 </PopularTag>
                 <PopularTag>
-                    <TopicItem type='django' size='5px' border='10px' fontSize='15px' to={`/tags/django`}>django</TopicItem>
+                    <TopicItem type='django' size='5px' border='10px' fontSize='15px' to={`/topics/django`}>django</TopicItem>
                 </PopularTag>
                 <PopularTag>
-                    <TopicItem type='css' size='5px' border='10px' fontSize='15px' to={`/tags/css`}>CSS</TopicItem>
+                    <TopicItem type='css' size='5px' border='10px' fontSize='15px' to={`/topics/css`}>CSS</TopicItem>
                 </PopularTag>
                 <PopularTag>
-                    <TopicItem type='netlify' size='5px' border='10px' fontSize='15px' to={`/tags/netlify`}>Netlify</TopicItem>
+                    <TopicItem type='netlify' size='5px' border='10px' fontSize='15px' to={`/topics/netlify`}>Netlify</TopicItem>
                 </PopularTag>
             </PopularTagsList>
         </RightSectionWrapper>

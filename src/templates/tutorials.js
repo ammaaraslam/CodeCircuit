@@ -66,7 +66,7 @@ export const tutorialsQuery = graphql`
           frontmatter {
             title
             date
-            tags
+            topics
             language
             slug
             cover {

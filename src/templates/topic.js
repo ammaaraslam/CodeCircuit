@@ -22,14 +22,14 @@ const PageBody = styled.div`
   border-bottom-right-radius: 30px;
 `
 
-class Tags extends React.Component {
+class Topics extends React.Component {
   render() {
-    const pageTitle = `${this.props.pageContext.tag}`
+    const pageTitle = `${this.props.pageContext.topic}`
     const posts = this.props.data.posts.edges
 
     return (
       <Layout location={this.props.location}>
-        <SEO title={`Tutorials on ${this.props.pageContext.tag}`} />
+        <SEO title={`Tutorials on ${this.props.pageContext.topic}`} />
         <Hero title={`Tutorials on ${pageTitle}`} />
 
         <PageBody>
@@ -43,15 +43,15 @@ class Tags extends React.Component {
   }
 }
 
-export default Tags
+export default Topics
 
 export const pageQuery = graphql`
-  query PostsByTag($tag: String!) {
+  query PostsByTag($topic: String!) {
     posts: allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         frontmatter: {
-          tags: { eq: $tag }
+          topics: { eq: $topic }
           published: { ne: false }
           unlisted: { ne: true }
         }
@@ -63,7 +63,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            tags
+            topics
             language
             slug
           }

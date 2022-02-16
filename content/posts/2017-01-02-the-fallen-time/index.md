@@ -5,7 +5,7 @@ cover: ./cover.jpg
 generate-card: false
 date: 2017-01-02
 language: en
-tags:
+topics:
   - test
   - something
   - fake

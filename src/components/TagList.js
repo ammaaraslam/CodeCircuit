@@ -9,24 +9,24 @@ const ListContainer = styled.div`
   
 `
 
-const TagListItem = styled.span`
+const TopicListItem = styled.span`
   margin-right: 5px;
 `
 
-class TagList extends React.Component {
+class TopicList extends React.Component {
   render() {
-    const { tags, noLink } = this.props
+    const { topics, noLink } = this.props
 
     return (
       <ListContainer>
-        {tags.map((tag, i) => {
+        {topics.map((topic, i) => {
           return (
-            <Fragment key={`tag-list-${i}`}>
+            <Fragment key={`topic-list-${i}`}>
               {!noLink && (
-                <TagListItem><TopicItem type={`${tag}-inverted`} size='5px' border='10px' fontSize='15px' to={`/tags/${tag}`}>{tag}</TopicItem></TagListItem>
+                <TopicListItem><TopicItem type={`${topic}-inverted`} size='5px' border='10px' fontSize='15px' to={`/topic/${topic}`}>{topic}</TopicItem></TopicListItem>
               )}
-              {noLink && <TagListItem><TopicItem type={tag} size='5px' fontSize='15px' border='10px' to={`/tags/${tag}`}>{tag}</TopicItem></TagListItem>}
-              {i < tags.length - 1 ? ' ' : ''}
+              {noLink && <TopicListItem><TopicItem type={topic} size='5px' fontSize='15px' border='10px' to={`/topic/${topic}`}>{topic}</TopicItem></TopicListItem>}
+              {i < topics.length - 1 ? ' ' : ''}
             </Fragment>
           )
         })}
@@ -35,4 +35,4 @@ class TagList extends React.Component {
   }
 }
 
-export default TagList
+export default TopicList

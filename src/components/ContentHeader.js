@@ -29,16 +29,16 @@ const CalendarIcon = styled(FaRegCalendarAlt)`
 `
 class ContentIntro extends React.Component {
   render() {
-    const { date, tags, translations } = this.props
+    const { date, topics, translations } = this.props
 
     return (
       <Header>
         <CalendarIcon />{date && <Time date={date} />}
-        {date && Array.isArray(tags) && tags.length > 0}
+        {date && Array.isArray(topics) && topics.length > 0}
         <br></br><br></br>
-        {Array.isArray(tags) && tags.length > 0 && (
+        {Array.isArray(topics) && topics.length > 0 && (
           <Fragment>
-            <TagList tags={tags} />
+            <TagList topics={topics} />
           </Fragment>
         )}
 

@@ -8,7 +8,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     './src/templates/blog-post-share-image.js'
   )
   const PageTemplate = require.resolve('./src/templates/page.js')
-  const PostsBytagTemplate = require.resolve('./src/templates/tag.js')
+  const PostsBytagTemplate = require.resolve('./src/templates/topic.js')
   const HomeListPostsTemplate = require.resolve(
     './src/templates/home.js'
   )
@@ -27,7 +27,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               title
               slug
               date
-              tags
+              topics
               language
               cover {
                 publicURL
@@ -137,19 +137,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
 
-  // generate tag page
+  // generate topic page
   markdownFiles
-    .filter(item => item.node.frontmatter.tags !== null)
+    .filter(item => item.node.frontmatter.topics !== null)
     .reduce(
-      (acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.tags])],
+      (acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.topics])],
       []
     )
-    .forEach(uniqTag => {
+    .forEach(uniqTopic => {
       createPage({
-        path: `tags/${uniqTag}`,
+        path: `topics/${uniqTopic}`,
         component: PostsBytagTemplate,
         context: {
-          tag: uniqTag,
+          topic: uniqTopic,
         },
       })
     })

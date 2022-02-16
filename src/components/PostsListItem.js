@@ -170,7 +170,7 @@ const ClockIcon = styled(AiOutlineClockCircle)`
 
 
 const PostsListItem = props => {
-  const { title, excerpt, slug, language, cover, tags, timeToRead } = props
+  const { title, excerpt, slug, language, cover, topics, timeToRead } = props
   const { defaultLang } = useSiteMetadata()
   const { siteCover } = useSiteMetadata()
   const { fluid } = useSiteImages(siteCover)
@@ -181,7 +181,7 @@ const PostsListItem = props => {
       <PostImage style={{ backgroundImage: `url("${heroImg}")` }} to={`/tutorial/${slug}`} />
       <PostHeader>
         <PostTags>
-          <TagList tags={tags} />
+          <TagList topics={topics} />
         </PostTags>
         <h2>
           <PostTitleLink to={`/tutorial/${slug}`}>

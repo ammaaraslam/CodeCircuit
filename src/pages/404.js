@@ -68,7 +68,7 @@ const NotFoundPage = props => {
             frontmatter {
               date(formatString: "DD MMMM, YYYY")
               title
-              tags
+              topics
               language
               slug
             }

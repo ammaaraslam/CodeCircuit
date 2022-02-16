@@ -30,7 +30,7 @@ const PostsList = ({ posts }) => {
       timeToRead: post.node.timeToRead,
       cover: post.node.frontmatter.cover,
       language: post.node.frontmatter.language || defaultLang,
-      tags: post.node.frontmatter.tags || [],
+      topics: post.node.frontmatter.topics || [],
     }
     
     return ( 
@@ -44,13 +44,13 @@ const PostsList = ({ posts }) => {
   );
 
   // const PostList = posts.map(({ frontmatter, fields, excerpt, timeToRead }) => {
-  //   const { title, tags, date, description } = frontmatter;
+  //   const { title, topics, date, description } = frontmatter;
   //   const { slug } = fields;
 
   //   return (
   //     <PostsListItem
   //       key={slug}
-  //       tags={tags}
+  //       topics={topics}
   //       title={title}
   //       date={date}
   //       slug={slug}
@@ -75,7 +75,7 @@ const PostsList = ({ posts }) => {
   // //           slug: post.node.frontmatter.slug,
   // //           timeToRead: post.node.timeToRead,
   // //           language: post.node.frontmatter.language || defaultLang,
-  // //           tags: post.node.frontmatter.tags || [],
+  // //           topics: post.node.frontmatter.topics || [],
   // //         }
   // //         return ( 
   // //             <PostListLayout>
