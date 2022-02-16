@@ -8,6 +8,7 @@ import {
 } from './src/tokens/colors'
 
 import App from './src/components/App'
+import { wrapRootElement as wrap } from "./src/components/wrap-root-element"
 
 function setColorsByTheme() {
   const colors = '🌈'
@@ -89,3 +90,4 @@ export const onRenderBody = ({ setPreBodyComponents, setHeadComponents }) => {
 export const wrapPageElement = ({ element }) => {
   return <App>{element}</App>
 }
+export const wrapRootElement = wrap

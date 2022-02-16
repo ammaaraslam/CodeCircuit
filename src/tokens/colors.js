@@ -57,6 +57,10 @@ export const COLORS = {
     light: colors.lightColor,
     dark: colors.darkColor,
   },
+  primaryBackgroundInverted: {
+    light: colors.darkColor,
+    dark: colors.lightColor,
+  },
   invertedBackground: {
     light: colors.lighterDarkColor,
     dark: colors.lighterLightColor,
