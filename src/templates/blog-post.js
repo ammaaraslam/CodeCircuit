@@ -17,9 +17,10 @@ const PageBody = styled.div`
     float: left;
     margin-left: 15px;
     margin-right: auto;
-    border-radius: 20px;
+    border: 10px solid var(--color-primaryBackground);
+    border-radius: 40px;
     transform: translateY(-55px);
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 18px;
@@ -43,7 +44,8 @@ const AboutAuthor = styled.div`
   transform: translateY(10px);
   margin-left: 15px;
   margin-right: auto;
-  border-radius: 20px;
+  border: 10px solid var(--color-primaryBackground);
+  border-radius: 40px;
   padding: 20px;
   z-index: 10;
   @media screen and (max-width: 768px) {
@@ -64,7 +66,8 @@ const Toc = styled.ul`
   left: calc(50% + 380px);
   max-height: 70vh;
   background-color: var(--color-darkerBackground);
-  border-radius: 20px;
+  border: 10px solid var(--color-primaryBackground);
+  border-radius: 40px;
   width: 280px;
   display: flex;
   padding: 15px;
@@ -119,7 +122,11 @@ const TitleContainer = styled.div`
   transform: translateY(75px);
   margin-left: 15px;
   margin-right: auto;
-  border-radius: 20px;
+  border-top: 10px solid var(--color-primaryBackground);
+  border-left: 10px solid var(--color-primaryBackground);
+  border-right: 10px solid var(--color-primaryBackground);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   padding: 20px;
   z-index: 10;
   @media screen and (max-width: 768px) {

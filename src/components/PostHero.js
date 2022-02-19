@@ -34,6 +34,7 @@ const TitleContainer = styled.div`
 const HeroTitle = styled.h1`
   font-weight: 700;
   font-size: 4.1rem;
+  -webkit-text-stroke: 2px var(--color-primaryBackground); /* width and color */
   margin: 10px 50px;
   color: var(--color-primaryText);
   text-transform: capitalize;

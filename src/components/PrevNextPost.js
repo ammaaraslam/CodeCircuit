@@ -18,7 +18,8 @@ const PreviewContainer = styled.aside`
   grid-template-columns: repeat(2, 1fr);
   width: 75%;
   background-color: var(--color-darkerBackground);
-  border-radius: 45px;
+  border: 10px solid var(--color-primaryBackground);
+  border-radius: 40px;
   padding-top: 90px;
   padding-bottom: 50px;
   padding-left: 20px;

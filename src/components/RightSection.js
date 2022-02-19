@@ -9,11 +9,15 @@ import '@fontsource/roboto/400.css'
 
 const RightSectionWrapper = styled.aside`
     background-color: var(--color-darkerBackground);
-    border-radius: 20px;
+    border: 10px solid var(--color-primaryBackground);
+    border-radius: 40px;
     align-items: center;
     float: right;
     width: 26%;
-    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
     transform: translateY(-50px);
     /* left: calc(50% + 380px);
     max-height: 100vh;
@@ -48,7 +52,7 @@ const AuthorImage = styled.img`
     display: block;
     margin-top: 8px;
     border-radius: 20px;
-    margin-left: 40px;
+    margin-left: 20px;
 
 `
 

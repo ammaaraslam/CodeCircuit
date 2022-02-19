@@ -41,7 +41,7 @@ Vue (pronounced /vjuː/, like **view**) is a **progressive framework** for build
 
 ## JavaScript, JSX and highlighted lines
 
-```js{7}
+```jsx highlights=3-5
 class ShoppingList extends React.Component {
   render() {
     const { user } = this.props

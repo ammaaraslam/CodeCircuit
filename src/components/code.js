@@ -1,6 +1,6 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/palenight";
+import theme from "prism-react-renderer/themes/shadesOfPurple";
 import rangeParser from "parse-numeric-range";
 
 const calculateLinesToHighlight = raw => {
@@ -109,6 +109,7 @@ const Code = props => {
           overflow: "auto",
           background: "var(--color-primaryColor)",
           borderRadius: "0.5rem",
+          marginLeft: '-1rem',
         }}
       >
         <Highlight
@@ -125,13 +126,18 @@ const Code = props => {
                 backgroundColor: "transparent",
                 float: "left",
                 minWidth: "100%",
+                padding: '0',
+                
               }}
             >
               {tokens.map((line, i) => (
                 <div
                   {...getLineProps({ line, key: i })}
                   style={{
-                    background: highlights(i) ? "#00f5c426" : "transparent",
+                    
+                    background: highlights(i) ? "#7cabf4" : "transparent",
+                    paddingLeft: highlights(i) ? '0px' : '0px',
+                    borderLeft: highlights(i) ? '6px solid var(--color-secondaryColor)' : 'transparent',
                     display: "block",
                   }}
                 >

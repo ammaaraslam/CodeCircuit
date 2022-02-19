@@ -75,10 +75,12 @@ const HomeBodyWrapper = styled.div`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 20px;
+  border: 15px solid var(--color-primaryBackground);
+  border-radius: 50px;
   transform: translateY(-55px);
   padding: 10px;
   z-index: 10;
+  
 
 `
 

@@ -77,6 +77,10 @@ export const COLORS = {
     light: colors.darkerDarkColor,
     dark: colors.lighterLightColor,
   },
+  textInverted: {
+    light: colors.lighterLightColor,
+    dark: colors.lighterDarkColor,
+  },
   secondaryText: {
     light: colors.lighterDarkColor,
     dark: colors.darkerLightColor,
