@@ -49,7 +49,7 @@ const FooterLinkItem = styled(Link)`
   color: var(--color-invertedBackground);
   transition: 0.25s ease-in;
   &:hover {
-    background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.04);
@@ -71,7 +71,7 @@ const FooterSpanText = styled(Link)`
   text-decoration: none;
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
@@ -89,7 +89,7 @@ const AuthorName = styled(Link)`
   transition: all 0.2s ease-in-out;
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;

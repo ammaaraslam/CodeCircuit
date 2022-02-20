@@ -88,13 +88,14 @@ const RecentArticlesLink = styled(Link)`
     font-size: 1.2rem;
     margin-left: 10px;
     font-family: 'Roboto';
-    color: var(--color-invertedBackground);
     transition: 0.25s ease-in;
+    background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    transition: background-size 0.1s ease-in;
     &:hover {
-        background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transform: scale(1.04);
+        background-size: 100% 88%;
     }
 `
 

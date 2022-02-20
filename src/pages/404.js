@@ -27,7 +27,7 @@ const SubTitle = styled.h2`
   line-height: 1.3cm;
   color: var(--color-secondaryText);
   border-bottom: 2px solid;
-  border-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  border-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   border-image-slice: 1;
   font-family: 'Rubik';
 `

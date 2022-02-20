@@ -84,12 +84,13 @@ const Toc = styled.ul`
       font-size: 1.2rem;
       color: var(--color-primaryText);
       font-family: 'Roboto';
+      background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+      transition: background-size 0.1s ease-in;
       &:hover {
-        cursor: pointer;
-        color: var(--color-secondaryColor);
-        text-decoration: underline;
-        text-decoration-color: var(--color-primaryColor);
-        text-decoration-thickness: 2px;
+        background-size: 100% 88%;
       }
     }
   }
@@ -111,7 +112,7 @@ const SectionTitle = styled.div`
     line-height: 1.3cm;
     color: var(--color-secondaryText);
     border-bottom: 2px solid;
-    border-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    border-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     border-image-slice: 1;
     font-family: 'Rubik';
 `

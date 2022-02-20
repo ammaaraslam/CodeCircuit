@@ -46,7 +46,7 @@ const NavLogoContainer = styled(Link)`
 
 const NavLogoTitle = styled.span`
   text-decoration: none;
-  background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   margin-left: 9px;

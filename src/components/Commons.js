@@ -39,7 +39,7 @@ ol {
 }
 
 *::selection {
-  background-color: var(--color-lighterBackground);
+  background-color: var(--color-lighterSecondaryColor);
 
 }
 *::-webkit-scrollbar {
@@ -54,12 +54,12 @@ ol {
   }
  
 *::-webkit-scrollbar-thumb {
-  background: linear-gradient(120deg, #FA8072 0%, #115dd2 100%); 
+  background: linear-gradient(120deg, #28d79a 0%, #004a8f 100%); 
   border-radius: 10px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  	background: linear-gradient(120deg, #FA8072 0%, #115dd2 100%); 
+  	background: linear-gradient(120deg, #28d79a 0%, #004a8f 100%); 
 }	
 `
 export const StyledLink = styled(Link)`
@@ -67,7 +67,7 @@ export const StyledLink = styled(Link)`
   color: var(--color-invertedBackground);
   transition: 0.25s ease-in;
   &:hover {
-    background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.04);

@@ -32,7 +32,7 @@ const HeroTitle = styled.h1`
   font-size: 4.1rem;
   margin: 10px 50px;
   font-family: 'Rubik';
-  background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: capitalize;

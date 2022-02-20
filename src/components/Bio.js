@@ -48,10 +48,10 @@ const BioImage = styled.img`
     width: 280px;
     height: 220px;
     border-radius: 20px;
-    box-shadow: 0px -10px 15px -6px  #115dd2, /* top - THE RED SHADOW */
-                0px  5px  15px  0px  #115dd2, /* bottom */
-                5px  0px  15px  0px  #FA8072, /* right */
-                -5px  0px  15px  0px  #FA8072; /* left */
+    box-shadow: 0px -10px 15px -6px  #004a8f, /* top - THE RED SHADOW */
+                0px  5px  15px  0px  #004a8f, /* bottom */
+                5px  0px  15px  0px  #28d79a, /* right */
+                -5px  0px  15px  0px  #28d79a; /* left */
     @media screen and (max-width: 768px) {
       & {
         align-items: center;
@@ -69,7 +69,7 @@ const BioText = styled(Text)`
   a {
     padding-left: 2px;
     padding-right: 2px;
-    background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;

@@ -135,7 +135,7 @@ const Code = props => {
                   {...getLineProps({ line, key: i })}
                   style={{
                     
-                    background: highlights(i) ? "#7cabf4" : "transparent",
+                    background: highlights(i) ? "#47a6ff" : "transparent",
                     paddingLeft: highlights(i) ? '0px' : '0px',
                     borderLeft: highlights(i) ? '6px solid var(--color-secondaryColor)' : 'transparent',
                     display: "block",

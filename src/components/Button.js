@@ -21,7 +21,7 @@ const ButtonComponent = styled(Link)`
     cursor: pointer;
     outline: 0;
     color: var(--color-primaryBackground);
-    background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     
 `
 

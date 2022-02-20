@@ -43,15 +43,15 @@ const Preview = styled.article`
   backdrop-filter: blur(10px);
   border-radius: 20px;
   width: 350px;
-  height: 490px;
+  height: 510px;
   transition: all 0.3s;
   
 
   &:hover {
-    box-shadow: 0px -10px 15px -6px  #115dd2, /* top - THE RED SHADOW */
-                0px  5px  15px  0px  #115dd2, /* bottom */
-                5px  0px  15px  0px  #FA8072, /* right */
-                -5px  0px  15px  0px  #FA8072; /* left */
+    box-shadow: 0px -10px 15px -6px  #004a8f, /* top - THE RED SHADOW */
+                0px  5px  15px  0px  #004a8f, /* bottom */
+                5px  0px  15px  0px  #28d79a, /* right */
+                -5px  0px  15px  0px  #28d79a; /* left */
   }
 
   @media (min-width: 780px) {
@@ -110,13 +110,13 @@ const ReadPostText = styled(Link)`
   padding-right: 12px;
   font-size: 0.9rem;
   color: var(--color-primaryBackground);
-  background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   border-radius: 50px;
   transition: all 0.3s;
 
   &:hover {
     color: var(--color-primaryBackground);
-    background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     transform: scale(1.04);
     ${RightArrowIcon} {
       color: var(--color-primaryBackground);
@@ -164,7 +164,7 @@ const PostTitleLink = styled(Link)`
   color: var(--color-primaryText);
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;

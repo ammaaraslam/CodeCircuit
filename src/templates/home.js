@@ -61,7 +61,7 @@ const HomeHeroInfoHeading = styled.h1`
 const HomeHeroInfoHeadingSpan = styled.span`
   padding: 10px;
   font-style: italic;
-  background: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+  background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   @media screen and (max-width: 768px) {
@@ -108,7 +108,7 @@ const SectionTitle = styled.h1`
     line-height: 1.3cm;
     color: var(--color-secondaryText);
     border-bottom: 2px solid;
-    border-image: linear-gradient(120deg, #115dd2 0%, #FA8072 100%);
+    border-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     border-image-slice: 1;
     font-family: 'Rubik';
     @media screen and (max-width: 768px) {
@@ -258,7 +258,7 @@ class BlogList extends React.Component {
           <AuthorSection>
             <SectionTitle>
               About The Author
-              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">Learn More ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/ammaar-aslam">Learn More ➡ </Button></AllBtn>
             </SectionTitle>
             <AuthorInfo>
               <Bio />
