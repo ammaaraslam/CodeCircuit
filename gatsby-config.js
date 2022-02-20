@@ -4,12 +4,14 @@ const config = require('./data/siteConfig')
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
+    siteUrl: 'https://codecircuit.netlify.app',
     author: config.authorName,
     description: config.siteDescription,
     ...config,
   },
   pathPrefix: config.pathPrefix,
   plugins: [
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {

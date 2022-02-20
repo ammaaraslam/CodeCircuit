@@ -37,7 +37,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
     };
     const miniPrimary = {
         letterSpacing: '0.5px',
-        maxWidth        : '110px',
+        maxWidth        : '120px',
         height          : '22px',
         fontSize        : '0.9rem',
         padding         : '6px',
@@ -48,7 +48,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
     const miniPrimaryHover = {
         letterSpacing   : '0.5px',
         color           : 'var(--color-primaryBackground)',
-        maxWidth        : '110px',
+        maxWidth        : '120px',
         height          : '22px',
         fontSize        : '0.9rem',
         transform       : 'scale(1.04)',

@@ -13,8 +13,8 @@ module.exports = {
   You can follow me on <a href='https://twitter.com/itsammaar_7' target="_blank">Twitter</a>, <a href='https://instagram.com/its.ammaar_7' target="_blank">Instagram</a> and <a href='https://github.com/ammaaraslam' target="_blank">Github</a> or get in touch: 
   <span><a href="mailto:ammaaraslam7@gmail.com">ammaaraslam7@gmail.com</a><span>
   `,
-  siteUrl: 'https://codecircuit.netlify.app/',
-  disqusSiteUrl: 'https://www.codecircuit.netlify.app/',
+  siteUrl: 'https://codecircuit.netlify.app',
+  disqusSiteUrl: 'https://www.codecircuit.netlify.app',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
   //pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
   siteCover: 'cover-baymax.jpeg', // file in content/images

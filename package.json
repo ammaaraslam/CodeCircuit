@@ -56,6 +56,7 @@
     "gatsby-plugin-page-creator": "^4.7.0",
     "gatsby-plugin-react-helmet": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-plugin-sitemap": "^5.7.0",
     "gatsby-plugin-styled-components": "^5.7.0",
     "gatsby-remark-autolink-headers": "^5.7.0",
     "gatsby-remark-copy-linked-files": "^5.7.0",

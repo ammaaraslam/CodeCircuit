@@ -256,7 +256,10 @@ class BlogList extends React.Component {
             </Topics>
           </TopicsSection>
           <AuthorSection>
-            <SectionTitle>About The Author</SectionTitle>
+            <SectionTitle>
+              About The Author
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">Learn More ➡ </Button></AllBtn>
+            </SectionTitle>
             <AuthorInfo>
               <Bio />
             </AuthorInfo>
