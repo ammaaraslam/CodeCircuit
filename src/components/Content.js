@@ -1,9 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
+import '@fontsource/rubik/700.css'
+import '@fontsource/roboto/400.css'
 
 const ContentBody = styled.div`
   line-height: 1.6;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  @media screen and (max-width: 768px) {
+    & {
+      font-size: 1.1rem;
+    }
+  }
   color: var(--color-primaryText);
   & > h2 {
     color: var(--color-primaryText);
@@ -143,6 +152,13 @@ const ContentBody = styled.div`
   }
   & code {
     word-wrap: break-word;
+    color: var(--color-darkerBackground);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 8px;
+    background-color: var(--color-secondaryColor);
   }
   & table {
     margin-top: 1em;

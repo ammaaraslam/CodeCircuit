@@ -1,7 +1,9 @@
 import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
-import theme from "prism-react-renderer/themes/shadesOfPurple";
+import theme from "prism-react-renderer/themes/nightOwl";
 import rangeParser from "parse-numeric-range";
+import '@fontsource/rubik/700.css'
+import '@fontsource/roboto/400.css'
 
 const calculateLinesToHighlight = raw => {
   const lineNumbers = rangeParser(raw);
@@ -59,7 +61,7 @@ const Code = props => {
             textTransform: "uppercase",
             borderBottomLeftRadius: "0.5rem",
             borderBottomRightRadius: "0.5rem",
-            fontFamily: "Montserrat",
+            fontFamily: "Rubik",
             fontWeight: "bold",
             textAlign: "center",
             display: "flex",
@@ -95,9 +97,10 @@ const Code = props => {
             border: "none",
             borderRadius: "8px",
             cursor: "pointer",
-            color: "var(--color-primaryText)",
+            color: "var(--color-primaryColor)",
             fontSize: "14px",
-            fontFamily: "sans-serif",
+            fontFamily: "Roboto",
+            fontWeight: 'bold',
             lineHeight: "1",
           }}
         >
