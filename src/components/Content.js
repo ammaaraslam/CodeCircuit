@@ -39,15 +39,15 @@ const ContentBody = styled.div`
     }
   }
   & a {
-    color: var(--color-primaryColor);
+    color: var(--color-linkColorChange);
     text-decoration: underline;
-    text-decoration-color: var(--color-secondaryColor);
+    text-decoration-color: var(--color-linkColorChangeInverted);
     text-decoration-thickness: 2px;
     font-family: 'Rubik';
     &:hover {
-      color: var(--color-secondaryColor);
+      color: var(--color-linkColorChangeInverted);
       text-decoration: underline;
-      text-decoration-color: var(--color-secondaryColor);
+      text-decoration-color: var(--color-linkColorChangeInverted);
       text-decoration-thickness: 3px;
   
     }
@@ -81,7 +81,7 @@ const ContentBody = styled.div`
   }
   & > blockquote {
     box-sizing: border-box;
-    background-color: var(--color-primaryBackground);
+    background-color: var(--color-lighterBackground);
     border-left: 10px solid var(--color-secondaryColor);
     margin: 30px 0px;
     padding: 5px 20px;

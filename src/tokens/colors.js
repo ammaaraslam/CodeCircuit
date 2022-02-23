@@ -54,6 +54,14 @@ const colors = {
 
 export const COLORS = {
   ...colors,
+  linkColorChange: {
+    light: colors.primaryColor,
+    dark: colors.secondaryColor,
+  },
+  linkColorChangeInverted: {
+    light: colors.secondaryColor,
+    dark: colors.primaryColor,
+  },
   primaryBackground: {
     light: colors.lightColor,
     dark: colors.darkColor,

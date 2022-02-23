@@ -44,10 +44,8 @@ const FooterLinkItem = styled(Link)`
   padding-bottom: 7px;
   padding-left: 10px;
   padding-right: 10px;
-  transition: all 0.2s ease-in-out;
   font-family: 'Rubik';
   color: var(--color-invertedBackground);
-  transition: 0.25s ease-in;
   &:hover {
     background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     -webkit-background-clip: text;
@@ -71,14 +69,15 @@ const FooterSpanText = styled(Link)`
   text-decoration: none;
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  font-family: 'Rubik';
-  transition: background-size 0.25s ease-in;
+  color: var(--color-linkColorChange);
+  text-decoration: underline;
+  text-decoration-color: var(--color-linkColorChangeInverted);
+  text-decoration-thickness: 2px;
   &:hover {
-    background-size: 100% 88%;
+    color: var(--color-linkColorChangeInverted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-linkColorChangeInverted);
+    text-decoration-thickness: 3px;
     cursor: pointer;
   }
 
@@ -86,19 +85,19 @@ const FooterSpanText = styled(Link)`
 const AuthorName = styled(Link)`
   font-family: 'Rubik';
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
+  color: var(--color-linkColorChange);
+  text-decoration: underline;
+  text-decoration-color: var(--color-linkColorChangeInverted);
+  text-decoration-thickness: 2px;
   &:hover {
-    background-size: 100% 88%;
+    color: var(--color-linkColorChangeInverted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-linkColorChangeInverted);
+    text-decoration-thickness: 3px;
     cursor: pointer;
-  }
-`
+  }`
 const GatsbyIcon = styled(GrGatsbyjs)`
   color: var(--color-secondaryText);
   padding-left: 2.5px;
@@ -147,12 +146,11 @@ const Footer = () => {
       <FooterLinks>
         <FooterLinkItem to='/about'>About</FooterLinkItem>
         <FooterLinkItem to='/terms'>Terms</FooterLinkItem>
-        <FooterLinkItem to='/impressum'>Impressum</FooterLinkItem>
         <FooterLinkItem to='/advertise'>Advertise</FooterLinkItem>
       </FooterLinks>
       <FooterText><FooterSpanText to='/'>Code Circuit</FooterSpanText> © 2021</FooterText>
       <FooterText>
-        Built with <a href='https://www.gatsbyjs.com' rel='noreferrer' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' rel='noreferrer' target='_blank'><ReactIcon /></a> by <AuthorName>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' rel='noreferrer' target='_blank'><NetlifyIcon /></a>
+        Built with <a href='https://www.gatsbyjs.com' rel='noreferrer' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' rel='noreferrer' target='_blank'><ReactIcon /></a> by <AuthorName to='/ammaar-aslam'>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' rel='noreferrer' target='_blank'><NetlifyIcon /></a>
       </FooterText>
     </FooterContainer>
   )

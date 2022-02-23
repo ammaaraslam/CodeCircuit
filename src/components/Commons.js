@@ -64,13 +64,17 @@ ol {
 `
 export const StyledLink = styled(Link)`
   font-family: 'Roboto';
-  color: var(--color-invertedBackground);
   transition: 0.25s ease-in;
+  color: var(--color-linkColorChange);
+  text-decoration: underline;
+  text-decoration-color: var(--color-linkColorChangeInverted);
+  text-decoration-thickness: 2px;
   &:hover {
-    background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.04);
+    color: var(--color-linkColorChangeInverted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-linkColorChangeInverted);
+    text-decoration-thickness: 3px;
+  
   }
 `
 

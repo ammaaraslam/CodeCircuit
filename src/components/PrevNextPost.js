@@ -161,16 +161,18 @@ const PostTitleLink = styled(Link)`
   font-family: 'Rubik';
   font-size: 1.6rem;
   font-weight: 1000;
-  color: var(--color-primaryText);
   padding-left: 2px;
   padding-right: 2px;
-  background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
+  color: var(--color-linkColorChange);
+  text-decoration: underline;
+  text-decoration-color: var(--color-linkColorChangeInverted);
+  text-decoration-thickness: 2px;
   &:hover {
-    background-size: 100% 88%;
+    color: var(--color-linkColorChangeInverted);
+    text-decoration: underline;
+    text-decoration-color: var(--color-linkColorChangeInverted);
+    text-decoration-thickness: 3px;
+  
   }
 `
 const PostTags = styled.div`

@@ -16,14 +16,16 @@ import RightSection from '../components/RightSection'
 import { PageBody } from "../components/PageBody"
 
 const TagList = styled.div`
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 10px;
+  padding-right: 10px;
   list-style: none;
   display: grid;
   justify-items: center;
-  grid-gap: 100px;
+  grid-gap: 0;
+  row-gap: 100px;
+  horizontal-grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
 
   @media screen and (max-width: 768px) {
