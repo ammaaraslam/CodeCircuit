@@ -8,21 +8,18 @@ import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 
 const RightSectionWrapper = styled.aside`
-    background-color: var(--color-darkerBackground);
-    border: 10px solid var(--color-primaryBackground);
-    border-radius: 40px;
     align-items: center;
     float: right;
     width: 26%;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
     transform: translateY(-50px);
     /* left: calc(50% + 380px);
-    max-height: 100vh;
     top: 230px;
-    position: sticky; */
+    display: grid;
+    justify-items: center;
+    grid-gap: 0;
+    row-gap: 20px;
+    horizontal-grid-gap: 100px;
+    grid-template-columns: repeat(1, 1fr);
     @media screen and (max-width: 768px) {
         & {
             
@@ -31,6 +28,20 @@ const RightSectionWrapper = styled.aside`
             margin-top: 20px;
         }
     }
+`
+const RightSectionItem = styled.div`
+    background-color: var(--color-darkerBackground);
+    border: 10px solid var(--color-primaryBackground);
+    border-radius: 40px;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* left: calc(50% + 380px);
+    max-height: 100vh;
+    top: 230px;
+    position: sticky; */
 `
 const AuthorInfo = styled.div`
     padding: 8px;
@@ -62,6 +73,19 @@ const AboutAuthor = styled.p`
     margin-top: 8px;
     color: var(--color-primaryText);
     font-family: 'Roboto';
+    a {
+        padding-left: 2px;
+        padding-right: 2px;
+        background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
+        background-repeat: no-repeat;
+        background-size: 100% 0.2em;
+        background-position: 0 88%;
+        transition: background-size 0.25s ease-in;
+    
+        &:hover {
+          background-size: 100% 88%;
+        }
+      }
 `
 const PopularTagsList = styled.div`
     display: grid;
@@ -104,41 +128,46 @@ const RightSection = () => {
     const { authorDescription } = useSiteMetadata()
     return (
         <RightSectionWrapper>
-            <RightSectionTitle>About The Author</RightSectionTitle>
-            <AuthorInfo>
-                <AuthorImage src={Avatar} alt='Author Image' />
-                <AboutAuthor dangerouslySetInnerHTML={{ __html: authorDescription }} />
-            </AuthorInfo>
-            <RightSectionTitle>Recent Tutorials</RightSectionTitle>
-            <RecentArticles>
-                <RecentArticlesLink to='/tutorial'>Link to the first tutorial</RecentArticlesLink><br></br>
-                <RecentArticlesLink to='/tutorial'>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
-                <RecentArticlesLink to='/tutorial'>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>
-            </RecentArticles>
-            <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
-            <PopularTagsList>
-                <PopularTag>
-                    <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/topics/gatsby`}>gatsby</TopicItem>
-                </PopularTag>
-                <PopularTag>
-                    <TopicItem type='react' size='5px' border='10px' fontSize='15px' to={`/topics/react`}>react</TopicItem>
-                </PopularTag>
-                <PopularTag>
-                    <TopicItem type='python' size='5px' border='10px' fontSize='15px' to={`/topics/python`}>python</TopicItem>
-                </PopularTag>
-                <PopularTag>
-                    <TopicItem type='git' size='5px' border='10px' fontSize='15px' to={`/topics/git`}>git</TopicItem>
-                </PopularTag>
-                <PopularTag>
-                    <TopicItem type='django' size='5px' border='10px' fontSize='15px' to={`/topics/django`}>django</TopicItem>
-                </PopularTag>
-                <PopularTag>
-                    <TopicItem type='css' size='5px' border='10px' fontSize='15px' to={`/topics/css`}>CSS</TopicItem>
-                </PopularTag>
-                <PopularTag>
-                    <TopicItem type='netlify' size='5px' border='10px' fontSize='15px' to={`/topics/netlify`}>Netlify</TopicItem>
-                </PopularTag>
-            </PopularTagsList>
+            <RightSectionItem>
+                <RightSectionTitle>About The Author</RightSectionTitle>
+                <AuthorInfo>
+                    <AuthorImage src={Avatar} alt='Author Image' />
+                    <AboutAuthor dangerouslySetInnerHTML={{ __html: authorDescription }} />
+                </AuthorInfo>
+                <RightSectionTitle>Recent Tutorials</RightSectionTitle>
+                <RecentArticles>
+                    <RecentArticlesLink to='/tutorial'>Link to the first tutorial</RecentArticlesLink><br></br>
+                    <RecentArticlesLink to='/tutorial'>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
+                    <RecentArticlesLink to='/tutorial'>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>
+                </RecentArticles>
+                <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
+                <PopularTagsList>
+                    <PopularTag>
+                        <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/topics/gatsby`}>gatsby</TopicItem>
+                    </PopularTag>
+                    <PopularTag>
+                        <TopicItem type='react' size='5px' border='10px' fontSize='15px' to={`/topics/react`}>react</TopicItem>
+                    </PopularTag>
+                    <PopularTag>
+                        <TopicItem type='python' size='5px' border='10px' fontSize='15px' to={`/topics/python`}>python</TopicItem>
+                    </PopularTag>
+                    <PopularTag>
+                        <TopicItem type='git' size='5px' border='10px' fontSize='15px' to={`/topics/git`}>git</TopicItem>
+                    </PopularTag>
+                    <PopularTag>
+                        <TopicItem type='django' size='5px' border='10px' fontSize='15px' to={`/topics/django`}>django</TopicItem>
+                    </PopularTag>
+                    <PopularTag>
+                        <TopicItem type='css' size='5px' border='10px' fontSize='15px' to={`/topics/css`}>CSS</TopicItem>
+                    </PopularTag>
+                    <PopularTag>
+                        <TopicItem type='netlify' size='5px' border='10px' fontSize='15px' to={`/topics/netlify`}>Netlify</TopicItem>
+                    </PopularTag>
+                </PopularTagsList>
+            </RightSectionItem>
+            <RightSectionItem>
+                <p>Add goes here</p>
+            </RightSectionItem>
         </RightSectionWrapper>
     )
 }

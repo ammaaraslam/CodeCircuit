@@ -90,7 +90,7 @@ const ContentBody = styled.div`
   }
   & > blockquote {
     box-sizing: border-box;
-    background-color: var(--color-primaryBackground);
+    background-color: var(--color-lighterBackground);
     border-left: 10px solid var(--color-secondaryColor);
     margin: 30px 0px;
     padding: 5px 20px;

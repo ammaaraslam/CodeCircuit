@@ -6,7 +6,7 @@ module.exports = {
   authorAvatar: 'avatar.jpg', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
-  Hi👋, I’m Ammaar Aslam. I’m a 16 year-old self taught full-stack developer from Sri Lanka. 
+  Hi👋, I’m <a href='https://codecircuit.netlify.app/ammaar-aslam'>Ammaar Aslam</a>. I’m a 16 year-old self taught full-stack developer from Sri Lanka. 
   I'm the founder and author of Code Circuit. I built this blog to share my programming journey and help others along the way.
   <br>
   <br>

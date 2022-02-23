@@ -147,12 +147,11 @@ const Footer = () => {
       <FooterLinks>
         <FooterLinkItem to='/about'>About</FooterLinkItem>
         <FooterLinkItem to='/terms'>Terms</FooterLinkItem>
-        <FooterLinkItem to='/impressum'>Impressum</FooterLinkItem>
         <FooterLinkItem to='/advertise'>Advertise</FooterLinkItem>
       </FooterLinks>
-      <FooterText><FooterSpanText to='/'>Code Circuit</FooterSpanText> © 2021</FooterText>
+      <FooterText><FooterSpanText to='/'>Code Circuit</FooterSpanText> © 2022-present</FooterText>
       <FooterText>
-        Built with <a href='https://www.gatsbyjs.com' rel='noreferrer' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' rel='noreferrer' target='_blank'><ReactIcon /></a> by <AuthorName>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' rel='noreferrer' target='_blank'><NetlifyIcon /></a>
+        Built with <a href='https://www.gatsbyjs.com' rel='noreferrer' target='_blank'><GatsbyIcon /></a> <a href='https://www.reactjs.com' rel='noreferrer' target='_blank'><ReactIcon /></a> by <AuthorName to='/ammmaar-aslam'>Ammaar Aslam</AuthorName> and hosted on <a href='https://www.netlify.com' rel='noreferrer' target='_blank'><NetlifyIcon /></a>
       </FooterText>
     </FooterContainer>
   )
