@@ -176,6 +176,7 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           date={post.frontmatter.date}
           topics={post.frontmatter.topics}
+          timeToRead={post.timeToRead}
         />
 
         <PageBody>
@@ -216,6 +217,7 @@ export const pageQuery = graphql`
       excerpt
       body
       tableOfContents
+      timeToRead
       frontmatter {
         title
         date

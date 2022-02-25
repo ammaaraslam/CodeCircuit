@@ -5,9 +5,10 @@ import useSiteMetadata from '../hooks/use-site-config'
 import useSiteImages from '../hooks/use-site-images'
 import TagList from './TagList'
 import Flag from './Flag'
-import { ReadingTime } from './Commons'
+import { ReadingTime, Bull } from './Commons'
 import {AiOutlineClockCircle} from 'react-icons/ai'
 import {HiArrowRight} from 'react-icons/hi'
+import Time from './Time'
 
 
 
@@ -182,22 +183,14 @@ const PostTags = styled.div`
 
 `
 const FooterLine = styled.div`
-  font-size: 13px;
+  font-size: 0.87rem;
   z-index: 1;
   padding: 0.5rem;
   position: absolute;
   font-family: 'Roboto';
-
   bottom: 60px;
-  color: var(--color-primaryText);
-`
+  color: var(--color-linkColorChangeInverted);
 
-
-
-const ClockIcon = styled(AiOutlineClockCircle)`
-  color: var(--color-primaryText);
-  transform: translateY(1px) translateX(-2.3px);
-  
 `
 
 const PrevNextPost = props => {
@@ -219,6 +212,7 @@ const PrevNextPost = props => {
               title,
               slug,
               language,
+              date
             } = tutorial.node.frontmatter
             const heroImg = (cover && cover.publicURL) || fluid.src
             
@@ -243,7 +237,8 @@ const PrevNextPost = props => {
                   </section>
                   <footer>
                     <FooterLine>
-                      <ClockIcon />
+                      {date && <Time date={date} />}
+                      <Bull />
                       <ReadingTime min={timeToRead} />
                     </FooterLine>
                     <ReadPost>

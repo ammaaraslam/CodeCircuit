@@ -100,6 +100,7 @@ const AboutAuthor = styled.p`
 const PopularTagsList = styled.div`
     display: grid;
     justify-items: center;
+    padding-top: 10px;
     grid-gap: 0;
     row-gap: 20px;
     horizontal-grid-gap: 100px;
@@ -118,7 +119,6 @@ const RecentArticles = styled.li`
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
     list-style-type: none;
 
 `
@@ -189,7 +189,8 @@ const RightSection = () => {
                     </RecentArticles>
                     )
                 })}
-                <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
+                <br />
+                <RightSectionTitle>Popular Topics</RightSectionTitle>
                 <PopularTagsList>
                     <PopularTag>
                         <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/topics/gatsby`}>gatsby</TopicItem>

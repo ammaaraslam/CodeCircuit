@@ -28,6 +28,7 @@ const PostsList = ({ posts }) => {
       excerpt: post.node.excerpt,
       slug: post.node.frontmatter.slug,
       timeToRead: post.node.timeToRead,
+      date: post.node.frontmatter.date,
       cover: post.node.frontmatter.cover,
       language: post.node.frontmatter.language || defaultLang,
       topics: post.node.frontmatter.topics || [],

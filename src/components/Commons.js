@@ -85,7 +85,7 @@ export const Text = styled.p`
 
 export const Bull = styled.span`
   display: inline-block;
-  color: var(--color-secondaryText);
+  color: var(--color-linkColorChange);
   font-family: 'Roboto';
   margin: 0 4px;
   &::before {
@@ -94,8 +94,7 @@ export const Bull = styled.span`
 `
 
 const ReadingTimeContainer = styled.span`
-  text-transform: uppercase;
-  color: var(--color-secondaryText);
+  text-transform: capitalize;
   font-family: 'Roboto';
 `
 

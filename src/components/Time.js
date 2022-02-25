@@ -4,7 +4,6 @@ import '@fontsource/rubik/700.css'
 import '@fontsource/roboto/400.css'
 
 const TimeContainer = styled.time`
-  color: var(--color-secondaryText);
   font-family: 'Roboto';
 `
 

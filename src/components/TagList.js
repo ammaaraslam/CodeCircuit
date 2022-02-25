@@ -6,7 +6,7 @@ const ListContainer = styled.div`
   display: inline;
   color: var(--color-secondaryText);
   font-size: 0.5rem;
-  
+  padding: 5px;
 `
 
 const TopicListItem = styled.span`
@@ -23,9 +23,9 @@ class TopicList extends React.Component {
           return (
             <Fragment key={`topic-list-${i}`}>
               {!noLink && (
-                <TopicListItem><TopicItem type={`${topic}-inverted`} size='5px' border='10px' fontSize='15px' to={`/topic/${topic}`}>{topic}</TopicItem></TopicListItem>
+                <TopicListItem><TopicItem type={topic} size='5px' border='10px' fontSize='15px' to={`/topics/${topic}`}>{topic}</TopicItem></TopicListItem>
               )}
-              {noLink && <TopicListItem><TopicItem type={topic} size='5px' fontSize='15px' border='10px' to={`/topic/${topic}`}>{topic}</TopicItem></TopicListItem>}
+              {noLink && <TopicListItem><TopicItem type={topic} size='5px' fontSize='15px' border='10px' to={`/topics/${topic}`}>{topic}</TopicItem></TopicListItem>}
               {i < topics.length - 1 ? ' ' : ''}
             </Fragment>
           )

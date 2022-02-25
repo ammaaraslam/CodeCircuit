@@ -55,14 +55,14 @@ const Hero = props => {
   const { siteCover } = useSiteMetadata()
   const { fluid } = useSiteImages(siteCover)
   const heroImg = props.heroImg || fluid.src
-  const { date, topics } = props
+  const { date, topics, timeToRead } = props
   
 
   return (
     <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
       <TitleContainer>
         <HeroTitle>{props.title}</HeroTitle>
-        <ContentHeader date={date} topics={topics} />
+        <ContentHeader date={date} topics={topics} timeToRead={timeToRead} />
       </TitleContainer>
     </HeroContainer>
   )
