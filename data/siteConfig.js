@@ -6,12 +6,11 @@ module.exports = {
   authorAvatar: 'avatar.jpg', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `
-  Hi👋, I’m Ammaar Aslam. I’m a 16 year-old self taught full-stack developer from Sri Lanka. 
+  Hi👋, I’m <a href='/ammaar-aslam'>Ammaar Aslam</a>. I’m a passionate, self taught programmer from Sri Lanka. 
   I'm the founder and author of Code Circuit. I built this blog to share my programming journey and help others along the way.
   <br>
   <br>
-  You can follow me on <a href='https://twitter.com/itsammaar_7' target="_blank">Twitter</a>, <a href='https://instagram.com/its.ammaar_7' target="_blank">Instagram</a> and <a href='https://github.com/ammaaraslam' target="_blank">Github</a> or get in touch: 
-  <span><a href="mailto:ammaaraslam7@gmail.com">ammaaraslam7@gmail.com</a><span>
+  You can follow me on <a href='https://twitter.com/itsammaar_7' target="_blank">Twitter</a>, <a href='https://instagram.com/its.ammaar_7' target="_blank">Instagram</a> and <a href='https://github.com/ammaaraslam' target="_blank">Github</a>
   `,
   siteUrl: 'https://codecircuit.netlify.app',
   disqusSiteUrl: 'https://www.codecircuit.netlify.app',

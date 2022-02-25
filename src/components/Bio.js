@@ -47,11 +47,12 @@ const BioInfo = styled.div`
 const BioImage = styled.img`
     width: 280px;
     height: 220px;
+    border: double 6px transparent;
     border-radius: 20px;
-    box-shadow: 0px -10px 15px -6px  #004a8f, /* top - THE RED SHADOW */
-                0px  5px  15px  0px  #004a8f, /* bottom */
-                5px  0px  15px  0px  #28d79a, /* right */
-                -5px  0px  15px  0px  #28d79a; /* left */
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, #28d79a, #004a8f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
     @media screen and (max-width: 768px) {
       & {
         align-items: center;

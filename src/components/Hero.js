@@ -44,6 +44,7 @@ const HeroSubTitle = styled.h2`
   color: var(--color-white);
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.85);
   text-transform: capitalize;
+  font-size: 2rem;
 `
 
 const Hero = props => {

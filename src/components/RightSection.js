@@ -6,6 +6,7 @@ import TopicItem from './TopicItem'
 import Avatar from '../images/avatar.jpg'
 import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const RightSectionWrapper = styled.aside`
     align-items: center;
@@ -58,8 +59,13 @@ const AuthorImage = styled.img`
     height: 135px;
     display: block;
     margin-top: 8px;
-    border-radius: 20px;
     margin-left: 20px;
+    border: double 6px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, #28d79a, #004a8f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 
 `
 
@@ -105,10 +111,16 @@ const PopularTag = styled.div`
     margin-right: 3px; 
 `
 
-const RecentArticles = styled.div`
-    padding: 8px;
-    
-    
+const RecentArticles = styled.li`
+    max-width: 300px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    list-style-type: none;
+
 `
 const RecentArticlesLink = styled(Link)`
     font-weight: 500;
@@ -130,7 +142,33 @@ const RecentArticlesLink = styled(Link)`
 
 
 const RightSection = () => {
+    const data = useStaticQuery(graphql`
+    query {
+      posts: allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: {
+          fileAbsolutePath: { regex: "//content/posts//" }
+          frontmatter: { published: { ne: false }, unlisted: { ne: true } }
+        }
+        limit: 10
+      ) {
+        edges {
+          node {
+            excerpt
+            frontmatter {
+              date(formatString: "DD MMMM, YYYY")
+              title
+              topics
+              language
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
     const { authorDescription } = useSiteMetadata()
+    const posts = data.posts.edges
     return (
         <RightSectionWrapper>
             <RightSectionItem>
@@ -140,11 +178,17 @@ const RightSection = () => {
                     <AboutAuthor dangerouslySetInnerHTML={{ __html: authorDescription }} />
                 </AuthorInfo>
                 <RightSectionTitle>Recent Tutorials</RightSectionTitle>
-                <RecentArticles>
-                    <RecentArticlesLink to='/tutorial'>Link to the first tutorial</RecentArticlesLink><br></br>
-                    <RecentArticlesLink to='/tutorial'>Link Onwrgwrqwrhgw e ew re</RecentArticlesLink><br></br>
-                    <RecentArticlesLink to='/tutorial'>Link Oneegqaegqe qefgqeg</RecentArticlesLink><br></br>
-                </RecentArticles>
+                {posts.map(post => {
+                    const title = post.node.frontmatter.title
+                    const slug = post.node.frontmatter.slug
+                    return (
+                    <RecentArticles key={slug}>
+                        <RecentArticlesLink to={`/tutorial/${slug}`}>
+                            {title}
+                        </RecentArticlesLink>
+                    </RecentArticles>
+                    )
+                })}
                 <RightSectionTitle>Popular Topics</RightSectionTitle><br></br>
                 <PopularTagsList>
                     <PopularTag>

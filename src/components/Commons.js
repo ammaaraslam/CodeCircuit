@@ -39,7 +39,7 @@ ol {
 }
 
 *::selection {
-  background-color: var(--color-lighterSecondaryColor);
+  background-color: var(--color-highlightColorChange);
 
 }
 *::-webkit-scrollbar {

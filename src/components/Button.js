@@ -40,7 +40,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         maxWidth        : '120px',
         height          : '22px',
         fontSize        : '0.9rem',
-        padding         : '6px',
+        padding         : '7px',
         borderRadius    : '10px',
         color           : 'var(--color-primaryBackground)',
 
@@ -52,7 +52,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         height          : '22px',
         fontSize        : '0.9rem',
         transform       : 'scale(1.04)',
-        padding         : '6px',
+        padding         : '7px',
         borderRadius    : '10px',
 
     }
@@ -63,12 +63,12 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         border          : `2px solid var(--color-secondaryText)`,
         maxWidth           : '150px',
         height          : '22px',
-        padding         : '5px',
+        padding         : '7px',
         fontSize        : '0.9rem',
     }
     const miniSecondaryHover = {
         backgroundColor : 'var(--color-secondaryText)',
-        padding         : '5px',
+        padding         : '7px',
         border          : `2px solid var(--color-secondaryText)`,
         letterSpacing: '0.5px',
         color           : 'var(--color-darkerBackground)',
@@ -84,6 +84,7 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
         width           : '100px',
         height          : '45px',
         fontSize        : '1.35rem',
+        padding         : '7px',
     }
     const smallPrimaryHover = {
         backgroundColor : 'var(--color-primaryColor)',
@@ -96,17 +97,19 @@ const Button = ({ children, onClick, to, textColor, disabled, type, style, ...pr
     }
     const bigPrimary = {
         color           : 'var(--color-primaryBackground)',
-        width           : '160px',
+        maxWidth           : '200px',
         height          : '60px',
         fontSize        : '1.5rem',
+        padding         : '7px',
         borderRadius    : '10px',
     }
     const bigPrimaryHover = {
         color           : textColor,
-        width           : '160px',
+        maxWidth           : '200px',
         height          : '60px',
         fontSize        : '1.5rem',
         transform       : 'scale(1.04)',
+        padding         : '7px',
         borderRadius    : '10px',
     }
     const bigSecondary = {

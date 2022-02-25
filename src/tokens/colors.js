@@ -22,6 +22,7 @@ const colors = {
   beige: '#fff9d9',
   red: '#ff0000',
   primaryColor: '#004a8f',
+  lighterPrimaryColor: '#90c9ff',
   secondaryColor: '#28d79a',
   lighterSecondaryColor: '#bef2e0',
   lightColor: '#f3f9ff',
@@ -61,6 +62,10 @@ export const COLORS = {
   linkColorChangeInverted: {
     light: colors.secondaryColor,
     dark: colors.primaryColor,
+  },
+  highlightColorChange: {
+    light: colors.lighterSecondaryColor,
+    dark: colors.lighterPrimaryColor,
   },
   primaryBackground: {
     light: colors.lightColor,

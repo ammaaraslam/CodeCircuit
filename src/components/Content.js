@@ -56,6 +56,14 @@ const ContentBody = styled.div`
       box-shadow: none;
     }
   }
+  & img {
+    border: double 6px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+                      linear-gradient(to right, #28d79a, #004a8f);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
   h1 .anchor svg,
   h2 .anchor svg,
   h3 .anchor svg,
