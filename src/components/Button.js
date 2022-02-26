@@ -10,7 +10,7 @@ const ButtonComponent = styled(Link)`
     position: relative;
     font-weight: 540;
     line-height: 2;
-    transition: all 0.2s ease-in-out;
+    
     letter-spacing: 1px;
     display: inline-flex;
     align-items: center;

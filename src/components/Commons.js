@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  transition: all 0.2s;
   
 }
 
@@ -64,7 +65,6 @@ ol {
 `
 export const StyledLink = styled(Link)`
   font-family: 'Roboto';
-  transition: 0.25s ease-in;
   color: var(--color-linkColorChange);
   text-decoration: underline;
   text-decoration-color: var(--color-linkColorChangeInverted);

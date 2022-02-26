@@ -23,7 +23,7 @@ export const AlertContainer = styled.div`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   overflow: hidden;
-  transition: all 0.2s ease-in-out;
+  
   @media screen and (max-width: 768px) {
     font-size: 15px;
   }

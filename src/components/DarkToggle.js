@@ -17,9 +17,8 @@ const DarkModeButton = styled.button`
 
 const MoonIcon = styled(BsMoonStarsFill)`
   font-size: 27px;
-  transition: all 0.2s;
   color: var(--color-invertedBackground);
-  transition: 0.25s ease-in;
+  
   margin-right: 8px;
   &:hover{
     color: var(--color-secondaryColor);
@@ -30,7 +29,7 @@ const MoonIcon = styled(BsMoonStarsFill)`
 const SunIcon = styled(BsFillSunFill)`
   font-size: 27px;
   color: var(--color-invertedBackground);
-  transition: 0.25s ease-in;
+  
   margin-right: 8px;
   &:hover{
     color: var(--color-secondaryColor);

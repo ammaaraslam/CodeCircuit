@@ -48,7 +48,7 @@ const StyledMenu = styled.div`
 
 
 const StyledLink = styled(Link)`
-    transition: all 0.3s;
+    
     color: #fff;
     height: 10%;
     display: flex;
@@ -57,7 +57,7 @@ const StyledLink = styled(Link)`
     font-size: 40px;
     padding: 0 1rem;
     color: var(--color-invertedBackground);
-    transition: 0.25s ease-in;
+    
     &:hover {
         color: var(--color-primaryColor);
         transform: scale(1.04);
@@ -84,9 +84,9 @@ const CloseToggle = styled(AiFillCloseCircle)`
     display: flex;
     place-items: center;
     font-size: 27px;
-    transition: all 0.2s;
+    
     color: var(--color-invertedBackground);
-    transition: 0.25s ease-in;
+    
     &:hover{
         color: var(--color-primaryColor);
         transform: scale(1.04);

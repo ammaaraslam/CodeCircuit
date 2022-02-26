@@ -50,7 +50,8 @@ const FooterLinkItem = styled(Link)`
     background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.04);
+    font-family: 'Rubik';
+    transform: scale(1.05);
   }
 
 `
@@ -104,7 +105,7 @@ const GatsbyIcon = styled(GrGatsbyjs)`
   padding-right: 2.5px;
   font-size: 1.5rem;
   transform: translateY(5px);
-  transition: all 0.2s ease-in-out;
+  
   &:hover {
     color: var(--color-gatsbyColor);
     transform: scale(1.04);
@@ -117,7 +118,7 @@ const ReactIcon = styled(FaReact)`
   padding-right: 2.5px;
   font-size: 1.5rem;
   transform: translateY(5px);
-  transition: all 0.2s ease-in-out;
+  
   &:hover {
     color: var(--color-reactColor);
     transform: scale(1.04);
@@ -131,7 +132,7 @@ const NetlifyIcon = styled(SiNetlify)`
   padding-right: 2.5px;
   font-size: 1.5rem;
   transform: translateY(5px);
-  transition: all 0.2s ease-in-out;
+  
   &:hover {
     color: var(--color-netlifyColor);
     transform: scale(1.04);

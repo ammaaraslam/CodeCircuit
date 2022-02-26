@@ -60,7 +60,7 @@ const NavLogoTitle = styled.span`
 `
 
 export const NavItem = styled.div`
-  transition: all 0.3s;
+  
   color: #fff;
   display: flex;
   align-items: center;
@@ -73,7 +73,7 @@ export const NavItem = styled.div`
 
 export const NavLink = styled(Link)`
   color: var(--color-secondaryText);
-  transition: 0.25s ease-in;
+  
   &:hover {
     color: var(--color-primaryColor);
     transform: scale(1.04);

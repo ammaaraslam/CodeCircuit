@@ -45,7 +45,7 @@ const Preview = styled.article`
   border-radius: 20px;
   width: 350px;
   height: 510px;
-  transition: all 0.3s;
+  
   
 
   &:hover {
@@ -91,13 +91,13 @@ const ReadPost = styled.div`
   right: 5px;
   padding: 10px;
   z-index: 1;
-  transition: all 0.3s;
+  
   font-family: 'Roboto';
 `
 const RightArrowIcon = styled(HiArrowRight)`
   color: var(--color-primaryBackground);
   transform: translateY(3px);
-  transition: all 0.3s;
+  
 `
 
 
@@ -113,7 +113,7 @@ const ReadPostText = styled(Link)`
   color: var(--color-primaryBackground);
   background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   border-radius: 50px;
-  transition: all 0.3s;
+  
 
   &:hover {
     color: var(--color-primaryBackground);
