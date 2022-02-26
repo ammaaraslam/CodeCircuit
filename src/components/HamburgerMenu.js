@@ -2,7 +2,7 @@
 // import styled from 'styled-components'
 import React from 'react'
 import { Link } from 'gatsby'
-import {FaWindowClose} from 'react-icons/fa'
+import {AiFillCloseCircle} from 'react-icons/ai'
 import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import {RiArticleFill} from 'react-icons/ri'
@@ -77,7 +77,7 @@ const StyledLink = styled(Link)`
 //     font-size: 27px;
 //     cursor: pointer;
 // `;
-const CloseToggle = styled(FaWindowClose)`
+const CloseToggle = styled(AiFillCloseCircle)`
     position: fixed;
     top: 4%;
     right: 4%;

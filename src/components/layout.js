@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import Header from './Header'
@@ -21,7 +21,7 @@ const SiteContent = styled.div`
 class Template extends React.Component {
   render() {
     const { children } = this.props
-
+    
     return (
       <>
         <Helmet>

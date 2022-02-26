@@ -67,6 +67,10 @@ export const COLORS = {
     light: colors.lighterSecondaryColor,
     dark: colors.lighterPrimaryColor,
   },
+  highlightColorChangeInverted: {
+    light: colors.lighterPrimaryColor,
+    dark: colors.lighterSecondaryColor,
+  },
   primaryBackground: {
     light: colors.lightColor,
     dark: colors.darkColor,

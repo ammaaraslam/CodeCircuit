@@ -7,6 +7,8 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import {RiArticleFill} from 'react-icons/ri'
 import {FaTags} from 'react-icons/fa'
+import {SiBookstack} from 'react-icons/si'
+import {HiChip} from 'react-icons/hi'
 import LogoChange from './LogoChange'
 import '@fontsource/rubik/800.css'
 import HamburgerMenuToggle from './HamburgerToggle'
@@ -21,7 +23,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem;
   z-index: 100000;
-  top: 0;
+  top: auto;
   left: 0;
   font-size: 27px;
   font-weight: 700;
@@ -63,7 +65,7 @@ export const NavItem = styled.div`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 1.1rem;
   height: 100%;
 
   
@@ -121,15 +123,25 @@ const TopicsIcon = styled(FaTags)`
   transform: translateY(3.5px);
   padding: 0;
 `
+const SeriesIcon = styled(SiBookstack)`
+  transform: translateY(3.5px);
+  padding: 0;
+`
+const CodeChipsIcon = styled(HiChip)`
+  transform: translateY(3.5px);
+  padding: 0;
+`
 
 
 const Header = (props) => {
    
     const [navToggled, setNavToggled] = useState(false);
+    
 
     const handleNavToggle = () => {
        setNavToggled(!navToggled);
     }
+    
   return (
     <>
       <Nav>
@@ -143,6 +155,12 @@ const Header = (props) => {
         <NavMenu>
           <NavItem>
             <NavLink to="/tutorials"><TutorialsIcon /> Tutorials</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/series"><SeriesIcon /> Series</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/code-chips"><CodeChipsIcon /> CodeChips</NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="/topics"><TopicsIcon /> Topics</NavLink>
