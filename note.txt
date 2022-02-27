@@ -33,3 +33,4 @@ Website Version 1 completed in December 2021
         - Unsuccesfully built when removed a-post-with-images post.
         - Successfully built when removed big-test post.
         - Successfully built when removed bold-mage post.
+        - Successfully built when removed using-mdx post.
