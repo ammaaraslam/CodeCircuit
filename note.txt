@@ -37,3 +37,4 @@ Website Version 1 completed in December 2021
         - Successfully built when removed code-highlighting-post post.
         - Successfully built when removed social-media-card-generator post.
         - Again Unsuccesfully built when removed a-post-with-images post.
+        - Unsuccesfully built when added gif to placeholder post.
