@@ -2,8 +2,8 @@
 title: Hello World
 slug: hello-world
 date: 2022-02-27
-topics: ['miscellaneous']
 cover: ./typewriter.webp
+topics: ['miscellaneous']
 language: en
 urlToAuthor: https://www.pexels.com/@olly?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
 nameOfAuthor: Andrea Piacquadio

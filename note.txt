@@ -39,3 +39,5 @@ Website Version 1 completed in December 2021
         - Again Unsuccesfully built when removed a-post-with-images post.
         - Unsuccesfully built when added gif to placeholder post.
         - Successfully built when added post-with-image post post.
+        - Unsuccesfully built when removed post-with-image post and added gif to hello-world.
+        
