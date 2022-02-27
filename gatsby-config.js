@@ -95,6 +95,12 @@ module.exports = {
         plugins: [
           `gatsby-remark-autolink-headers`, 
           `gatsby-remark-images`,
+          {
+            resolve: "gatsby-remark-normalize-paths",
+            options: {
+                pathFields: ["cover", "imageShare"],
+            },
+        },
         ],
       },
     },
