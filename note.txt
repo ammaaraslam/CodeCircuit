@@ -40,4 +40,4 @@ Website Version 1 completed in December 2021
         - Unsuccesfully built when added gif to placeholder post.
         - Successfully built when added post-with-image post post.
         - Unsuccesfully built when removed post-with-image post and added gif to hello-world.
-        
+        - Unsuccesfully built when moved cover to top and topics to bottom in hello-world and removing post-with-image post
