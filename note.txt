@@ -30,4 +30,4 @@ Website Version 1 completed in December 2021
     - I'm tryng to fix this error:
         - Successfully built when removed falen time post.
         - Successfully built when removed post-en-francais post.
-        - 
+        - Unsuccesfully built when removed a-post-with-images post.
