@@ -13,10 +13,12 @@ const DarkModeButton = styled.button`
   font-weight: 700;
   margin: 10px 0;
   font-family: 'Rubik';
+  transition: all 0.25s ease-in-out;
 `
 
 const MoonIcon = styled(BsMoonStarsFill)`
   font-size: 27px;
+  transition: all 0.25s ease-in-out;
   color: var(--color-invertedBackground);
   
   margin-right: 8px;
@@ -29,6 +31,7 @@ const MoonIcon = styled(BsMoonStarsFill)`
 const SunIcon = styled(BsFillSunFill)`
   font-size: 27px;
   color: var(--color-invertedBackground);
+  transition: all 0.25s ease-in-out;
   
   margin-right: 8px;
   &:hover{

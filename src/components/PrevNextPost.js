@@ -6,7 +6,6 @@ import useSiteImages from '../hooks/use-site-images'
 import TagList from './TagList'
 import Flag from './Flag'
 import { ReadingTime, Bull } from './Commons'
-import {AiOutlineClockCircle} from 'react-icons/ai'
 import {HiArrowRight} from 'react-icons/hi'
 import Time from './Time'
 
@@ -45,9 +44,7 @@ const Preview = styled.article`
   border-radius: 20px;
   width: 350px;
   height: 510px;
-  
-  
-
+  transition: all 0.1s ease-in-out;
   &:hover {
     box-shadow: 0px -10px 15px -6px  #004a8f, /* top - THE RED SHADOW */
                 0px  5px  15px  0px  #004a8f, /* bottom */
@@ -91,10 +88,11 @@ const ReadPost = styled.div`
   right: 5px;
   padding: 10px;
   z-index: 1;
-  
+  transition: all 0.15s ease-in-out;
   font-family: 'Roboto';
 `
 const RightArrowIcon = styled(HiArrowRight)`
+  transition: all 0.15s ease-in-out;
   color: var(--color-primaryBackground);
   transform: translateY(3px);
   
@@ -111,6 +109,7 @@ const ReadPostText = styled(Link)`
   padding-right: 12px;
   font-size: 0.9rem;
   color: var(--color-primaryBackground);
+  transition: all 0.15s ease-in-out;
   background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   border-radius: 50px;
   

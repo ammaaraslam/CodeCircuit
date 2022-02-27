@@ -59,7 +59,10 @@ const HomeHeroInfoHeading = styled.h1`
     
 `
 const HomeHeroInfoHeadingSpan = styled.span`
-  padding: 10px;
+  padding-right: 15px;
+  padding-left: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-style: italic;
   background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   -webkit-background-clip: text;

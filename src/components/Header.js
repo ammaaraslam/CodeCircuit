@@ -60,30 +60,25 @@ const NavLogoTitle = styled.span`
 `
 
 export const NavItem = styled.div`
-  
-  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0 1.1rem;
   height: 100%;
-
+  transition: all 0.25s ease-in-out;
   
 `;
 
 export const NavLink = styled(Link)`
+  transition: all 0.25s ease-in-out;
   color: var(--color-secondaryText);
-  
   &:hover {
     color: var(--color-primaryColor);
     transform: scale(1.04);
+    cursor: pointer;
   }
-`
-export const NavLinkText = styled(Link)`
-  text-decoration: none;
   
 `
-
 
 export const NavMenu = styled.div`
   display: flex;
@@ -116,6 +111,7 @@ export const NavBtns = styled.nav`
 
 
 const TutorialsIcon = styled(RiArticleFill)`
+  color: var(--color-seconaryText);
   transform: translateY(3.5px);
   padding: 0;
 `

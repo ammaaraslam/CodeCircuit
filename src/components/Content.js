@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
+import '@fontsource/rubik/800.css'
+import '@fontsource/roboto/500.css'
 
 const ContentBody = styled.div`
   line-height: 1.6;
@@ -90,7 +92,7 @@ const ContentBody = styled.div`
   & > blockquote {
     box-sizing: border-box;
     background-color: var(--color-lighterBackground);
-    border-left: 10px solid var(--color-secondaryColor);
+    border-left: 10px solid var(--color-linkColorChange);
     margin: 30px 0px;
     padding: 5px 20px;
     border-radius: 0 8px 8px 0;

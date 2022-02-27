@@ -14,6 +14,7 @@ const FooterContainer = styled.footer`
   height: auto;
   text-align: center;  
   background-color: var(--color-primaryBackground);
+  
   @media screen and (max-width: 768px) {
     & {
       height: auto;
@@ -46,12 +47,13 @@ const FooterLinkItem = styled(Link)`
   padding-right: 10px;
   font-family: 'Rubik';
   color: var(--color-invertedBackground);
+  transition: all 0.25s ease-in-out;
   &:hover {
     background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Rubik';
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
 
 `
@@ -62,7 +64,7 @@ const FooterText = styled.p`
   color: var(--color-primaryText);
   text-align: center;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Rubik';
   padding-top: 8.5px;
   padding-bottom: 20px;
 `
@@ -105,6 +107,7 @@ const GatsbyIcon = styled(GrGatsbyjs)`
   padding-right: 2.5px;
   font-size: 1.5rem;
   transform: translateY(5px);
+  transition: all 0.2s ease-in-out;
   
   &:hover {
     color: var(--color-gatsbyColor);
@@ -118,7 +121,7 @@ const ReactIcon = styled(FaReact)`
   padding-right: 2.5px;
   font-size: 1.5rem;
   transform: translateY(5px);
-  
+  transition: all 0.2s ease-in-out;
   &:hover {
     color: var(--color-reactColor);
     transform: scale(1.04);
@@ -132,7 +135,7 @@ const NetlifyIcon = styled(SiNetlify)`
   padding-right: 2.5px;
   font-size: 1.5rem;
   transform: translateY(5px);
-  
+  transition: all 0.2s ease-in-out;
   &:hover {
     color: var(--color-netlifyColor);
     transform: scale(1.04);

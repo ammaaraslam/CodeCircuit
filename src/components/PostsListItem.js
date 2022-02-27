@@ -22,7 +22,7 @@ const Post = styled.li`
   border-radius: 20px;
   width: 350px;
   height: 510px;
-  
+  transition: all 0.1s ease-in-out;
   &:hover {
     box-shadow: 0px -10px 15px -6px  #004a8f, /* top - THE RED SHADOW */
                 0px  5px  15px  0px  #004a8f, /* bottom */
@@ -61,10 +61,11 @@ const ReadPost = styled.div`
   right: 5px;
   padding: 10px;
   z-index: 1;
-  
+  transition: all 0.15s ease-in-out;
   font-family: 'Roboto';
 `
 const RightArrowIcon = styled(HiArrowRight)`
+  transition: all 0.15s ease-in-out;
   color: var(--color-primaryBackground);
   transform: translateY(3px);
   
@@ -83,7 +84,7 @@ const ReadPostText = styled(Link)`
   color: var(--color-primaryBackground);
   background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   border-radius: 50px;
-  
+  transition: all 0.15s ease-in-out;
 
   &:hover {
     color: var(--color-primaryBackground);
@@ -138,6 +139,7 @@ const PostTitleLink = styled(Link)`
   text-decoration: underline;
   text-decoration-color: var(--color-linkColorChangeInverted);
   text-decoration-thickness: 2px;
+  transition: all 0.1s;
   &:hover {
     color: var(--color-linkColorChangeInverted);
     text-decoration: underline;

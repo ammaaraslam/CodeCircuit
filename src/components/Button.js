@@ -22,7 +22,7 @@ const ButtonComponent = styled(Link)`
     outline: 0;
     color: var(--color-primaryBackground);
     background-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
-    
+    transition: all 0.25s ease-in-out;
 `
 
 

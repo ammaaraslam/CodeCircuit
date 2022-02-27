@@ -25,7 +25,7 @@ const colors = {
   lighterPrimaryColor: '#90c9ff',
   secondaryColor: '#28d79a',
   lighterSecondaryColor: '#bef2e0',
-  lightColor: '#f3f9ff',
+  lightColor: '#eff7fe',
   darkerLightColor: '#e8f4ff',
   lighterLightColor: '#ffffff',
   darkColor: '#000e1c',

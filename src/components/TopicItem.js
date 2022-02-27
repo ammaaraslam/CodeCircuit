@@ -11,7 +11,7 @@ const Topic = styled(Link)`
   text-transform: capitalize;
   color: var(--color-secondaryText);
   font-family: 'Rubik';
-  
+  transition: all 0.15s ease-in-out;
 
 `
 

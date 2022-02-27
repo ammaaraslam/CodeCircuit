@@ -2,6 +2,8 @@ import React from "react";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/shadesOfPurple";
 import rangeParser from "parse-numeric-range";
+import '@fontsource/rubik/800.css'
+import '@fontsource/roboto/500.css'
 
 const calculateLinesToHighlight = raw => {
   const lineNumbers = rangeParser(raw);
@@ -47,6 +49,7 @@ const Code = props => {
         marginBottom: "2rem",
         paddingLeft: "1.5rem",
         color: "var(--color-secondaryText)",
+        transition: "all 0.25s ease-inout",
       }}
     >
       <div style={{ display: "flex", position: "relative" }}>
@@ -59,23 +62,25 @@ const Code = props => {
             textTransform: "uppercase",
             borderBottomLeftRadius: "0.5rem",
             borderBottomRightRadius: "0.5rem",
-            fontFamily: "Montserrat",
+            fontFamily: "Rubik",
             fontWeight: "bold",
             textAlign: "center",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: "var(--color-primaryBackground)"
+            color: "var(--color-primaryBackground)",
+            transition: "all 0.15s ease-in-out",
           }}
         >{`${language}`}</div>
         <div
           style={{
             color: "#9d9d9d",
-            fontFamily: "Montserrat",
+            fontFamily: "Rubik",
             fontStyle: "italic",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            transition: "all 0.15s ease-in-out",
           }}
         >
           {file && `${file}`}
@@ -97,8 +102,9 @@ const Code = props => {
             cursor: "pointer",
             color: "var(--color-primaryText)",
             fontSize: "14px",
-            fontFamily: "sans-serif",
+            fontFamily: "Roboto",
             lineHeight: "1",
+            transition: "all 0.15s ease-in-out",
           }}
         >
           {isCopied ? "🎉 Copied!" : "Copy"}
@@ -110,6 +116,7 @@ const Code = props => {
           background: "var(--color-primaryColor)",
           borderRadius: "0.5rem",
           marginLeft: '-1rem',
+          transition: "all 0.15s ease-in-out",
         }}
       >
         <Highlight

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 import { Link } from 'gatsby'
 import '@fontsource/rubik/700.css'
-import '@fontsource/roboto/400.css'
+import '@fontsource/roboto/500.css'
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -11,7 +11,6 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  transition: all 0.2s;
   
 }
 
@@ -25,6 +24,7 @@ img {
 a {
   text-decoration: none;
   color: var(--color-primaryText);
+  transition: all 0.15s ease-in-out;
 }
 
 hr {
