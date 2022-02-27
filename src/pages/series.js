@@ -18,6 +18,7 @@ const PageBody = styled.div`
   transform: translateY(-50px);
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
+  color: var(--color-primaryText);
   
 `
 

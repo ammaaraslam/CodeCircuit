@@ -4,6 +4,7 @@ import useSiteMetadata from '../hooks/use-site-config'
 import useSiteImages from '../hooks/use-site-images'
 import ContentHeader from './ContentHeader'
 import '@fontsource/rubik/800.css'
+import '@fontsource/roboto/400.css'
 const HeroContainer = styled.div`
   position: relative;
   display: table;
@@ -49,6 +50,26 @@ const HeroTitle = styled.h1`
   
   
 `
+const BackgroundAccredit = styled.span`
+  padding: 8px;
+  background-color: var(--color-primaryBackground);
+  border-radius: 8px;
+  font-family: 'Roboto';
+  color: var(--color-primaryText);
+  a {
+    color: var(--color-linkColorChange);
+    text-decoration: underline;
+    text-decoration-color: var(--color-linkColorChangeInverted);
+    text-decoration-thickness: 2px;
+    &:hover {
+      color: var(--color-linkColorChangeInverted);
+      text-decoration: underline;
+      text-decoration-color: var(--color-linkColorChangeInverted);
+      text-decoration-thickness: 3px;
+    
+    }
+  }
+`
 
 
 const Hero = props => {
@@ -63,6 +84,9 @@ const Hero = props => {
       <TitleContainer>
         <HeroTitle>{props.title}</HeroTitle>
         <ContentHeader date={date} topics={topics} timeToRead={timeToRead} />
+        <BackgroundAccredit>
+          Background Image by <a href={props.urlToAuthor} target="_blank" rel="noreferrer" >{props.nameOfAuthor}</a> on <a href={props.urlToProvider} target="_blank" rel="noreferrer" >{props.nameOfProvider}</a>
+          </BackgroundAccredit>
       </TitleContainer>
     </HeroContainer>
   )

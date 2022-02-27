@@ -33,6 +33,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 publicURL
               }
               unlisted
+              urlToAuthor
+              nameOfAuthor
+              urlToProvider
+              nameOfProvider
             }
             timeToRead
             excerpt

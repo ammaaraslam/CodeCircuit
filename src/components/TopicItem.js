@@ -25,11 +25,11 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   };
   const defaultColor = {
     backgroundColor : 'var(--color-primaryColor)',
-    padding : size,
+    border : '3px solid var(--color-primaryColor)',
     borderRadius : border,
-    fontSize : fontSize,
     color: 'var(--color-darkerBackground)',
-    fontFamily: 'Rubik',
+    fontSize : fontSize,
+    padding : size,
     transform : 'scale(1.04)',
   }
   const gatsby = {
@@ -183,6 +183,16 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     borderRadius : border,
     color: 'var(--color-darkerBackground)',
     border : '3px solid var(--color-githubColor)',
+    padding : size,
+  }
+  const defaultColorHover = {
+    border : '3px solid var(--color-primaryColor)',
+    backgroundColor: 'transparent',
+    borderRadius : border,
+    
+    fontSize : fontSize,
+    fontFamily: 'Rubik',
+    color: 'var(--color-primaryColor)',
     padding : size,
   }
   const gatsbyHover = {
@@ -573,8 +583,13 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
               }
               break;
         default:
-            tagStyle = defaultColor;
-            break;
+              if (hover) {
+                tagStyle = defaultColorHover;
+            }
+              else {
+                tagStyle = defaultColor;
+              }
+              break;
       }
       return (
         <Topic

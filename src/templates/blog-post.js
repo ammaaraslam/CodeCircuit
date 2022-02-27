@@ -177,6 +177,10 @@ class BlogPostTemplate extends React.Component {
           date={post.frontmatter.date}
           topics={post.frontmatter.topics}
           timeToRead={post.timeToRead}
+          urlToAuthor={post.frontmatter.urlToAuthor}
+          nameOfAuthor={post.frontmatter.nameOfAuthor}
+          urlToProvider={post.frontmatter.urlToProvider}
+          nameOfProvider={post.frontmatter.nameOfProvider}
         />
 
         <PageBody>
@@ -235,6 +239,10 @@ export const pageQuery = graphql`
           link
           hreflang
         }
+        urlToAuthor
+        nameOfAuthor
+        urlToProvider
+        nameOfProvider
       }
     }
   }
