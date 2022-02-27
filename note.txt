@@ -23,3 +23,7 @@ Website Version 1 completed in December 2021
 18/02/2022
     - Changed tag to topic & tags to topics
     - Styled code blocks, header links
+
+27/02/2022 
+    - Field "cover" must not have a selection since type "String" has no subfields.
+      (This error gets fixed if i add all the dummy posts)
