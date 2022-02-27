@@ -70,8 +70,8 @@ export const tutorialsQuery = graphql`
             language
             slug
             cover {
-            publicURL
-          }
+              publicURL
+            }
           }
         }
       }

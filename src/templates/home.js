@@ -303,8 +303,8 @@ export const pageQuery = graphql`
             date
             slug
             cover {
-            publicURL
-          }
+              publicURL
+            }
           }
         }
       }
