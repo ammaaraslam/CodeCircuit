@@ -27,3 +27,6 @@ Website Version 1 completed in December 2021
 27/02/2022 
     - Field "cover" must not have a selection since type "String" has no subfields.
       (This error gets fixed if i add all the dummy posts)
+    - I'm tryng to fix this error:
+        - Successfully built when removed falen time post.
+        
