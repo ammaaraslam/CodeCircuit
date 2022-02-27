@@ -29,4 +29,5 @@ Website Version 1 completed in December 2021
       (This error gets fixed if i add all the dummy posts)
     - I'm tryng to fix this error:
         - Successfully built when removed falen time post.
-        
+        - Successfully built when removed post-en-francais post.
+        - 
