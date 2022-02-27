@@ -32,3 +32,4 @@ Website Version 1 completed in December 2021
         - Successfully built when removed post-en-francais post.
         - Unsuccesfully built when removed a-post-with-images post.
         - Successfully built when removed big-test post.
+        - Successfully built when removed bold-mage post.
