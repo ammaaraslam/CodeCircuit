@@ -35,3 +35,4 @@ Website Version 1 completed in December 2021
         - Successfully built when removed bold-mage post.
         - Successfully built when removed using-mdx post.
         - Successfully built when removed code-highlighting-post post.
+        - Successfully built when removed social-media-card-generator post.
