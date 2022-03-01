@@ -7,11 +7,13 @@ import Avatar from '../images/avatar.jpg'
 import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 import { graphql, useStaticQuery } from 'gatsby'
+import kebabCase from "lodash/kebabCase"
+
 
 const RightSectionWrapper = styled.aside`
     align-items: center;
     float: right;
-    width: 26%;
+    max-width: 26.5%;
     transform: translateY(-50px);
     display: grid;
     justify-items: center;
@@ -104,12 +106,9 @@ const PopularTagsList = styled.div`
     grid-gap: 0;
     row-gap: 20px;
     horizontal-grid-gap: 100px;
+    column-gap: 5px;
     grid-template-columns: repeat(4, 1fr);
-
-`
-const PopularTag = styled.div`
-    display: inline;
-    margin-right: 3px; 
+    list-style: none;
 `
 
 const RecentArticles = styled.li`
@@ -144,30 +143,37 @@ const RecentArticlesLink = styled(Link)`
 const RightSection = () => {
     const data = useStaticQuery(graphql`
     query {
-      posts: allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        filter: {
-          fileAbsolutePath: { regex: "//content/posts//" }
-          frontmatter: { published: { ne: false }, unlisted: { ne: true } }
-        }
-        limit: 10
-      ) {
-        edges {
-          node {
-            excerpt
-            frontmatter {
-              date(formatString: "DD MMMM, YYYY")
-              title
-              topics
-              language
-              slug
+        topics: allMarkdownRemark(limit: 2000) {
+            group(field: frontmatter___topics) {
+              fieldValue
+              totalCount
             }
           }
+        posts: allMdx(
+            sort: { fields: [frontmatter___date], order: DESC }
+            filter: {
+            fileAbsolutePath: { regex: "//content/posts//" }
+            frontmatter: { published: { ne: false }, unlisted: { ne: true } }
+            }
+            limit: 10
+        ) {
+            edges {
+            node {
+                excerpt
+                frontmatter {
+                date(formatString: "DD MMMM, YYYY")
+                title
+                topics
+                language
+                slug
+                }
+            }
+            }
         }
-      }
-    }
-  `)
+        }
+    `)
     const { authorDescription } = useSiteMetadata()
+    const group = data.topics.group
     const posts = data.posts.edges
     return (
         <RightSectionWrapper>
@@ -192,27 +198,13 @@ const RightSection = () => {
                 <br />
                 <RightSectionTitle>Popular Topics</RightSectionTitle>
                 <PopularTagsList>
-                    <PopularTag>
-                        <TopicItem type='gatsby' size='5px' border='10px' fontSize='15px' to={`/topics/gatsby`}>gatsby</TopicItem>
-                    </PopularTag>
-                    <PopularTag>
-                        <TopicItem type='react' size='5px' border='10px' fontSize='15px' to={`/topics/react`}>react</TopicItem>
-                    </PopularTag>
-                    <PopularTag>
-                        <TopicItem type='python' size='5px' border='10px' fontSize='15px' to={`/topics/python`}>python</TopicItem>
-                    </PopularTag>
-                    <PopularTag>
-                        <TopicItem type='git' size='5px' border='10px' fontSize='15px' to={`/topics/git`}>git</TopicItem>
-                    </PopularTag>
-                    <PopularTag>
-                        <TopicItem type='django' size='5px' border='10px' fontSize='15px' to={`/topics/django`}>django</TopicItem>
-                    </PopularTag>
-                    <PopularTag>
-                        <TopicItem type='css' size='5px' border='10px' fontSize='15px' to={`/topics/css`}>CSS</TopicItem>
-                    </PopularTag>
-                    <PopularTag>
-                        <TopicItem type='netlify' size='5px' border='10px' fontSize='15px' to={`/topics/netlify`}>Netlify</TopicItem>
-                    </PopularTag>
+                    {group.map(topic => (
+                        <li key={topic.fieldValue}>
+                            <TopicItem type={topic.fieldValue} size='5px' fontSize='14px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                            {topic.fieldValue}
+                            </TopicItem>
+                        </li>
+                        ))} 
                 </PopularTagsList>
             </RightSectionItem>
         </RightSectionWrapper>

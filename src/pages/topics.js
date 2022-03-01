@@ -18,8 +18,8 @@ import { PageBody } from "../components/PageBody"
 const TagList = styled.div`
   padding-top: 45px;
   padding-bottom: 45px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
   list-style: none;
   display: grid;
   justify-items: center;
@@ -27,6 +27,15 @@ const TagList = styled.div`
   row-gap: 100px;
   horizontal-grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
+  margin-left: auto;
+  margin-right: auto;
+  
+  li {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   @media screen and (max-width: 768px) {
     & {

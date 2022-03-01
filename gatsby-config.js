@@ -11,6 +11,17 @@ module.exports = {
   },
   pathPrefix: config.pathPrefix,
   plugins: [
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleTagManager: {
+          trackingId: 'GTM-PQFD7BC', // leave empty if you want to disable the tracker
+          cookieName: 'gatsby-gdpr-google-analytics=true', // default
+          dataLayerName: 'dataLayer', // default
+          anonymize: true,
+        },
+      },
+    },
     'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-canonical-urls`,

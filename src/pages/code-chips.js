@@ -5,7 +5,6 @@ import Hero from '../components/Hero'
 import styled from 'styled-components'
 import LeftPageBody from '../components/LeftPageBody'
 import RightSection from '../components/RightSection'
-import Alert from '../components/alert'
 
 const PageBody = styled.div`
   background-color: var(--color-lighterBackground);
@@ -29,7 +28,6 @@ class CodeChipsPage extends React.Component {
             <Layout>
                 <SEO title={`Code Chips`} />
                 <Hero title="Code Chips" />
-                <Alert alertText='This page is currently under construction.' />
                 <PageBody>
                   <LeftPageBody>
                     <h1>Coming Soon</h1>

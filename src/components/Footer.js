@@ -150,7 +150,7 @@ const Footer = () => {
       <FooterLinks>
         <FooterLinkItem to='/about'>About</FooterLinkItem>
         <FooterLinkItem to='/terms'>Terms</FooterLinkItem>
-        <FooterLinkItem to='/advertise'>Advertise</FooterLinkItem>
+        <FooterLinkItem to='/privacy'>Privacy</FooterLinkItem>
       </FooterLinks>
       <FooterText><FooterSpanText to='/'>Code Circuit</FooterSpanText> © 2021</FooterText>
       <FooterText>

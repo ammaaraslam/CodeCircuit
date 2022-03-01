@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import Header from './Header'
 import Footer from './Footer'
 import 'prismjs/themes/prism-tomorrow.css'
 import { GlobalStyle } from './Commons'
-
+import CookieConsentBar from './cookieConsentBar'
 const SiteContent = styled.div`
   margin: 0;
   background-color: var(--color-lighterBackground);
@@ -35,6 +35,7 @@ class Template extends React.Component {
         <SiteContent>
           <Header />
           {children}
+          <CookieConsentBar />
           <Footer />
         </SiteContent>
       </>

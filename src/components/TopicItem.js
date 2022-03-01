@@ -584,10 +584,10 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
               break;
         default:
               if (hover) {
-                tagStyle = defaultColorHover;
+                tagStyle = defaultColor;
             }
               else {
-                tagStyle = defaultColor;
+                tagStyle = defaultColorHover;
               }
               break;
       }

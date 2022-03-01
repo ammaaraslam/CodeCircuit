@@ -10,6 +10,7 @@ import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 import Button from '../components/Button'
 import Bio from '../components/Bio'
+import kebabCase from "lodash/kebabCase"
 
 
 const HomeHero = styled.div`
@@ -220,6 +221,7 @@ class BlogList extends React.Component {
   
   render() {
     const posts = this.props.data.posts.edges
+    const group = this.props.data.topics.group
     return (
       <Layout>
         <SEO />
@@ -250,12 +252,13 @@ class BlogList extends React.Component {
               <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">All Topics ➡ </Button></AllBtn>
             </SectionTitle>
             <Topics>
-              <TopicItem type="gatsby" to='/topics/gatsby' fontSize='28px'>Gatsby</TopicItem>
-              <TopicItem type="react" to='/topics/react' fontSize='28px'>React</TopicItem>
-              <TopicItem type="python" to='/topics/python' fontSize='28px'>Python</TopicItem>
-              <TopicItem type="django" to='/topics/django' fontSize='28px'>Django</TopicItem>
-              <TopicItem type="css" to='/topics/css' fontSize='28px'>CSS</TopicItem>
-              <TopicItem type="git" to='/topics/git' fontSize='28px'>Git</TopicItem>
+              {group.map(topic => (
+                <li key={topic.fieldValue}>
+                    <TopicItem type={topic.fieldValue} size='20px' fontSize='26px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                    {topic.fieldValue}
+                    </TopicItem>
+                </li>
+                ))}
             </Topics>
           </TopicsSection>
           <AuthorSection>
@@ -281,6 +284,12 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    topics: allMarkdownRemark(limit: 2000) {
+      group(field: frontmatter___topics) {
+        fieldValue
+        totalCount
       }
     }
     posts: allMdx(
