@@ -4,7 +4,6 @@ import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies';
 import styled from 'styled-components';
 import '@fontsource/rubik/500.css'
 import '@fontsource/roboto/400.css'
-
 function isBrowser() {
   return typeof window !== 'undefined';
 }
