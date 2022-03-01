@@ -25,7 +25,7 @@ class Translations extends React.Component {
 
     return (
       <TranslationContainer>
-        <InfoText>This tutorial also exists in: </InfoText>
+        <InfoText>This article also exists in: </InfoText>
         {translations.map((translation, i) => {
           return (
             <Fragment key={`translation-${i}`}>

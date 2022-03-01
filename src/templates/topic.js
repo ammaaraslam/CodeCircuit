@@ -29,8 +29,8 @@ class Topics extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <SEO title={`Tutorials on ${this.props.pageContext.topic}`} />
-        <Hero title={`Tutorials on ${pageTitle}`} />
+        <SEO title={`Articles on ${this.props.pageContext.topic}`} />
+        <Hero title={`Articles on ${pageTitle}`} />
 
         <PageBody>
           <LeftPageBody>

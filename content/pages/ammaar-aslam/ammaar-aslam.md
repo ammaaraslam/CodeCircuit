@@ -5,7 +5,7 @@ cover: ./gatsby-cover.png
 disqus: false
 ---
 
-Hi I'm **Ammaar Aslam**, a passionate  self-taught programmer from [Colombo, Sri Lanka](https://en.wikipedia.org/wiki/Sri_Lanka). I'm the founder and author of Code Circuit. I built Code Circuit as a way to help others to learn and improve their programming skils by writing simple and practical [tutorials](/tutorials) on  programming related [topics](/topics).
+Hi I'm **Ammaar Aslam**, a passionate  self-taught programmer from [Colombo, Sri Lanka](https://en.wikipedia.org/wiki/Sri_Lanka). I'm the founder and author of Code Circuit. I built Code Circuit as a way to help others to learn and improve their programming skils by writing simple and practical [articles](/articles) on  programming related [topics](/topics).
 
 ## My Programming Backstory
 I learned [Python](/topics/python) as my first programming language when I was 12. I chose python not only because it was one of the most popular programming languages, but also because the learning curve was very easy compared to others. I learned it through free courses and youtube videos. [FreeCodeCamp](https://freecodecamp.org) was also a very useful resource for me to learn python *(very grateful for these resources for making these free)*. Since python was mostly used in the backend of applications, I had an interest in learning to build good user interfaces. That's when i started to learn HTML, CSS & JavaScript *properly* then [React](/topics/react) for frontend web development and flutter for mobile development.
@@ -20,7 +20,7 @@ Here is my recommendation list if you are interested in the tools I use, my favo
 - This site's [tech stack](/about/#tools)
 
 
->I'm thinking of learning ElectronJS in the future for building desktop applications.I might share what I'm learning through tutorials, so stay tuned for that.
+>I'm thinking of learning ElectronJS in the future for building desktop applications.I might share what I'm learning through articles, so stay tuned for that.
 
 ## Get in touch
 - **Twitter** - [@itsammaar_7](https://twitter.com/itsammaar_7)

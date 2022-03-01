@@ -183,13 +183,13 @@ const RightSection = () => {
                     <AuthorImage src={Avatar} alt='Author Image' />
                     <AboutAuthor dangerouslySetInnerHTML={{ __html: authorDescription }} />
                 </AuthorInfo>
-                <RightSectionTitle>Recent Tutorials</RightSectionTitle>
+                <RightSectionTitle>Recent Articles</RightSectionTitle>
                 {posts.map(post => {
                     const title = post.node.frontmatter.title
                     const slug = post.node.frontmatter.slug
                     return (
                     <RecentArticles key={slug}>
-                        <RecentArticlesLink to={`/tutorial/${slug}`}>
+                        <RecentArticlesLink to={`/article/${slug}`}>
                             {title}
                         </RecentArticlesLink>
                     </RecentArticles>

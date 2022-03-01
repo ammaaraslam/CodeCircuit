@@ -150,7 +150,7 @@ const Header = (props) => {
 
         <NavMenu>
           <NavItem>
-            <NavLink to="/tutorials"><TutorialsIcon /> Tutorials</NavLink>
+            <NavLink to="/articles"><TutorialsIcon /> Articles</NavLink>
           </NavItem>
           <NavItem>
             <NavLink to="/series"><SeriesIcon /> Series</NavLink>

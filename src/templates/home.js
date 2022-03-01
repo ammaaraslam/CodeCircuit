@@ -156,21 +156,25 @@ const TopicsSection = styled.div`
   background-position: center;
   background-size: cover;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   z-index: 5;
 `
 
 const Topics = styled.div`
-  padding-top: 40px;
+  padding-top: 70px;
   padding-left: 45px;
   padding-right: 45px;
+  padding-bottom: 40px;
   list-style: none;
   display: grid;
   justify-items: center;
-  grid-gap: 50px;
+  grid-gap: 60px;
   grid-template-columns: repeat(3, 1fr);
   font-family: 'Rubik';
-
+  li {
+    padding: 0;
+    
+  }
   @media screen and (max-width: 768px) {
     & {
       grid-template-columns: repeat(1, 1fr);
@@ -233,14 +237,14 @@ class BlogList extends React.Component {
             {/* <HomeHeroInfoPara>
               Programming and Web Development tutorials.
             </HomeHeroInfoPara> */}
-              <Button type={'big-primary'} to='/tutorials'>Get Started</Button>
+              <Button type={'big-primary'} to='/articles'>Get Started</Button>
           </HomeHeroInfo>
         </HomeHero>
         <HomeBodyWrapper>
           <RecentPostsSection>
             <SectionTitle>
               Recent Articles
-              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/tutorials">All Posts ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/articles">All Posts ➡ </Button></AllBtn>
             </SectionTitle>
             <RecentPosts>
               <PostsList posts={posts} />

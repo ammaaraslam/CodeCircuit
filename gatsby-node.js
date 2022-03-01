@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const HomeListPostsTemplate = require.resolve(
     './src/templates/home.js'
   )
-  const AllListPostsTemplate = require.resolve('./src/templates/tutorials.js')
+  const AllListPostsTemplate = require.resolve('./src/templates/articles.js')
   const allMarkdownQuery = await graphql(`
     {
       allMarkdown: allMdx(
@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
   Array.from({ length: nbPages }).forEach((_, i) => {
     createPage({
-      path: i === 0 ? `/tutorials` : `/pages/${i + 1}`,
+      path: i === 0 ? `/articles` : `/pages/${i + 1}`,
       component: AllListPostsTemplate,
       context: {
         limit: postsPerPage,
@@ -105,7 +105,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const next = index === 0 ? null : posts[index - 1].node
 
     createPage({
-      path: `/tutorial/${post.node.frontmatter.slug}`,
+      path: `/article/${post.node.frontmatter.slug}`,
       component: BlogPostTemplate,
       context: {
         slug: post.node.frontmatter.slug,

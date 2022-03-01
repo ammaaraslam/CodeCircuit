@@ -181,13 +181,13 @@ const PostsListItem = props => {
  
   return (
     <Post>
-      <PostImage style={{ backgroundImage: `url("${heroImg}")` }} to={`/tutorial/${slug}`} />
+      <PostImage style={{ backgroundImage: `url("${heroImg}")` }} to={`/article/${slug}`} />
       <PostHeader>
         <PostTags>
           <TagList topics={topics} />
         </PostTags>
         <h2>
-          <PostTitleLink to={`/tutorial/${slug}`}>
+          <PostTitleLink to={`/article/${slug}`}>
             {defaultLang !== language && <Flag language={language} />}
             {title}
           </PostTitleLink>
@@ -205,7 +205,7 @@ const PostsListItem = props => {
           <ReadingTime min={timeToRead} />
         </FooterLine>
         <ReadPost>
-          <ReadPostText to={`/tutorial/${slug}`} aria-label={`View ${title} tutorial`}>Read More <RightArrowIcon /></ReadPostText>
+          <ReadPostText to={`/article/${slug}`} aria-label={`View ${title} article`}>Read More <RightArrowIcon /></ReadPostText>
         </ReadPost>
       </footer>
     </Post>

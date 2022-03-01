@@ -25,4 +25,4 @@ Also checkout the [uses page](/uses).
 - Try the [topics page](/topics).
 - Learn more [about me](/ammaar-aslam).
 - Check out my [recommended resources](/resources).
-- Want me to write a tutorial on something? Shoot me a tweet [@itsammaar_7](https://twitter.com/itsammaar_7).
+- Want me to write a article on something? Shoot me a tweet [@itsammaar_7](https://twitter.com/itsammaar_7).

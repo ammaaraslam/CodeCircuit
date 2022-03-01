@@ -205,7 +205,7 @@ class BlogPostTemplate extends React.Component {
           <Bio />
         </AboutAuthor>
         <TitleContainer>
-          <SectionTitle>Related Tutorials</SectionTitle>
+          <SectionTitle>Related Articles</SectionTitle>
         </TitleContainer>
         <PrevNextPost previous={previous} next={next} />
       </Layout>

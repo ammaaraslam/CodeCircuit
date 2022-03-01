@@ -28,8 +28,8 @@ class AllArticlesPage extends React.Component {
 
         return (
             <Layout>
-                <SEO title={`All Tutorials`} />
-                <Hero title="All Tutorials" />
+                <SEO title={`All Articles`} />
+                <Hero title="All Articles" />
                 <PageBody>
                   <LeftPageBody>
                     <PostsList posts={posts} />

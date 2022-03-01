@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'Code Circuit',
-  siteDescription: 'Programming and Web Development Tutorials, Tips and Tricks',
+  siteDescription: 'Programming and Web Development Articles, Tips and Tricks',
   authorName: 'Ammaar Aslam',
   twitterUsername: '_maxpou',
   authorAvatar: 'avatar.jpg', // file in content/images

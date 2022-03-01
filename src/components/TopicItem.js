@@ -12,6 +12,9 @@ const Topic = styled(Link)`
   color: var(--color-secondaryText);
   font-family: 'Rubik';
   transition: all 0.15s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
 
 `
 
@@ -30,7 +33,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     color: 'var(--color-darkerBackground)',
     fontSize : fontSize,
     padding : size,
-    transform : 'scale(1.04)',
+    
   }
   const gatsby = {
     backgroundColor : 'var(--color-gatsbyColor)',
@@ -39,7 +42,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     color: 'var(--color-darkerBackground)',
     fontSize : fontSize,
     padding : size,
-    transform : 'scale(1.04)',
+    
   }
   
   const react = {
@@ -48,7 +51,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     borderRadius : border,
     color: 'var(--color-darkerBackground)',
     fontFamily: 'Rubik',
-    transform : 'scale(1.04)',
+    
     fontSize : fontSize,
     padding : size,
   }
@@ -57,16 +60,16 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     borderRadius : border,
     border : '3px solid var(--color-pythonColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
     padding : size,
-    transform : 'scale(1.04)',
+    
   }
   const js = {
     backgroundColor : 'var(--color-jsColor)',
     borderRadius : border,
-    transform : 'scale(1.04)',
+    
     fontSize : fontSize,
     fontFamily: 'Rubik',
     border : '3px solid var(--color-jsColor)',
@@ -76,7 +79,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const html = {
     backgroundColor : 'var(--color-htmlColor)',
     borderRadius : border,
-    transform : 'scale(1.04)',
+    
     border : '3px solid var(--color-htmlColor)',
     fontSize : fontSize,
     color: 'var(--color-darkerBackground)',
@@ -87,7 +90,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const css= {
     backgroundColor : 'var(--color-cssColor)',
     padding : size,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     textTransform : 'uppercase',
     color: 'var(--color-darkerBackground)',
@@ -98,7 +101,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const django = {
     backgroundColor : 'var(--color-djangoColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     color: 'var(--color-darkerBackground)',
     padding : size,
     fontFamily: 'Rubik',
@@ -108,7 +111,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const flask = {
     backgroundColor : 'var(--color-flaskColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
     padding : size,
@@ -118,7 +121,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const nodejs = {
     backgroundColor : 'var(--color-nodejsColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
     borderRadius : border,
@@ -128,7 +131,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const flutter = {
     backgroundColor : 'var(--color-flutterColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
     borderRadius : border,
@@ -138,7 +141,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const graphql = {
     backgroundColor : 'var(--color-graphqlColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
     borderRadius : border,
@@ -148,7 +151,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const netlify = {
     backgroundColor : 'var(--color-netlifyColor)',
     borderRadius : border,
-    transform : 'scale(1.04)',
+    
     fontSize : fontSize,
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
@@ -158,7 +161,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const git = {
     backgroundColor : 'var(--color-gitColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     borderRadius : border,
     color: 'var(--color-darkerBackground)',
@@ -168,7 +171,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const sass = {
     backgroundColor : 'var(--color-sassColor)',
     borderRadius : border,
-    transform : 'scale(1.04)',
+    
     fontSize : fontSize,
     fontFamily: 'Rubik',
     color: 'var(--color-darkerBackground)',
@@ -178,7 +181,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   const github = {
     backgroundColor : 'var(--color-githubColor)',
     fontSize : fontSize,
-    transform : 'scale(1.04)',
+    
     fontFamily: 'Rubik',
     borderRadius : border,
     color: 'var(--color-darkerBackground)',
@@ -194,6 +197,7 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     fontFamily: 'Rubik',
     color: 'var(--color-primaryColor)',
     padding : size,
+    
   }
   const gatsbyHover = {
     border : '3px solid var(--color-gatsbyColor)',

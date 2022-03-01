@@ -14,7 +14,7 @@ Website Version 1 completed in December 2021
     - Completed home hero responsiveness.
     - Completed home sections responsiveness.
     - Completed entire home screen and footer responsiveness.
-    - Completed Tutorials page and Topics page.
+    - Completed Articles page and Topics page.
     - Completed Entire Website Responsiveness.
 15/02/2022
     - Completed V1 of entire website and added google analytics 4 using tag manager
