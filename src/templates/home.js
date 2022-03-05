@@ -11,6 +11,7 @@ import '@fontsource/roboto/400.css'
 import Button from '../components/Button'
 import Bio from '../components/Bio'
 import kebabCase from "lodash/kebabCase"
+import {HiArrowRight} from 'react-icons/hi'
 
 
 const HomeHero = styled.div`
@@ -244,7 +245,7 @@ class BlogList extends React.Component {
           <RecentPostsSection>
             <SectionTitle>
               Recent Articles
-              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/articles">All Posts ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/articles">All Posts <HiArrowRight /> </Button></AllBtn>
             </SectionTitle>
             <RecentPosts>
               <PostsList posts={posts} />
@@ -253,7 +254,7 @@ class BlogList extends React.Component {
           <TopicsSection>
             <SectionTitle>
               Popular Topics
-              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">All Topics ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">All Topics <HiArrowRight /> </Button></AllBtn>
             </SectionTitle>
             <Topics>
               {group.map(topic => (
@@ -268,7 +269,7 @@ class BlogList extends React.Component {
           <AuthorSection>
             <SectionTitle>
               About The Author
-              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/ammaar-aslam">Learn More ➡ </Button></AllBtn>
+              <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/ammaar-aslam">Learn More <HiArrowRight /> </Button></AllBtn>
             </SectionTitle>
             <AuthorInfo>
               <Bio />

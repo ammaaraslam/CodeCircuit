@@ -77,16 +77,27 @@ const Hero = props => {
   const { fluid } = useSiteImages(siteCover)
   const heroImg = props.heroImg || fluid.src
   const { date, topics, timeToRead } = props
-  
+  const ownCover = props.ownCover
+
+  if (ownCover) {
+    return (
+      <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
+        <TitleContainer>
+          <HeroTitle>{props.title}</HeroTitle>
+          <ContentHeader date={date} topics={topics} timeToRead={timeToRead} />
+          <BackgroundAccredit>
+            Background Image by <a href={props.urlToAuthor} target="_blank" rel="noreferrer" >{props.nameOfAuthor}</a> on <a href={props.urlToProvider} target="_blank" rel="noreferrer" >{props.nameOfProvider}</a>
+          </BackgroundAccredit>
+        </TitleContainer>
+      </HeroContainer>
+    )
+  }
 
   return (
     <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
       <TitleContainer>
         <HeroTitle>{props.title}</HeroTitle>
         <ContentHeader date={date} topics={topics} timeToRead={timeToRead} />
-        <BackgroundAccredit>
-          Background Image by <a href={props.urlToAuthor} target="_blank" rel="noreferrer" >{props.nameOfAuthor}</a> on <a href={props.urlToProvider} target="_blank" rel="noreferrer" >{props.nameOfProvider}</a>
-          </BackgroundAccredit>
       </TitleContainer>
     </HeroContainer>
   )

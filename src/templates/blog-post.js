@@ -181,6 +181,7 @@ class BlogPostTemplate extends React.Component {
           nameOfAuthor={post.frontmatter.nameOfAuthor}
           urlToProvider={post.frontmatter.urlToProvider}
           nameOfProvider={post.frontmatter.nameOfProvider}
+          ownCover={post.frontmatter.ownCover}
         />
 
         <PageBody>
@@ -243,6 +244,7 @@ export const pageQuery = graphql`
         nameOfAuthor
         urlToProvider
         nameOfProvider
+        ownCover
       }
     }
   }

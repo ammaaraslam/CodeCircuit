@@ -4,6 +4,7 @@ slug: hello-world
 cover: ./typewriter.webp
 date: 2022-02-27
 language: en
+ownCover: true
 urlToAuthor: https://www.pexels.com/@olly?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
 nameOfAuthor: Andrea Piacquadio
 urlToProvider: https://www.pexels.com/photo/writer-working-on-typewriter-in-office-3808904/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
