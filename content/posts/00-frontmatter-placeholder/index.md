@@ -11,6 +11,7 @@ language: fr
 cover: ./cover.jpeg
 imageShare: ./cover.jpeg
 topics: ['fake']
+ownCover: false
 translations:
   - link: 'https://www.maxpou.fr/about'
     language: 'french'

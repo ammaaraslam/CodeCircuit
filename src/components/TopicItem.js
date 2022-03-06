@@ -27,8 +27,8 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
       setHover(!hover);
   };
   const defaultColor = {
-    backgroundColor : 'var(--color-primaryColor)',
-    border : '3px solid var(--color-primaryColor)',
+    backgroundColor : 'var(--color-secondaryColor)',
+    border : '3px solid var(--color-secondaryColor)',
     borderRadius : border,
     color: 'var(--color-darkerBackground)',
     fontSize : fontSize,
@@ -189,13 +189,55 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     padding : size,
   }
   const defaultColorHover = {
-    border : '3px solid var(--color-primaryColor)',
+    border : '3px solid var(--color-secondaryColor)',
     backgroundColor: 'transparent',
     borderRadius : border,
     
     fontSize : fontSize,
     fontFamily: 'Rubik',
-    color: 'var(--color-primaryColor)',
+    color: 'var(--color-secondaryColor)',
+    padding : size,
+    
+  }
+  const vscode = {
+    backgroundColor : 'var(--color-vscodeColor)',
+    fontSize : fontSize,
+    
+    fontFamily: 'Rubik',
+    borderRadius : border,
+    color: 'var(--color-darkerBackground)',
+    border : '3px solid var(--color-vscodeColor)',
+    padding : size,
+  }
+  const vscodeHover = {
+    border : '3px solid var(--color-vscodeColor)',
+    backgroundColor: 'transparent',
+    borderRadius : border,
+    
+    fontSize : fontSize,
+    fontFamily: 'Rubik',
+    color: 'var(--color-vscodeColor)',
+    padding : size,
+    
+  }
+  const extensions = {
+    backgroundColor : 'var(--color-extensionsColor)',
+    fontSize : fontSize,
+    
+    fontFamily: 'Rubik',
+    borderRadius : border,
+    color: 'var(--color-darkerBackground)',
+    border : '3px solid var(--color-extensionsColor)',
+    padding : size,
+  }
+  const extensionsHover = {
+    border : '3px solid var(--color-extensionsColor)',
+    backgroundColor: 'transparent',
+    borderRadius : border,
+    
+    fontSize : fontSize,
+    fontFamily: 'Rubik',
+    color: 'var(--color-extensionsColor)',
     padding : size,
     
   }
@@ -346,6 +388,22 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   };
   let tagStyle;
     switch (type) {
+      case 'extensions':
+        if (hover) {
+          tagStyle = extensions;
+        }
+        else {
+          tagStyle = extensionsHover;
+        }
+        break;
+      case 'vs code':
+        if (hover) {
+          tagStyle = vscode;
+        }
+        else {
+          tagStyle = vscodeHover;
+        }
+        break;
       case 'gatsby':
         if (hover) {
           tagStyle = gatsby;

@@ -79,7 +79,7 @@ const Hero = props => {
   const { date, topics, timeToRead } = props
   const ownCover = props.ownCover
 
-  if (ownCover) {
+  if (!ownCover) {
     return (
       <HeroContainer style={{ backgroundImage: `url("${heroImg}")` }}>
         <TitleContainer>

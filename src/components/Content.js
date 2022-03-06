@@ -7,7 +7,7 @@ import '@fontsource/roboto/500.css'
 const ContentBody = styled.div`
   line-height: 1.6;
   color: var(--color-primaryText);
-  & > h2 {
+  & > h1 {
     color: var(--color-primaryText);
     scroll-margin-top: 5rem;
     font-family: 'Rubik';
@@ -18,7 +18,7 @@ const ContentBody = styled.div`
       }
     }
   }
-  & > h3 {
+  & > h2 {
     padding-top: 0.5rem;
     color: var(--color-primaryText);
     font-family: 'Rubik';

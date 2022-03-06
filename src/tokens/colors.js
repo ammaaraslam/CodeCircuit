@@ -33,6 +33,7 @@ const colors = {
   lighterDarkColor: '#00152b',
 
   gatsbyColor: '#452475',
+  extensionsColor: '#E4959E',
   reactColor: '#61dafb',
   pythonColor: '#1d405d',
   jsColor: '#efd81d',
@@ -47,6 +48,7 @@ const colors = {
   gitColor: '#e94e31',
   sassColor: '#c76494',
   githubColor: '#1b1f23',
+  vscodeColor: '#0066b8',
   lightLogo: CodeCircuitLogoDark,
   darkLogo: CodeCircuitLogoLight,
 
