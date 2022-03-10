@@ -13,7 +13,7 @@ const HeroContainer = styled.div`
   overflow: hidden;
   top: 0;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -35,10 +35,10 @@ const TitleContainer = styled.div`
 const HeroTitle = styled.h1`
   font-weight: 700;
   font-size: 4.1rem;
-  background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
+  background: -webkit-linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 2px var(--color-primaryBackground); /* width and color */
+  -webkit-text-stroke: 10px transparent;
+  color: var(--color-textInverted);
   margin: 10px 50px;
   text-transform: capitalize;
   @media screen and (max-width: 768px) {

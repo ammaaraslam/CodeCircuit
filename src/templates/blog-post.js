@@ -104,19 +104,18 @@ const Toc = styled.ul`
   
 
 `
-const SectionTitle = styled.div`
+const SectionTitle = styled.h1`
     margin-left: 3%;
     text-decoration: none;
     font-size: 3.3rem;
     padding-top: 20px;
     padding-bottom: 10px;
-    font-weight: 1500;
+    font-family: 'Rubik';
     line-height: 1.3cm;
     color: var(--color-secondaryText);
     border-bottom: 2px solid;
     border-image: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
     border-image-slice: 1;
-    font-family: 'Rubik';
 `
 const TitleContainer = styled.div`
   background-color: var(--color-darkerBackground);

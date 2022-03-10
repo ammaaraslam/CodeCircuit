@@ -4,7 +4,12 @@ slug: best-vs-code-extensions-for-developers
 date: 2022-03-05
 cover: ./best-vs-code-extensions.webp
 topics: ['vs code', extensions]
-ownCover: true
+ownCover: false
+urlToAuthor: https://www.pexels.com/@antonio-batinic-2573434?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
+nameOfAuthor: Antonio Batinić
+urlToProvider: https://www.pexels.com
+nameOfProvider: Pexels
+
 ---
 
 VS Code is one of the most widely used and loved IDE, developers all around the world use to build software. Whether you're a beginner who is writing basic HTML or professional building desktop applications, chances are you might be one of the many developers who use VS Code.

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
-import '@fontsource/rubik/800.css'
+import '@fontsource/rubik/700.css'
 import '@fontsource/roboto/500.css'
 
 const ContentBody = styled.div`
