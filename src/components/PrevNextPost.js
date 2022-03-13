@@ -195,7 +195,7 @@ const FooterLine = styled.div`
 const PrevNextPost = props => {
   const { previous, next } = props
   const articles = [previous, next].filter(i => i).map(item => ({ node: item }))
-  const { siteCover, defaultLang } = useSiteMetadata()
+  const { siteCover } = useSiteMetadata()
   const { fluid } = useSiteImages(siteCover)
 
   return (
@@ -210,7 +210,6 @@ const PrevNextPost = props => {
               cover,
               title,
               slug,
-              language,
               date
             } = article.node.frontmatter
             const heroImg = (cover && cover.publicURL) || fluid.src
@@ -226,7 +225,6 @@ const PrevNextPost = props => {
                     </PostTags>
                     <h2>
                       <PostTitleLink to={`/article/${slug}`}>
-                        {defaultLang !== language && <Flag language={language} />}
                         {title}
                       </PostTitleLink>
                     </h2>
