@@ -34,6 +34,7 @@ const colors = {
 
   gatsbyColor: '#452475',
   extensionsColor: '#E4959E',
+  webScrapingColor: '#bdb2ff',
   reactColor: '#61dafb',
   pythonColor: '#1d405d',
   jsColor: '#efd81d',

@@ -13,7 +13,7 @@ import kebabCase from "lodash/kebabCase"
 const RightSectionWrapper = styled.aside`
     align-items: center;
     float: right;
-    max-width: 26.5%;
+    max-width: 28%;
     transform: translateY(-50px);
     display: grid;
     justify-items: center;
@@ -103,11 +103,12 @@ const PopularTagsList = styled.div`
     display: grid;
     justify-items: center;
     padding-top: 10px;
+    max-width: 70%;
     grid-gap: 0;
     row-gap: 20px;
     horizontal-grid-gap: 100px;
     column-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     list-style: none;
 `
 
@@ -143,7 +144,7 @@ const RecentArticlesLink = styled(Link)`
 const RightSection = () => {
     const data = useStaticQuery(graphql`
     query {
-        topics: allMarkdownRemark(limit: 2000) {
+        topics: allMarkdownRemark(limit: 2000, skip: 1) {
             group(field: frontmatter___topics) {
               fieldValue
               totalCount

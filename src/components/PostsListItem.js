@@ -130,6 +130,11 @@ const Excerpt = styled.p`
 `
 
 const PostTitleLink = styled(Link)`
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
   font-family: 'Rubik';
   font-size: 1.6rem;
   font-weight: 1000;
@@ -140,6 +145,7 @@ const PostTitleLink = styled(Link)`
   text-decoration-color: var(--color-linkColorChangeInverted);
   text-decoration-thickness: 2px;
   transition: all 0.1s;
+
   &:hover {
     color: var(--color-linkColorChangeInverted);
     text-decoration: underline;
@@ -186,13 +192,12 @@ const PostsListItem = props => {
         <PostTags>
           <TagList topics={topics} />
         </PostTags>
-        <h2>
-          <PostTitleLink to={`/article/${slug}`}>
+      </PostHeader>
+      <PostTitleLink to={`/article/${slug}`}>
             {defaultLang !== language && <Flag language={language} />}
             {title}
-          </PostTitleLink>
-        </h2>
-      </PostHeader>
+      </PostTitleLink>
+
 
       <section>
         <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />

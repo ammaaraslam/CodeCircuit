@@ -63,12 +63,12 @@ const Toc = styled.ul`
   position: sticky;
   transform: translateY(-69px);
   top: 230px;
-  left: calc(50% + 380px);
+  left: calc(50% + 340px);
   max-height: 70vh;
   background-color: var(--color-darkerBackground);
   border: 10px solid var(--color-primaryBackground);
   border-radius: 40px;
-  width: 280px;
+  max-width: 290px;
   display: flex;
   padding: 15px;
   list-style-type: none;

@@ -8,7 +8,7 @@ const Topic = styled(Link)`
   padding: 30px;
   border-radius: 15px;
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--color-secondaryText);
   font-family: 'Rubik';
   transition: all 0.15s ease-in-out;
@@ -241,6 +241,27 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     padding : size,
     
   }
+  const webScraping = {
+    backgroundColor : 'var(--color-webScrapingColor)',
+    fontSize : fontSize,
+    
+    fontFamily: 'Rubik',
+    borderRadius : border,
+    color: 'var(--color-darkerBackground)',
+    border : '3px solid var(--color-webScrapingColor)',
+    padding : size,
+  }
+  const webScrapingHover = {
+    border : '3px solid var(--color-webScrapingColor)',
+    backgroundColor: 'transparent',
+    borderRadius : border,
+    
+    fontSize : fontSize,
+    fontFamily: 'Rubik',
+    color: 'var(--color-webScrapingColor)',
+    padding : size,
+    
+  }
   const gatsbyHover = {
     border : '3px solid var(--color-gatsbyColor)',
     backgroundColor: 'transparent',
@@ -394,6 +415,14 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
         }
         else {
           tagStyle = extensionsHover;
+        }
+        break;
+      case 'web scraping':
+        if (hover) {
+          tagStyle = webScraping;
+        }
+        else {
+          tagStyle = webScrapingHover;
         }
         break;
       case 'vs code':

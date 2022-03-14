@@ -256,6 +256,7 @@ class BlogList extends React.Component {
               Popular Topics
               <AllBtn><Button type="mini-primary" textColor='var(--color-secondaryText)' to="/topics">All Topics <HiArrowRight /> </Button></AllBtn>
             </SectionTitle>
+            
             <Topics>
               {group.map(topic => (
                 <li key={topic.fieldValue}>
@@ -291,7 +292,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    topics: allMarkdownRemark(limit: 2000) {
+    topics: allMarkdownRemark(limit: 2000, skip: 1) {
       group(field: frontmatter___topics) {
         fieldValue
         totalCount

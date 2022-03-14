@@ -7,7 +7,7 @@ const LeftPageBodyContainer = styled.section`
     border-radius: 40px;
     align-items: center;
     float: left;
-    width: 72%;
+    width: 70%;
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 35px;

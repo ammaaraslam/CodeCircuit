@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import useSiteMetadata from '../hooks/use-site-config'
 import useSiteImages from '../hooks/use-site-images'
 import TagList from './TagList'
-import Flag from './Flag'
 import { ReadingTime, Bull } from './Commons'
 import {HiArrowRight} from 'react-icons/hi'
 import Time from './Time'
@@ -158,6 +157,10 @@ const Excerpt = styled.p`
 `
 
 const PostTitleLink = styled(Link)`
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-family: 'Rubik';
   font-size: 1.6rem;
   font-weight: 1000;
@@ -223,12 +226,10 @@ const PrevNextPost = props => {
                     <PostTags>
                       <TagList topics={topics} />
                     </PostTags>
-                    <h2>
-                      <PostTitleLink to={`/article/${slug}`}>
-                        {title}
-                      </PostTitleLink>
-                    </h2>
                   </PostHeader>
+                  <PostTitleLink to={`/article/${slug}`}>
+                        {title}
+                  </PostTitleLink>
                   <section>
                     <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
                   </section>
