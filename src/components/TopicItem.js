@@ -418,276 +418,106 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
   let tagStyle;
     switch (type) {
       case 'extensions':
-        if (hover) {
           tagStyle = extensions;
-        }
-        else {
-          tagStyle = extensionsHover;
-        }
         break;
       case 'web scraping':
-        if (hover) {
           tagStyle = webScraping;
-        }
-        else {
-          tagStyle = webScrapingHover;
-        }
         break;
       case 'vs code':
-        if (hover) {
           tagStyle = vscode;
-        }
-        else {
-          tagStyle = vscodeHover;
-        }
         break;
       case 'gatsby':
-        if (hover) {
           tagStyle = gatsby;
-        }
-        else {
-          tagStyle = gatsbyHover;
-        }
         break;
       case 'react':
-        if (hover) {
           tagStyle = react;
-        }
-        else {
-          tagStyle = reactHover;
-        }
         break;
       case 'python':
-        if (hover) {
           tagStyle = python;
-        }
-        else {
-          tagStyle = pythonHover;
-        }
         break;
       case 'js':
-        if (hover) {
           tagStyle = js;
-        }
-        else {
-          tagStyle = jsHover;
-          }
           break;
         case 'html':
-          if (hover) {
             tagStyle = html;
-            }
-          else {
-            tagStyle = htmlHover;
-            }
           break;
         case 'css':
-          if (hover) {
             tagStyle = css;
-            }
-          else {
-            tagStyle = cssHover;
-            }
           break;
         case 'django':
-          if (hover) {
             tagStyle = django;
-          }
-          else {
-            tagStyle = djangoHover;
-          }
           break;
         case 'flask':
-          if (hover) {
             tagStyle = flask;
-          }
-          else {
-            tagStyle = flaskHover;
-          }
           break;
         case 'nodejs':
-          if (hover) {
             tagStyle = nodejs;
-          }
-          else {
-            tagStyle = nodejsHover;
-            }
           break;
         case 'flutter':
-          if (hover) {
             tagStyle = flutter;
-          }
-          else {
-            tagStyle = flutterHover;
-          }
           break;
         case 'graphql':
-          if (hover) {
             tagStyle = graphql;
-          }
-          else {
-            tagStyle = graphqlHover;
-            }
           break;
         case 'netlify':
-          if (hover) {
             tagStyle = netlify;
-          }
-          else {
-            tagStyle = netlifyHover;
-          }
           break;
         case 'git':
-          if (hover) {
             tagStyle = git;
-          }
-          else {
-            tagStyle = gitHover;
-          }
           break;
         case 'github':
-          if (hover) {
             tagStyle = github;
-          }
-          else {
-            tagStyle = githubHover;
-          }
           break;
         case 'sass':
-          if (hover) {
             tagStyle = sass;
-        }
-          else {
-            tagStyle = sassHover;
-          }
           break;
-          case 'gatsby-inverted':
-            if (hover) {
-              tagStyle = gatsbyHover;
-            }
-            else {
-              tagStyle = gatsby;
-            }
-            break;
-          case 'react-inverted':
-            if (hover) {
-              tagStyle = reactHover;
-            }
-            else {
-              tagStyle = react;
-            }
-            break;
-          case 'python-inverted':
-            if (hover) {
+        case 'gatsby-inverted':
+            tagStyle = gatsbyHover;
+          break;
+        case 'react-inverted':
+            tagStyle = reactHover;
+          break;
+        case 'python-inverted':
               tagStyle = pythonHover;
-            }
-            else {
-              tagStyle = python;
-            }
             break;
           case 'js-inverted':
-            if (hover) {
               tagStyle = jsHover;
-            }
-            else {
-              tagStyle = js;
-              }
               break;
             case 'html-inverted':
-              if (hover) {
                 tagStyle = htmlHover;
-                }
-              else {
-                tagStyle = html;
-                }
               break;
             case 'css-inverted':
-              if (hover) {
                 tagStyle = cssHover;
-                }
-              else {
-                tagStyle = css;
-                }
               break;
             case 'django-inverted':
-              if (hover) {
                 tagStyle = djangoHover;
-              }
-              else {
-                tagStyle = django;
-              }
               break;
             case 'flask-inverted':
-              if (hover) {
                 tagStyle = flaskHover;
-              }
-              else {
-                tagStyle = flask;
-              }
               break;
             case 'nodejs-inverted':
-              if (hover) {
                 tagStyle = nodejsHover;
-              }
-              else {
-                tagStyle = nodejs;
-                }
               break;
             case 'flutter-inverted':
-              if (hover) {
                 tagStyle = flutterHover;
-              }
-              else {
-                tagStyle = flutter;
-              }
               break;
             case 'graphql-inverted':
-              if (hover) {
                 tagStyle = graphqlHover;
-              }
-              else {
-                tagStyle = graphql;
-                }
               break;
             case 'netlify-inverted':
-              if (hover) {
                 tagStyle = netlifyHover;
-              }
-              else {
-                tagStyle = netlify;
-              }
               break;
             case 'git-inverted':
-              if (hover) {
                 tagStyle = gitHover;
-              }
-              else {
-                tagStyle = git;
-              }
               break;
             case 'github-inverted':
-              if (hover) {
                 tagStyle = githubHover;
-              }
-              else {
-                tagStyle = github;
-              }
               break;
             case 'sass-inverted':
-              if (hover) {
                 tagStyle = sassHover;
-            }
-              else {
-                tagStyle = sass;
-              }
               break;
         default:
-              if (hover) {
                 tagStyle = defaultColor;
-            }
-              else {
-                tagStyle = defaultColorHover;
-              }
               break;
       }
       return (
