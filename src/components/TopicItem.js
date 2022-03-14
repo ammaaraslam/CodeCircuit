@@ -11,10 +11,18 @@ const Topic = styled(Link)`
   text-transform: uppercase;
   color: var(--color-secondaryText);
   font-family: 'Rubik';
-  transition: all 0.15s ease-in-out;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
   }
+
 
 `
 
@@ -250,17 +258,17 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     color: 'var(--color-darkerBackground)',
     border : '3px solid var(--color-webScrapingColor)',
     padding : size,
+
   }
   const webScrapingHover = {
-    border : '3px solid var(--color-webScrapingColor)',
-    backgroundColor: 'transparent',
-    borderRadius : border,
-    
+    backgroundColor : 'var(--color-webScrapingColor)',
     fontSize : fontSize,
-    fontFamily: 'Rubik',
-    color: 'var(--color-webScrapingColor)',
-    padding : size,
     
+    fontFamily: 'Rubik',
+    borderRadius : border,
+    color: 'var(--color-darkerBackground)',
+    border : '3px solid var(--color-webScrapingColor)',
+    padding : size,
   }
   const gatsbyHover = {
     border : '3px solid var(--color-gatsbyColor)',
