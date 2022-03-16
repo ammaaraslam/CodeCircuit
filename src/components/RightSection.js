@@ -8,6 +8,7 @@ import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/400.css'
 import { graphql, useStaticQuery } from 'gatsby'
 import kebabCase from "lodash/kebabCase"
+import startCase from 'lodash/startCase'
 
 
 const RightSectionWrapper = styled.aside`
@@ -202,7 +203,7 @@ const RightSection = () => {
                     {group.map(topic => (
                         <li key={topic.fieldValue}>
                             <TopicItem type={topic.fieldValue} size='5px' border='10px' fontSize='16px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
-                            {topic.fieldValue}
+                            {startCase(topic.fieldValue)}
                             </TopicItem>
                         </li>
                         ))} 

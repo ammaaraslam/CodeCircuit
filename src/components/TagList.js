@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import TopicItem from './TopicItem'
+import kebabCase from "lodash/kebabCase"
+import startCase from 'lodash/startCase'
 
 const ListContainer = styled.div`
   display: inline;
@@ -23,9 +25,9 @@ class TopicList extends React.Component {
           return (
             <Fragment key={`topic-list-${i}`}>
               {!noLink && (
-                <TopicListItem><TopicItem type={topic} size='5px' border='10px' fontSize='15px' to={`/topics/${topic}`}>{topic}</TopicItem></TopicListItem>
+                <TopicListItem><TopicItem type={kebabCase(topic)} size='5px' border='10px' fontSize='15px' to={`/topics/${kebabCase(topic)}`}>{startCase(topic)}</TopicItem></TopicListItem>
               )}
-              {noLink && <TopicListItem><TopicItem type={topic} size='5px' fontSize='15px' border='10px' to={`/topics/${topic}`}>{topic}</TopicItem></TopicListItem>}
+              {noLink && <TopicListItem><TopicItem type={kebabCase(topic)} size='5px' fontSize='15px' border='10px' to={`/topics/${kebabCase(startCase(topic))}`}>{topic}</TopicItem></TopicListItem>}
               {i < topics.length - 1 ? ' ' : ''}
             </Fragment>
           )
