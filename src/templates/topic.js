@@ -65,7 +65,11 @@ export const pageQuery = graphql`
             title
             topics
             language
+            date
             slug
+            cover {
+              publicURL
+            }
           }
         }
       }
