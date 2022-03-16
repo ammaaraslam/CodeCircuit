@@ -47,15 +47,16 @@ ol {
   	width: 12px;
 }
 
-*::-webkit-scrollbar-track {
-  background-color: var(--color-primaryScrollbar); 
-  }
-*::-webkit-scrollbar-track:hover {
-  background-color: var(--color-secondaryScrollbar); 
-  }
- 
+::-webkit-scrollbar-track {
+  background: var(--color-primaryBackground);
+}
+::-webkit-scrollbar-track:hover {
+  background: var(--color-darkerBackground);
+}
+
+
 *::-webkit-scrollbar-thumb {
-  background: linear-gradient(120deg, #28d79a 0%, #004a8f 100%); 
+  background: linear-gradient(120deg, #3ddba4 0%, #005cb3 100%); 
   border-radius: 10px;
 }
 

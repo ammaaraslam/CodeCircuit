@@ -112,8 +112,8 @@ export const COLORS = {
     dark: colors.darkColor,
   },
   secondaryScrollbar: {
-    light: colors.lightColor,
-    dark: colors.darkColor,
+    light: colors.darkerLightColor,
+    dark: colors.darkerDarkColor,
   },
   siteBackground: {
     light: '#f4f8fb',

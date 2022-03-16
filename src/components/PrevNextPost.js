@@ -191,7 +191,7 @@ const FooterLine = styled.div`
   position: absolute;
   font-family: 'Roboto';
   bottom: 60px;
-  color: var(--color-linkColorChangeInverted);
+  color: var(--color-linkColorChange);
 
 `
 
