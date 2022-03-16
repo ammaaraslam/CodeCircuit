@@ -33,6 +33,7 @@ const colors = {
   lighterDarkColor: '#00152b',
 
   gatsbyColor: '#452475',
+  miscellaneousColor: '#fb83af',
   extensionsColor: '#E4959E',
   webScrapingColor: '#bdb2ff',
   reactColor: '#61dafb',

@@ -260,6 +260,17 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
     padding : size,
 
   }
+  const miscellaneous = {
+    backgroundColor : 'var(--color-miscellaneousColor)',
+    fontSize : fontSize,
+    
+    fontFamily: 'Rubik',
+    borderRadius : border,
+    color: 'var(--color-darkerBackground)',
+    border : '3px solid var(--color-miscellaneousColor)',
+    padding : size,
+
+  }
   const webScrapingHover = {
     backgroundColor : 'var(--color-webScrapingColor)',
     fontSize : fontSize,
@@ -420,10 +431,14 @@ const TopicItem = ({children, onClick, fontSize, to, tagName, disabled, size, ty
       case 'extensions':
           tagStyle = extensions;
         break;
-      case 'web scraping':
+      case 'miscellaneous':
+          tagStyle = miscellaneous;
+        break;
+
+      case 'web-scraping':
           tagStyle = webScraping;
         break;
-      case 'vs code':
+      case 'vs-code':
           tagStyle = vscode;
         break;
       case 'gatsby':

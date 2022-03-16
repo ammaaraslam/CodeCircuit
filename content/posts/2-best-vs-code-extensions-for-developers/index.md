@@ -3,7 +3,7 @@ title: Best VS Code Extensions for Developers
 slug: best-vs-code-extensions-for-developers
 date: 2022-03-05
 cover: ./best-vs-code-extensions.webp
-topics: ['vs code', extensions]
+topics: ['vs-code', extensions]
 ownCover: false
 urlToAuthor: https://www.pexels.com/@antonio-batinic-2573434?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels
 nameOfAuthor: Antonio Batinić

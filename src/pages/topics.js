@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 // Utilities
 import kebabCase from "lodash/kebabCase"
-
+import startCase from 'lodash/startCase'
 // Components
 import { graphql } from "gatsby"
 import Layout from '../components/layout'
@@ -65,9 +65,9 @@ const TopicsPage = ({
           <LeftPageBody>
             <TagList>
                   {group.map(topic => (
-                  <li key={topic.fieldValue}>
+                  <li key={kebabCase(topic.fieldValue)}>
                       <TopicItem type={topic.fieldValue} size='20px' fontSize='26px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
-                      {topic.fieldValue}
+                      {startCase(topic.fieldValue)}
                       </TopicItem>
                       {/* <Link to={`/topics/${kebabCase(topic.fieldValue)}/`}>
                       {topic.fieldValue} ({topic.totalCount})
@@ -109,7 +109,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000, skip: 1) {
+    allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___topics) {
         fieldValue
         totalCount

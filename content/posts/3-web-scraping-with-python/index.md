@@ -3,7 +3,7 @@ title: Web Scraping with Python
 slug: web-scraping-with-python
 date: 2022-03-13
 cover: ./web-scraping-with-python.webp
-topics: ['python', 'web scraping']
+topics: ['python', 'web-scraping']
 ownCover: false
 urlToAuthor: https://twitter.com/ninaLimpi
 nameOfAuthor: Katerina Limpitsouni

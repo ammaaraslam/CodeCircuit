@@ -292,7 +292,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    topics: allMarkdownRemark(limit: 2000, skip: 1) {
+    topics: allMarkdownRemark(limit: 2000) {
       group(field: frontmatter___topics) {
         fieldValue
         totalCount

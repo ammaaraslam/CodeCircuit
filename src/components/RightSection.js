@@ -144,7 +144,7 @@ const RecentArticlesLink = styled(Link)`
 const RightSection = () => {
     const data = useStaticQuery(graphql`
     query {
-        topics: allMarkdownRemark(limit: 2000, skip: 1) {
+        topics: allMarkdownRemark(limit: 2000) {
             group(field: frontmatter___topics) {
               fieldValue
               totalCount
@@ -201,7 +201,7 @@ const RightSection = () => {
                 <PopularTagsList>
                     {group.map(topic => (
                         <li key={topic.fieldValue}>
-                            <TopicItem type={topic.fieldValue} size='5px' fontSize='14px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                            <TopicItem type={topic.fieldValue} size='5px' border='10px' fontSize='16px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
                             {topic.fieldValue}
                             </TopicItem>
                         </li>
