@@ -7,6 +7,8 @@ import { FaTimes } from 'react-icons/fa';
 import styled from 'styled-components';
 import {RiArticleFill} from 'react-icons/ri'
 import {FaTags} from 'react-icons/fa'
+import {SiBookstack} from 'react-icons/si'
+
 import '@fontsource/rubik/800.css'
 
 
@@ -17,6 +19,7 @@ const HamburgerMenu = ({handleNavToggle}) => {
         <StyledMenu>
             <StyledLink onClick={handleNavToggle} to="/articles"><TutorialsIcon />  Articles</StyledLink>
             <StyledLink onClick={handleNavToggle} to="/topics"><TopicsIcon />  Topics</StyledLink>
+            <StyledLink onClick={handleNavToggle} to="/series"><SiBookstack />  Series</StyledLink>
             <CloseToggle onClick={handleNavToggle}><FaTimes/></CloseToggle>
         </StyledMenu>
     )
