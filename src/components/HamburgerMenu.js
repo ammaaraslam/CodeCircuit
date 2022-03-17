@@ -19,17 +19,25 @@ const HamburgerMenu = ({handleNavToggle}) => {
         <StyledMenu>
             <StyledLink onClick={handleNavToggle} to="/articles"><TutorialsIcon />  Articles</StyledLink>
             <StyledLink onClick={handleNavToggle} to="/topics"><TopicsIcon />  Topics</StyledLink>
-            <StyledLink onClick={handleNavToggle} to="/series"><SiBookstack />  Series</StyledLink>
+            <StyledLink onClick={handleNavToggle} to="/series"><SeriesIcon />  Series</StyledLink>
             <CloseToggle onClick={handleNavToggle}><FaTimes/></CloseToggle>
         </StyledMenu>
     )
 }
 const TutorialsIcon = styled(RiArticleFill)`
   padding: 0;
+  margin-right: 7px;
 `
 const TopicsIcon = styled(FaTags)`
   padding: 0;
+  margin-right: 7px;
+
 `
+const SeriesIcon = styled(SiBookstack)`
+  margin-right: 7px;
+  padding: 0;
+`
+
 const StyledMenu = styled.div`
     
     position: fixed;
