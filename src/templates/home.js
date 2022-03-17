@@ -12,7 +12,7 @@ import Button from '../components/Button'
 import Bio from '../components/Bio'
 import kebabCase from "lodash/kebabCase"
 import {HiArrowRight} from 'react-icons/hi'
-
+import startCase from 'lodash/startCase'
 
 const HomeHero = styled.div`
     position: relative;
@@ -40,9 +40,10 @@ const HomeHeroInfo = styled.div`
     color: var(--color-secondaryText);
     align-items: left;
     text-align: left;
-    @media screen and (max-width: 768px) {
-      margin-left: 5%;
+    @media screen and (max-width: 900px) {
+      width: 70%;
     }
+
 
 `
 const HomeHeroInfoHeading = styled.h1`
@@ -54,9 +55,18 @@ const HomeHeroInfoHeading = styled.h1`
     text-transform: uppercase;
     font-weight: 1700;
     line-height: 2cm;
+    @media screen and (max-width: 900px) {
+      line-height: 1.5cm;
+      font-size: 3.5rem;
+    }
     @media screen and (max-width: 768px) {
-      line-height: 1.4cm;
-      font-size: 2.7rem;
+      line-height: 1.3cm;
+      font-size: 2.3rem;
+    }
+
+    @media screen and (max-width: 420px) {
+      line-height: 1.2cm;
+      font-size: 2.2rem;
     }
     
 `
@@ -65,11 +75,10 @@ const HomeHeroInfoHeadingSpan = styled.span`
   padding-left: 0;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-style: italic;
   background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
   -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
       padding: 5px;
       margin-left: -5px;
     }
@@ -121,6 +130,14 @@ const SectionTitle = styled.h1`
         font-size: 2.9rem;
       }
     }
+    @media screen and (max-width: 420px) {
+      & {
+        font-size: 2.5rem;
+        margin-left: 2%;
+
+      }
+    }
+
 `
 
 const AllBtn = styled.div`
@@ -134,13 +151,13 @@ const RecentPosts = styled.div`
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 20px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     & {
       padding-left: 15px;
       padding-right: 15px;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     & {
       padding-left: 5px;
       padding-right: 5px;
@@ -176,13 +193,28 @@ const Topics = styled.div`
     padding: 0;
     
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     & {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       padding-left: 40px;
       padding-right: 40px;
     }
   }
+  @media screen and (max-width: 768px) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
 `
 
 const AuthorSection = styled.div`
@@ -210,14 +242,35 @@ const AuthorInfo = styled.div`
   text-align: left;
   width: 90%;
   margin-top: 10px;
+  @media screen and (max-width: 900px) {
+    & {
+      padding: 6px;
+      width: 99%;
+      margin-left: 0;
+      felx-direction: row;
+    }
+  }
   @media screen and (max-width: 768px) {
     & {
       padding: 6px;
-      width: 90%;
+      width: 99%;
       margin-left: 0;
-      felx-direction: column;
+      felx-direction: row;
+      text-align: left;
+
     }
   }
+  @media screen and (max-width: 420) {
+    & {
+      padding: 6px;
+      width: 95%;
+      margin-left: 0;
+      felx-direction: row;
+      text-align: center;
+    }
+  }
+
+
 `
 
 
@@ -259,9 +312,9 @@ class BlogList extends React.Component {
             
             <Topics>
               {group.map(topic => (
-                <li key={topic.fieldValue}>
-                    <TopicItem type={topic.fieldValue} size='20px' fontSize='26px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
-                    {topic.fieldValue}
+                <li key={kebabCase(topic.fieldValue)}>
+                    <TopicItem type={kebabCase(topic.fieldValue)} size='20px' fontSize='26px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                      {startCase(topic.fieldValue)}
                     </TopicItem>
                 </li>
                 ))}

@@ -8,6 +8,7 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import LeftPageBody from '../components/LeftPageBody'
 import RightSection from '../components/RightSection'
+import startCase from 'lodash/startCase'
 
 const PageBody = styled.div`
   background-color: var(--color-lighterBackground);
@@ -30,7 +31,7 @@ class Topics extends React.Component {
     return (
       <Layout location={this.props.location}>
         <SEO title={`Articles on ${this.props.pageContext.topic}`} />
-        <Hero title={`Articles on ${pageTitle}`} />
+        <Hero title={`Articles on ${startCase(pageTitle)}`} />
 
         <PageBody>
           <LeftPageBody>
