@@ -33,6 +33,7 @@ const TitleContainer = styled.div`
 `
 
 const HeroTitle = styled.h1`
+  font-family: 'Rubik';
   font-weight: 700;
   font-size: 4.1rem;
   background: -webkit-linear-gradient(120deg, #004a8f 0%, #28d79a 100%);

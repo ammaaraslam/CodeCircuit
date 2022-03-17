@@ -24,18 +24,36 @@ const TitleContainer = styled.div`
   vertical-align: middle;
   text-align: center;
   width: 100%;
+
+
 `
+// font-weight: 700;
+// font-size: 4.1rem;
+// font-family: 'Rubik';
+// background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+// text-transform: capitalize;
+
 
 
 const HeroTitle = styled.h1`
-  font-weight: 700;
-  font-size: 4.1rem;
-  margin: 10px 50px;
-  font-family: 'Rubik';
-  background: linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-transform: capitalize;
+font-family: 'Rubik';
+font-weight: 700;
+font-size: 4.1rem;
+background: -webkit-linear-gradient(120deg, #004a8f 0%, #28d79a 100%);
+-webkit-background-clip: text;
+-webkit-text-stroke: 10px transparent;
+color: var(--color-textInverted);
+margin: 10px 50px;
+text-transform: capitalize;
+@media screen and (max-width: 768px) {
+  & {
+    margin: 0;
+    font-size: 3.4rem;
+  }
+}
+
   
 `
 

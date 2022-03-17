@@ -10,13 +10,15 @@ const LeftPageBodyContainer = styled.section`
     width: 70%;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 35px;
-    padding-right: 27px;
+    padding-left: 32px;
+    padding-right: 32px;
     transform: translateY(-50px);
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 420px) {
         & {
-          width: 95%;
-          display: block;
+            width: 95%;
+            padding-left: 15px;
+            padding-right: 15px;
+            border: 8px solid var(--color-primaryBackground);
         }
       }
     

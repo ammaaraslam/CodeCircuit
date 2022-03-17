@@ -14,6 +14,7 @@ import startCase from 'lodash/startCase'
 const RightSectionWrapper = styled.aside`
     align-items: center;
     float: right;
+    width: 28%;
     max-width: 28%;
     transform: translateY(-50px);
     display: grid;
@@ -22,11 +23,10 @@ const RightSectionWrapper = styled.aside`
     row-gap: 20px;
     horizontal-grid-gap: 100px;
     grid-template-columns: repeat(1, 1fr);
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 420px) {
         & {
-            
             width: 95%;
+            max-width: 95%;
             float: left;
             margin-top: 20px;
         }
@@ -42,9 +42,25 @@ const RightSectionItem = styled.aside`
     padding-bottom: 40px;
     padding-left: 15px;
     padding-right: 15px;
+    @media screen and (max-width: 420px) {
+        & {
+            border: 8px solid var(--color-primaryBackground);
+            padding-top: 18px;
+            padding-bottom: 37px;
+            padding-left: 10px;
+            padding-right: 10px;
+                }
+    }
+
 `
 const AuthorInfo = styled.div`
     padding: 8px;
+    @media screen and (max-width: 420px) {
+        & {
+            padding: 5px;
+        }
+    }
+
 `
 
 const RightSectionTitle = styled.h2`
@@ -55,6 +71,13 @@ const RightSectionTitle = styled.h2`
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     font-family: 'Rubik';
+    @media screen and (max-width: 420px) {
+        & {
+            font-size: 1.2rem;
+        }
+    }
+
+    
 `
 
 const AuthorImage = styled.img`
@@ -107,7 +130,7 @@ const PopularTagsList = styled.div`
     max-width: 70%;
     grid-gap: 0;
     row-gap: 20px;
-    horizontal-grid-gap: 100px;
+    horizontal-grid-gap: 90px;
     column-gap: 5px;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
@@ -121,6 +144,12 @@ const RecentArticles = styled.li`
     overflow: hidden;
     text-overflow: ellipsis;
     list-style-type: none;
+    @media screen and (max-width: 420px) {
+        & {
+            max-width: 280px;
+        }
+    }
+
 
 `
 const RecentArticlesLink = styled(Link)`
@@ -138,6 +167,12 @@ const RecentArticlesLink = styled(Link)`
         text-decoration-color: var(--color-linkColorChangeInverted);
         text-decoration-thickness: 3px;
     
+    }
+    @media screen and (max-width: 420px) {
+        & {
+            margin-left: 8px;
+            font-size: 1.1rem;
+        }
     }
 `
 
@@ -202,7 +237,7 @@ const RightSection = () => {
                 <PopularTagsList>
                     {group.map(topic => (
                         <li key={topic.fieldValue}>
-                            <TopicItem type={topic.fieldValue} size='5px' border='10px' fontSize='16px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                            <TopicItem type={topic.fieldValue} size='4px' border='10px' fontSize='13px' to={`/topics/${kebabCase(topic.fieldValue)}/`}>
                             {startCase(topic.fieldValue)}
                             </TopicItem>
                         </li>

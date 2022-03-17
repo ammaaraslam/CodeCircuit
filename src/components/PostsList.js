@@ -6,14 +6,19 @@ import PostsListItem from './PostsListItem'
 
 const PostListLayout = styled.ul`
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   list-style: none;
   display: grid;
   justify-items: center;
   grid-gap: 50px;
   grid-template-columns: repeat(2, 1fr);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 420px) {
     & {
+      margin-left: auto;
+      margin-right: auto;
+    
       grid-template-columns: repeat(1, 1fr);
     }
   }

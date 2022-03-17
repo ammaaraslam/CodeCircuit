@@ -39,7 +39,7 @@ const Post = styled.li`
   @media screen and (max-width: 420px) {
     & {
       margin-top: var(--size-600);
-      width: 310px;
+      width: 300px;
       height: 460px;
     }
   }
