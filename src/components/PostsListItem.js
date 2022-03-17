@@ -5,7 +5,6 @@ import TagList from './TagList'
 import useSiteMetadata from '../hooks/use-site-config'
 import styled from 'styled-components'
 import { Bull, ReadingTime } from './Commons'
-import {AiOutlineClockCircle} from 'react-icons/ai'
 import {HiArrowRight} from 'react-icons/hi'
 import useSiteImages from '../hooks/use-site-images'
 import '@fontsource/rubik/700.css'
@@ -34,14 +33,14 @@ const Post = styled.li`
     & {
       margin-top: var(--size-600);
       width: 340px;
-      height: 480px;
+      height: 490px;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 420px) {
     & {
       margin-top: var(--size-600);
       width: 310px;
-      height: 450px;
+      height: 460px;
     }
   }
 
@@ -117,6 +116,12 @@ const PostImage = styled(Link)`
 const PostHeader = styled.header`
   padding: 0.5rem;
   z-index: 1;
+  @media screen (max-width: 420px) {
+    & {
+      padding: 0.4rem;
+    }
+  }
+
 `
 
 const Excerpt = styled.p`
@@ -126,6 +131,11 @@ const Excerpt = styled.p`
   font-family: 'Roboto';
 
   z-index: 1;
+  @media screen (max-width: 420px) {
+    & {
+      max-width: 2ch;
+    }
+  }
   
 `
 
@@ -171,12 +181,6 @@ const FooterLine = styled.div`
 `
 
 
-const ClockIcon = styled(AiOutlineClockCircle)`
-  color: var(--color-linkColorChange);
-  transform: translateY(1px);
-`
-
-
 
 const PostsListItem = props => {
   const { title, excerpt, slug, language, cover, topics, timeToRead, date } = props
@@ -184,6 +188,9 @@ const PostsListItem = props => {
   const { siteCover } = useSiteMetadata()
   const { fluid } = useSiteImages(siteCover)
   const heroImg = (cover && cover.publicURL) || fluid.src
+  const TruncExcerpt = require('trunc-html')
+  let excerptHtml = excerpt
+  excerptHtml = TruncExcerpt(excerptHtml, 110).html
  
   return (
     <Post>
@@ -200,7 +207,7 @@ const PostsListItem = props => {
 
 
       <section>
-        <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <Excerpt dangerouslySetInnerHTML={{ __html: excerptHtml}} />
       </section>
 
       <footer>
