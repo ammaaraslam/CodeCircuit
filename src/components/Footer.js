@@ -67,12 +67,6 @@ const FooterText = styled.p`'
   font-family: 'Rubik';
   padding-top: 8.5px;
   padding-bottom: 20px;
-  @media screen and (max-width: 420px) {
-    & {
-      font-size: 0.95rem;
-      max-width: 98%;
-    }
-  }
 
 `
 const FooterSpanText = styled(Link)`
