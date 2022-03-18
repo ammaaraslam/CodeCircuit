@@ -58,7 +58,6 @@ const FooterLinkItem = styled(Link)`
 
 `
 const FooterText = styled.p`'
-  max-width: 100%;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -71,8 +70,10 @@ const FooterText = styled.p`'
   @media screen and (max-width: 420px) {
     & {
       font-size: 0.95rem;
+      max-width: 98%;
     }
   }
+
 `
 const FooterSpanText = styled(Link)`
   text-decoration: none;
