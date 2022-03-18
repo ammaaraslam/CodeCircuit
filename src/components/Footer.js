@@ -57,7 +57,8 @@ const FooterLinkItem = styled(Link)`
   }
 
 `
-const FooterText = styled.p`
+const FooterText = styled.p`'
+  max-width: 100%;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -67,6 +68,11 @@ const FooterText = styled.p`
   font-family: 'Rubik';
   padding-top: 8.5px;
   padding-bottom: 20px;
+  @media screen and (max-width: 420px) {
+    & {
+      font-size: 0.95rem;
+    }
+  }
 `
 const FooterSpanText = styled(Link)`
   text-decoration: none;

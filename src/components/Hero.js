@@ -50,7 +50,7 @@ text-transform: capitalize;
 @media screen and (max-width: 768px) {
   & {
     margin: 0;
-    font-size: 3.4rem;
+    font-size: 3.2rem;
   }
 }
 
