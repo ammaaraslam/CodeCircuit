@@ -109,6 +109,19 @@ const RecentPostsSection = styled.div`
     background-size: cover;
     padding-top: 25px;
     padding-bottom: 25px;
+    @media screen and (max-width: 768px) {
+      & {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      & {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+
 
 `
 

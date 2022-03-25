@@ -20,6 +20,13 @@ const PageBody = styled.div`
   transform: translateY(-50px);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  @media screen and (max-width: 768px) {
+    & {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
 `
 
 const Page = props => {

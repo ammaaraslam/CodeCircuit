@@ -18,7 +18,6 @@ const PostListLayout = styled.ul`
     & {
       margin-left: auto;
       margin-right: auto;
-    
       grid-template-columns: repeat(1, 1fr);
     }
   }
