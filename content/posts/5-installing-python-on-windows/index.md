@@ -3,7 +3,7 @@ title: Installing Python on Windows
 slug: installing-python-on-windows
 date: 2022-04-05
 cover: ./installing-python-on-windows.webp
-topic: ['python']
+topics: ['python']
 ownCover: true
 ---
 
