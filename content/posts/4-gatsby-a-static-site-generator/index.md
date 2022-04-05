@@ -4,7 +4,7 @@ slug: gatsby-a-static-site-generator
 date: 2022-03-21
 cover: ./gatsby-a-static-site-generator.webp
 ownCover: true
-topics: ['Gatsby']
+topics: ['gatsby']
 ---
 In today's article, I'm hoping to give you guys a quick overview of the React-based framework, [GatsbyJS](https://www.gatsbyjs.com/). By the end of this article, you will know [what Gatsby is](#what-is-gatsbyjs), [where you can use it](some-projects-gatsby-is-good-for),  [what makes Gatsby unique compared to other Static Site Generators (SSGs)](#what-makes-gatsbyjs-unique-compared-to-other-ssgs), [what you need to know to build a site with Gatsby](#do-you-need-to-be-good-at-react-graphql-and-webpack) and [whether you should use Gatsby for your projects](#should-you-use-gatsby-for-your-next-web-project)
 
