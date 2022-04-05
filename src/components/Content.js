@@ -59,8 +59,8 @@ const ContentBody = styled.div`
     }
   }
   & img {
-    border: double 6px transparent;
-    border-radius: 20px;
+    border: double 5px transparent;
+    border-radius: 15px;
     background-image: linear-gradient(white, white), 
                       linear-gradient(to right, #28d79a, #004a8f);
     background-origin: border-box;
