@@ -2,9 +2,9 @@
 title: Installing Python on Windows
 slug: installing-python-on-windows
 date: 2022-04-05
+cover: ./installing-python-on-windows.webp
+topic: ['python']
 ownCover: true
-cover: installing-python-on-windows.webp
-topic: ['Python']
 ---
 
 Python is a very popular high-level, general-purpose programming language, created by [Guido van Rossum](https://twitter.com/gvanrossum). Python can be  used for a wide variety of applications, some of these applications include, web development, machine learning, automation or scripting, software testing/prototyping.
