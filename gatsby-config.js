@@ -10,7 +10,12 @@ module.exports = {
     ...config,
   },
   pathPrefix: config.pathPrefix,
+  flags: {
+    FAST_DEV: true,
+  },
+
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
@@ -44,6 +49,14 @@ module.exports = {
         path: 'content/posts',
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: 'allSeries',
+        path: 'content/series',
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

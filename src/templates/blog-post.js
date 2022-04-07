@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import '@fontsource/rubik/800.css'
 import '@fontsource/roboto/500.css'
 import Bio from '../components/Bio'
+import TableOfContents from '../components/TableOfContents'
 
 const PageBody = styled.div`
     background-color: var(--color-darkerBackground);
@@ -186,6 +187,12 @@ class BlogPostTemplate extends React.Component {
         <PageBody>
           <Article post={post} />
         </PageBody>
+        {/* {
+          post?.tableOfContents?.items && (
+            <TableOfContents items={post.tableOfContents.items} />
+          )
+        } */}
+
         {typeof post.tableOfContents.items === 'undefined' ? null : (
           <Toc>
             <InnerScroll>

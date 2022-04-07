@@ -4,6 +4,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const BlogPostTemplate = require.resolve('./src/templates/blog-post.js')
+  const SeriesTemplate = require.resolve('./src/templates/blog-post.js')
   const BlogPostShareImage = require.resolve(
     './src/templates/blog-post-share-image.js'
   )
@@ -13,6 +14,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     './src/templates/home.js'
   )
   const AllListPostsTemplate = require.resolve('./src/templates/articles.js')
+  const AllListSeriesTemplate = require.resolve('./src/templates/allSeries.js')
+
+  
   const allMarkdownQuery = await graphql(`
     {
       allMarkdown: allMdx(
@@ -65,14 +69,24 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const posts = markdownFiles.filter(item =>
     item.node.fileAbsolutePath.includes('/content/posts/')
   )
+  const allSeries = markdownFiles.filter(item =>
+    item.node.fileAbsolutePath.includes('/content/series/')
+  )
+
 
   const listedPosts = posts.filter(
     item => item.node.frontmatter.unlisted !== true
   )
+  const listedSeries = allSeries.filter(
+    item => item.node.frontmatter.unlisted !== true
+  )
+
 
   // generate paginated post list
   const postsPerPage = postPerPageQuery.data.site.siteMetadata.postsPerPage
   const nbPages = Math.ceil(listedPosts.length / postsPerPage)
+  const nbPagesSeries = Math.ceil(listedSeries.length / postsPerPage)
+
 
   Array.from({ length: nbPages }).forEach((_, i) => {
     createPage({
@@ -98,7 +112,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       },
     })
   })
+  Array.from({ length: nbPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/series` : `/pages/${i + 1}`,
+      component: AllListSeriesTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        currentPage: i + 1,
+        nbPages: nbPagesSeries,
+      },
+    })
+  })
 
+  
   // generate blog posts
   posts.forEach((post, index, posts) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
@@ -126,6 +153,20 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     }
+  })
+  allSeries.forEach((series, index, allSeries) => {
+    const previous = index === allSeries.length - 1 ? null : allSeries[index + 1].node
+    const next = index === 0 ? null : allSeries[index - 1].node
+
+    createPage({
+      path: `/series/${series.node.frontmatter.slug}`,
+      component: SeriesTemplate,
+      context: {
+        slug: series.node.frontmatter.slug,
+        previous,
+        next,
+      },
+    })
   })
 
   // generate pages
