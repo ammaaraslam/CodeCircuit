@@ -153,9 +153,6 @@ const Header = (props) => {
             <NavLink to="/articles"><TutorialsIcon /> Articles</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink to="/series"><SeriesIcon /> Series</NavLink>
-          </NavItem>
-          <NavItem>
             <NavLink to="/topics"><TopicsIcon /> Topics</NavLink>
           </NavItem>
         </NavMenu>

@@ -19,7 +19,6 @@ const HamburgerMenu = ({handleNavToggle}) => {
         <StyledMenu>
             <StyledLink onClick={handleNavToggle} to="/articles"><TutorialsIcon />  Articles</StyledLink>
             <StyledLink onClick={handleNavToggle} to="/topics"><TopicsIcon />  Topics</StyledLink>
-            <StyledLink onClick={handleNavToggle} to="/series"><SeriesIcon />  Series</StyledLink>
             <CloseToggle onClick={handleNavToggle}><FaTimes/></CloseToggle>
         </StyledMenu>
     )
